@@ -1,5 +1,4 @@
 
-
 function cardcont(prop){
     const cart = prop.cart;
 
@@ -14,9 +13,7 @@ function cardcont(prop){
         <button>Ver más</button>
     </div>
 
-
-)
-
+    )
 
 }
 
