@@ -4,6 +4,7 @@ import Categorias from './Categorias';
 import Barra from './Barra';
 import '../sass/main.scss';
 
+
 function App() {
   return (
 
