@@ -5,23 +5,29 @@ import Categoria from './Categoria';
 const categorias = [
 
     {
-        title:'Categoria1',
+        title:'Short Drinks',
         ObjectId: 0,
         
 
     },
 
     {
-        title:'Categoria2',
+        title:'Long drinks',
         ObjectId: 1
 
 
     },
     {
-        title:'Cartegoria3',
+        title:'Aperitivos',
         ObjectId: 2
 
-    }
+    },
+
+    {
+        title:'Digestivos',
+        ObjectId: 2
+
+    },
 
 ]
 
