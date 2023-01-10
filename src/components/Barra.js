@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import Resultados from './Resultados';
 
 const cocteles = [
 
@@ -22,7 +23,7 @@ const cocteles = [
     },
     {
         title:'Cuba libre',
-        ObjectId: 2,
+        ObjectId: 3,
         ingredients: [] 
 
 
@@ -30,21 +31,21 @@ const cocteles = [
 
     {
         title :'Blody Mary' ,
-        ObjectId: 2,
+        ObjectId: 4,
         ingredients: [] 
 
 
     },
     {
         title:'Tom collins',
-        ObjectId: 2,
+        ObjectId: 5,
         ingredients: [] 
 
 
     },
     {
         title:'Reburjito',
-        ObjectId: 2,
+        ObjectId: 6,
         ingredients: [],
         alcohol: true,
         categoria: 'short drink'
@@ -53,14 +54,14 @@ const cocteles = [
 
     {
         title:'Amanecer ecuatoriano',
-        ObjectId: 2,
+        ObjectId: 7,
         ingredients: [] 
 
     },
 
     {
         title:'Atardecer filipino',
-        ObjectId: 2,
+        ObjectId: 8,
         ingredients: [] 
 
     },
@@ -71,6 +72,8 @@ const cocteles = [
 
 
 function Barra(){
+
+
     const [searchTerm, setSearchTerm] = useState('');
 
     function handleChange (event){
@@ -96,7 +99,10 @@ function Barra(){
     </div>
 </div>
     <p align="center">{cocteles.includes(title) ? "Resultados para " : "Sin coincidencias para "} {searchTerm}</p>
+    {cocteles.includes(title) ?  <Resultados coct={searchTerm} /> : " "}
 </>
+
+
     )
 }
 

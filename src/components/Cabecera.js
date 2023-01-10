@@ -5,10 +5,10 @@ function cabecera(){
     return(
 <>
 
-<div class="cabecera">
-<img src={barra}/>
-<div class="COCOKTAIL">COCOKTAIL.</div>
-</div>
+    <div class="cabecera">
+        <img src={barra}/>
+        <div class="COCOKTAIL">COCOKTAIL.</div>
+    </div>
 
 </>
 
