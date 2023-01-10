@@ -1,5 +1,5 @@
 .categorias {
-    min-height: 70vh;
+    min-height: 65vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -85,7 +85,7 @@
             position: absolute;
             bottom: 32px;
             right: 32px;
-            color: sandybrown;
+            color: darkgoldenrod;
             background-color: transparent;
             font-size: 18px;
             padding: 5px 10px;
@@ -93,12 +93,12 @@
             border-bottom-right-radius: 12px;
             border-top-left-radius: 12px;
             transition: .5s;
-            border: 1px solid sandybrown;
+            border: 1px solid darkgoldenrod;
             font-weight: 600;
         }
         
         button:hover {
-            background: sandybrown;
+            background: darkgoldenrod;
             color: black;
         
         }

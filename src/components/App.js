@@ -1,24 +1,23 @@
 import Nav from './Nav';
 import Cab from './Cabecera';
 import Categorias from './Categorias';
-import '../css/main.css';
-import '../css/style.css';
+import Barra from './Barra';
+import '../sass/main.scss';
 
 
 function App() {
   return (
 
 <>
-<Nav />
-<Cab />
-<Categorias />
+  <Nav />
+  <Cab />
+  <Categorias />
+  <Barra />
+
 </>
     
   ) 
 
-
-  
-  
  
 }
 

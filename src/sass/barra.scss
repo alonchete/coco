@@ -1,0 +1,96 @@
+.barra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 15vh;
+    //background-color: antiquewhite;
+    position: relative;
+    width: 100%;
+}
+.input-container {
+    width: 700px;
+    height: 50px;
+    @media screen and (max-width: 750px){
+        width: 650px;
+        //height: 60px;
+    }
+    @media screen and (max-width: 700px){
+        width: 600px;
+        //height: 55px;
+    }
+    @media screen and (max-width: 650px){
+        width: 550px;
+        //height: 50px;
+    }
+    @media screen and (max-width: 600px){
+        width: 500px;
+        //height: 5px;
+    }
+    @media screen and (max-width: 550px){
+        width: 450px;
+        //height: 50px;
+    }
+    border-radius: 2px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+
+    background-color: darkgoldenrod;
+    box-shadow: inset .4rem .4rem 1rem rgb(143, 103, 3),
+                inset -.4rem -.4rem 1rem rgb(242, 181, 27),
+                0 0 0 .5rem darkgoldenrod,
+                0 0 0 .5rem darkgoldenrod,
+                .4rem .4rem 1rem rgb(113, 82, 4),
+                -.4rem -.4rem 1rem rgb(242, 181, 27);
+    position: relative;
+    overflow: hidden;
+    
+}
+input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+::-webkit-input-placeholder { color: rgb(35, 31, 31); }
+span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #161616;
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, .3);
+    transition: 200ms ease-in-out background-color,
+                200ms ease-in-out box-shadow;
+}
+i {
+    color: rgb(242, 181, 27);
+    font-size: .7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 200ms ease-in-out color,
+                200ms ease-in-out font-size;
+}
+
+/* this symbol (~) selects the sibling element */
+/* span is a sibling element of input and the other way around */
+input:focus ~ span {
+    background-color: transparent;
+    box-shadow: none;
+}
+input:focus ~ span i {
+    color: #161616;
+    font-size: 1.5rem;
+}
