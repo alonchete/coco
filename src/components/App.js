@@ -7,13 +7,13 @@ import '../sass/main.scss';
 function App() {
   return (
 
-<>
-  <Nav />
-  <Cab />
-  <Categorias />
-  <Barra />
+      <>
+        <Nav />
+        <Cab />
+        <Categorias />
+        <Barra />
 
-</>
+      </>
     
   ) 
  
