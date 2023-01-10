@@ -95,11 +95,9 @@ function Categorias(){
     return(
 
         <div class="categorias">
-            <input type='text' onChange={handleChange} defaultValue="Mojito"  />
+            <input type='text' onChange={handleChange}   />
            <p>{cocteles.includes(title) ? "Resultados para " : "Sin coincidencias para "} {searchTerm}</p>
 
-         
-    
          {categorias.map(function(x){
             return(
                     <div key={x.ObjectId} class="card">
