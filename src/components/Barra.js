@@ -7,7 +7,8 @@ const cocteles = [
     {
         title:'Mojito',
         ObjectId: 0,
-        ingredients: [] 
+        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
+        alcohol: 'miau'
 
         
 
@@ -16,7 +17,9 @@ const cocteles = [
     {
         title:'Sex on the beach',
         ObjectId: 1,
-        ingredients: [] 
+        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
+        alcohol: 'si'
+
 
 
 
@@ -24,7 +27,9 @@ const cocteles = [
     {
         title:'Cuba libre',
         ObjectId: 3,
-        ingredients: [] 
+        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
+        alcohol: 'si'
+
 
 
     },
@@ -32,22 +37,26 @@ const cocteles = [
     {
         title :'Blody Mary' ,
         ObjectId: 4,
-        ingredients: [] 
+        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
+        alcohol: 'si'
+
 
 
     },
     {
         title:'Tom collins',
         ObjectId: 5,
-        ingredients: [] 
+        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
+        alcohol: 'si'
+
 
 
     },
     {
         title:'Reburjito',
         ObjectId: 6,
-        ingredients: [],
-        alcohol: true,
+        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
+        alcohol: 'si',
         categoria: 'short drink'
 
     },
@@ -55,14 +64,18 @@ const cocteles = [
     {
         title:'Amanecer ecuatoriano',
         ObjectId: 7,
-        ingredients: [] 
+        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
+        alcohol: 'si'
+
 
     },
 
     {
         title:'Atardecer filipino',
         ObjectId: 8,
-        ingredients: [] 
+        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
+        alcohol: 'si'
+ 
 
     },
 
@@ -82,15 +95,22 @@ function Barra(){
 
     let title;
     title = cocteles.find(function(coctel){
-        return coctel.title === searchTerm
+        return coctel.title  === searchTerm
        })
+
+       let alcohol;
+    alcohol = cocteles.filter(function(coctel){
+    return coctel.alcohol  === searchTerm
+   })
+
+   console.log(title)
 
     return(
 <>
 <div class="barra">
     <div class="container">
       <div class="input-container">
-          <input type="text" placeholder="Search..."  onChange={handleChange} />
+          <input type="text" placeholder="Search..." defaultValue="Mojit" onChange={handleChange} />
           <span>
               <i class="fa-solid fa-magnifying-glass"/>
           </span>
@@ -99,7 +119,14 @@ function Barra(){
     </div>
 </div>
     <p align="center">{cocteles.includes(title) ? "Resultados para " : "Sin coincidencias para "} {searchTerm}</p>
-    {cocteles.includes(title) ?  <Resultados coct={searchTerm} /> : " "}
+
+    {cocteles.includes(title) ?
+    
+     <div><Resultados coctel={title}/></div> 
+     
+     : " "}
+
+
 </>
 
 
