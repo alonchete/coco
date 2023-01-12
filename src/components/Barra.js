@@ -94,17 +94,13 @@ function Barra(){
     }
 
     let title;
-    title = cocteles.find(function(coctel){
-        return coctel.title  === searchTerm
-       })
-
-       let alcohol;
-    alcohol = cocteles.filter(function(coctel){
-    return coctel.alcohol  === searchTerm
-   })
-
-   console.log(title)
-
+    const cocktail = async function(){
+    const res =  await fetch('http://localhost:3000/cocktails/4');
+    const data = await res.json();
+    return data
+    }
+  cocktail();
+    
     return(
 <>
 <div class="barra">
