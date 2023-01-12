@@ -16,6 +16,16 @@
     border-radius: 36px;
     overflow: hidden;
     margin: 20px;
+
+    border-radius: 6px;
+    border-bottom-right-radius: 28px;
+    border-top-left-radius: 28px;
+    box-shadow: 0 0 0 .5rem darkgoldenrod,//grosor
+                0 0 0 .5rem darkgoldenrod,//grosor
+                .4rem .4rem 1rem rgb(113, 82, 4),//por  fuera
+                -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuera
+
+
     .card-bg {
         width: 100%;
         height: 100%;

@@ -7,7 +7,7 @@ function cardbg(){
 return(
     <div class="card-bg">
 
-    <img src={coctel1} alt="..."/>
+      <img src={coctel1} alt="..."/>
 
     </div>
 

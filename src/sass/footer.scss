@@ -1,0 +1,92 @@
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   // background-color: #ffbf00;
+   
+
+    .social{
+        display: flex;
+        
+        justify-content: center;
+        flex-wrap: wrap;
+
+        display: flex;
+    align-items: center;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+        ul{
+            display: flex;
+            list-style: none;//adios puntos
+            li{
+                margin: 2.5rem;
+                height: 70px;
+                width: 70px;
+                background-color: aliceblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                //border-radius: 14px;
+                border-bottom-right-radius: 25px;
+                border-bottom-left-radius:2px ;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 2px;
+
+                @media screen and (max-width: 600px){
+                    height: 50px;
+                    width: 50px;
+                    border-bottom-right-radius: 20px;
+                    border-bottom-left-radius:2px ;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 2px;
+                }
+
+                background: darkgoldenrod;
+                box-shadow: 0 0 0 .5rem darkgoldenrod,//grosor
+                            0 0 0 .5rem darkgoldenrod,//grosor
+                            .4rem .4rem 1rem rgb(113, 82, 4),//por  fuera
+                            -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuera
+                transition-duration: 1s;
+                spam{
+                    font-size: 2rem;
+                    cursor: pointer;
+                }
+            }
+            li:hover{
+                box-shadow: inset .4rem .4rem 1rem rgb(143, 103, 3),//por dentro
+                inset -.4rem -.4rem 1rem rgb(242, 181, 27),//por dentro
+                0 0 0 .5rem darkgoldenrod,//grosor
+                0 0 0 .5rem darkgoldenrod,//grosor
+                .4rem .4rem 1rem rgb(113, 82, 4),//por  fuera
+                -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuera
+            }
+        }
+        
+        li:hover spam{
+            font-size: 1.7rem;
+            color: white;
+        }
+        
+    }
+
+    .derechos{
+        padding: 15px 10px;
+        text-align: center;
+        
+
+    small{
+      font-size: 1rem;
+
+    }
+    }
+}
+
+
+
+
+
+

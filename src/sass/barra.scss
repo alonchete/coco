@@ -37,12 +37,12 @@
     border-top-left-radius: 25px;
 
     background-color: darkgoldenrod;
-    box-shadow: inset .4rem .4rem 1rem rgb(143, 103, 3),
-                inset -.4rem -.4rem 1rem rgb(242, 181, 27),
-                0 0 0 .5rem darkgoldenrod,
-                0 0 0 .5rem darkgoldenrod,
-                .4rem .4rem 1rem rgb(113, 82, 4),
-                -.4rem -.4rem 1rem rgb(242, 181, 27);
+    box-shadow: inset .4rem .4rem 1rem rgb(143, 103, 3),//por dentro
+                inset -.4rem -.4rem 1rem rgb(242, 181, 27),//por dentro
+                0 0 0 .5rem darkgoldenrod,//grosor
+                0 0 0 .5rem darkgoldenrod,//grosor
+                .4rem .4rem 1rem rgb(113, 82, 4),//por  fuera
+                -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuera
     position: relative;
     overflow: hidden;
     
@@ -95,6 +95,3 @@ input:focus ~ span i {
     font-size: 1.5rem;
 }
     
- p{
-    align: center;
- }
