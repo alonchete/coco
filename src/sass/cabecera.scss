@@ -6,8 +6,12 @@
     clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
     @media screen and (max-width: 600px){
         height: 60vh;
+        clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    }
+    @media screen and (max-width: 500px){
+        height: 40vh;
         clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
-   }
+    }
    img{
     position: fixed;
     top: 0;

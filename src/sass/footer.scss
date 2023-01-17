@@ -21,6 +21,7 @@ footer{
         ul{
             display: flex;
             list-style: none;//adios puntos
+            //flex-wrap: wrap;
             li{
                 margin: 2.5rem;
                 height: 70px;
@@ -36,13 +37,18 @@ footer{
                 border-top-left-radius: 25px;
                 border-top-right-radius: 2px;
 
+                @media screen and (max-width: 900px){
+                    height: 60px;
+                    width: 60px;
+                    margin: 2.25rem;
+                    
+                }
+
                 @media screen and (max-width: 600px){
                     height: 50px;
                     width: 50px;
-                    border-bottom-right-radius: 20px;
-                    border-bottom-left-radius:2px ;
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 2px;
+                    margin: 2rem;
+                    
                 }
 
                 background: darkgoldenrod;
@@ -77,11 +83,10 @@ footer{
         padding: 15px 10px;
         text-align: center;
         
+        small{
+        font-size: 1rem;
 
-    small{
-      font-size: 1rem;
-
-    }
+        }
     }
 }
 
