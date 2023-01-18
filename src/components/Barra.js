@@ -109,9 +109,6 @@ const cocteles = [
  searchCocktail = posts.find(function(x){
     return x.name === searchTerm || x.id === searchTerm
     })
-let allCocktail = posts.map(function(x){
-    return x
-})
 
 const search = Array(searchCocktail);
 console.log(search)
@@ -133,7 +130,7 @@ console.log(search)
 </div>
 
 <button onClick="dsa"></button>
-    <p align="center">{ posts.some(function(x){ return x.name === RegExp('.o.') }) || posts.some(function(x){ return x.id === searchTerm}) 
+    <p align="center">{ posts.some(function(x){ return x.name === searchTerm }) || posts.some(function(x){ return x.id === searchTerm}) 
 ? "Resultados para " : "Sin coincidencias para " } {searchTerm} {
 } </p>
 <div class="cartas">
