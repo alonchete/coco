@@ -12,25 +12,80 @@
 .input-container {
     width: 700px;
     height: 50px;
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 787.5px){
+        width: 687.5px;
+    }
+    @media screen and (max-width: 775px){
+        width: 675px;
+    }
+    @media screen and (max-width: 762.5px){
+        width: 662.5px;
+    }
+    @media screen and (max-width: 750px){////
         width: 650px;
-        //height: 60px;
     }
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 737.5px){
+        width: 637.5px;
+    }
+    @media screen and (max-width: 725px){
+        width: 625px;
+    }
+    @media screen and (max-width: 712.5px){
+        width: 612.5px;
+    }
+    @media screen and (max-width: 700px){//////////
         width: 600px;
-        //height: 55px;
     }
-    @media screen and (max-width: 650px){
+    @media screen and (max-width: 687.5px){
+        width: 587.5px;
+    }
+    @media screen and (max-width: 675px){
+        width: 575px;
+    }
+    @media screen and (max-width: 662.5px){
+        width: 562.5px;
+    }
+    @media screen and (max-width: 650px){/////
         width: 550px;
-        //height: 50px;
     }
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 637.5px){
+        width: 537.5px;
+    }
+    @media screen and (max-width: 625px){
+        width: 525px;
+    }
+    @media screen and (max-width: 612.5px){
+        width: 512.5px;
+    }
+    @media screen and (max-width: 600px){/////////////////
         width: 500px;
-        //height: 5px;
     }
-    @media screen and (max-width: 550px){
+    @media screen and (max-width: 587.5px){
+        width: 487.5px;
+    }
+    @media screen and (max-width: 575px){
+        width: 475px;
+    }
+    @media screen and (max-width: 562.5px){
+        width: 462.5px;
+    }
+    @media screen and (max-width: 550px){///////
         width: 450px;
-        //height: 50px;
+    }
+    @media screen and (max-width: 537.5px){
+        width: 437.5px;
+    }
+    @media screen and (max-width: 525px){
+        width: 425px;
+    }
+    @media screen and (max-width: 512.5px){
+        width: 412.5px;
+    }
+    @media screen and (max-width: 500px){/////////////////
+        width: 400px;
+    }
+    @media screen and (max-width: 487.5px){
+        width: 387.5px;
     }
     border-radius: 2px;
     border-bottom-right-radius: 25px;
