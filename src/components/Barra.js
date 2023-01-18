@@ -1,6 +1,8 @@
 
 import { useState } from 'react';
-import Resultados from './Resultados';
+import { useEffect } from 'react';
+
+import Resultado from './Resultado';
 
 const cocteles = [
 
@@ -84,45 +86,64 @@ const cocteles = [
 ]
 
 
-function Barra(){
+ function Barra(){
 
 
     const [searchTerm, setSearchTerm] = useState('');
+    const [posts, setPosts] = useState([]);
+    const [alcohol, setAlcohol] = useState(true);
 
     function handleChange (event){
         return setSearchTerm(event.target.value);
     }
 
-    let title;
-    const cocktail = async function(){
-    const res =  await fetch('http://localhost:3000/cocktails/4');
-    const data = await res.json();
-    return data
-    }
-  cocktail();
-    
+    let searchCocktail;
+    useEffect(() => {
+        fetch(`http://localhost:3000/cocktails`)
+          .then((res) => res.json())
+          .then((result) => {
+            setPosts(result);
+          });
+      }, []);
+
+ searchCocktail = posts.find(function(x){
+    return x.name === searchTerm || x.id === searchTerm
+    })
+let allCocktail = posts.map(function(x){
+    return x
+})
+
+const search = Array(searchCocktail);
+console.log(search)
+
     return(
+        
 <>
 <div class="barra">
     <div class="container">
       <div class="input-container">
-          <input type="text" placeholder="Search..." defaultValue="Mojit" onChange={handleChange} />
+          <input type="text" placeholder="Search..." defaultValue="Mojit" onChange={handleChange}  />
           <span>
               <i class="fa-solid fa-magnifying-glass"/>
           </span>
+          
       </div>
 
     </div>
 </div>
-    <p align="center">{cocteles.includes(title) ? "Resultados para " : "Sin coincidencias para "} {searchTerm}</p>
 
-    {cocteles.includes(title) ?
-    
-     <div><Resultados coctel={title}/></div> 
-     
-     : " "}
+<button onClick="dsa"></button>
+    <p align="center">{ posts.some(function(x){ return x.name === RegExp('.o.') }) || posts.some(function(x){ return x.id === searchTerm}) 
+? "Resultados para " : "Sin coincidencias para " } {searchTerm} {
+} </p>
+<div class="cartas">
+
+    {(posts.some(function(x){ return x.name === searchTerm}) || posts.some(function(x){ return x.id === searchTerm})  ? 
+     search.map(function(x){ return( <div class="carta" id={x.id}> <Resultado cocktail={searchCocktail}/> </div> )})
+     : posts.map(function(x){ return( <div class="carta" id={x.id}> <Resultado cocktail={x}/> </div> )})) }
 
 
+</div>
 </>
 
 

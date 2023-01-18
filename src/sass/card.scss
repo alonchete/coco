@@ -1,14 +1,20 @@
 @import './mixins.scss';
 @import './variables.scss';
-
+.cartas{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .carta{
     @include clearfix;
+    margin: 2rem;
+
+
 }
 .contenedor{
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    margin: auto;
+    
 
     @media screen and (max-width: 1000px){
         width: 90%;
