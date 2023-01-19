@@ -97,7 +97,13 @@ const cocteles = [
         return setSearchTerm(event.target.value);
     }
 
+    function alcoholClick(event){
+    alcohol === false ? setAlcohol(true) : setAlcohol(false)
+        console.log(alcohol)
+    }
+
     let searchCocktail;
+    let alcoholFilter;
     useEffect(() => {
         fetch(`http://localhost:3000/cocktails`)
           .then((res) => res.json())
@@ -110,8 +116,16 @@ const cocteles = [
     return x.name === searchTerm || x.id === searchTerm
     })
 
-const search = Array(searchCocktail);
+ alcoholFilter = posts.filter(function(x){
+return x.alcohol === alcohol
+    })
+
+let filter = [];
+filter = alcoholFilter
+var search = Array(searchCocktail);
 console.log(search)
+console.log(filter)
+
 
     return(
         
@@ -129,15 +143,19 @@ console.log(search)
     </div>
 </div>
 
-<button onClick="dsa"></button>
+    <button onClick={alcoholClick}>{alcohol === true ? "Mostrar sin alcohol" : "Mostrar con alcohol"}</button>
     <p align="center">{ posts.some(function(x){ return x.name === searchTerm }) || posts.some(function(x){ return x.id === searchTerm}) 
-? "Resultados para " : "Sin coincidencias para " } {searchTerm} {
+    ? "Resultados para " : "Sin coincidencias para " } {searchTerm} {
 } </p>
 <div class="cartas">
 
-    {(posts.some(function(x){ return x.name === searchTerm}) || posts.some(function(x){ return x.id === searchTerm})  ? 
+    {    
+    
+    (posts.some(function(x){ return x.name === searchTerm}) || posts.some(function(x){ return x.id === searchTerm})  ? 
      search.map(function(x){ return( <div class="carta" id={x.id}> <Resultado cocktail={searchCocktail}/> </div> )})
-     : posts.map(function(x){ return( <div class="carta" id={x.id}> <Resultado cocktail={x}/> </div> )})) }
+     :filter.map(function(x){ return( <div class="carta" id={x.id}> <Resultado cocktail={x}/> </div> )})) 
+     
+     }
 
 
 </div>
