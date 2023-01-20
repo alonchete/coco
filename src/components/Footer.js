@@ -6,13 +6,13 @@ function footer(){
         <footer>
           <div class="social">
              <ul>
-                <li><spam class='fab fa-facebook-f'></spam></li>
+                <li class="elemento"><spam class='fab fa-facebook-f'></spam></li>
              
-                <li><spam class='fab fa-twitter'></spam></li>
+                <li class="elemento"><spam class='fab fa-twitter'></spam></li>
              
-                <li><spam class='fab fa-instagram'></spam></li>
+                <li class="elemento"><spam class='fab fa-instagram'></spam></li>
               
-                <li><spam class='fab fa-youtube'></spam></li>
+                <li class="elemento"><spam class='fab fa-youtube'></spam></li>
              </ul>
           </div>
           <div class="derechos">

@@ -4,24 +4,21 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: column;
-   // background-color: #ffbf00;
    
     .social{
         display: flex;
-        
         justify-content: center;
         flex-wrap: wrap;
-
         display: flex;
-    align-items: center;
-    
-    flex-direction: row;
-    flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        
         ul{
             display: flex;
             list-style: none;//adios puntos
             //flex-wrap: wrap;
-            li{
+
+            .elemento{
                 margin: 2.5rem;
                 height: 70px;
                 width: 70px;
@@ -36,6 +33,9 @@ footer{
                 border-top-left-radius: 25px;
                 border-top-right-radius: 2px;
 
+                transition: all 1s ease-out;
+                
+
                 @media screen and (max-width: 900px){
                     height: 60px;
                     width: 60px;
@@ -46,7 +46,7 @@ footer{
                 @media screen and (max-width: 600px){
                     height: 50px;
                     width: 50px;
-                    margin: 2rem;
+                    margin: 1.9rem;
                     
                 }
 
@@ -55,24 +55,25 @@ footer{
                             0 0 0 .5rem darkgoldenrod,//grosor
                             .4rem .4rem 1rem rgb(113, 82, 4),//por  fuera
                             -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuera
-                transition-duration: 1s;
+
                 spam{
                     font-size: 2rem;
                     cursor: pointer;
+                    transition: .4s;
                 }
             }
-            li:hover{
-                box-shadow: inset .4rem .4rem 1rem rgb(143, 103, 3),//por dentro
-                inset -.4rem -.4rem 1rem rgb(242, 181, 27),//por dentro
-                0 0 0 .5rem darkgoldenrod,//grosor
-                0 0 0 .5rem darkgoldenrod,//grosor
-                .4rem .4rem 1rem rgb(113, 82, 4),//por  fuera
-                -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuera
-            }
+            
         }
-        
-        li:hover spam{
-            font-size: 1.7rem;
+        li.elemento:hover{
+            box-shadow: inset .4rem .4rem 1rem rgb(143, 103, 3),//por dentro
+            inset -.4rem -.4rem 1rem rgb(242, 181, 27),//por dentro
+            0 0 0 .5rem darkgoldenrod,//grosor
+            0 0 0 .5rem darkgoldenrod,//grosor
+            .4rem .4rem 1rem rgb(113, 82, 4),//por  fuera
+            -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuer
+        }
+        .elemento:hover spam{
+            font-size: 1.8rem;
             color: white;
         }
         

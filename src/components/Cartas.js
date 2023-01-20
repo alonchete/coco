@@ -4,119 +4,178 @@ function Cartas(){
 
 //<img src={coctel} />
 return(
+    <>
+   
 
 <div class="cartas">
     <div class="carta">
         <div class="caja">
-        <img src={coctel} />
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
             <div class="contenido">
-               <h2>Mojito1</h2> 
-               <button>Ver más</button>
+               <a href="#">White Russian Lady</a> 
             </div>
         </div>
     </div>
     <div class="carta">
         <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
             <div class="contenido">
-               <h2>Mojito2</h2> 
-               
-               <button>Ver más</button>
+               <a href="#">Virgin Colada *</a> 
             </div>
         </div>
     </div>
     <div class="carta">
         <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
             <div class="contenido">
-               <h2>Mojito3</h2> 
-               
-               <button>Ver más</button>
+               <a href="#">Tequila Sunrise</a> 
             </div>
         </div>
     </div>
     <div class="carta">
         <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
             <div class="contenido">
-               <h2>Mojito4</h2> 
-               
-               <button>Ver más</button>
+               <a href="#">Spritz Veneziano</a> 
             </div>
         </div>
     </div>
     <div class="carta">
         <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
             <div class="contenido">
-               <h2>Mojito5</h2> 
-               
-               <button>Ver más</button>
+               <a href="#">Sex On The Beach</a> 
             </div>
         </div>
     </div>
     <div class="carta">
         <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
             <div class="contenido">
-               <h2>Mojito6</h2> 
-               
-               <button>Ver más</button>
+               <a href="#">President Margarita</a> 
             </div>
         </div>
     </div>
     <div class="carta">
         <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
             <div class="contenido">
-               <h2>Mojito7</h2> 
-               
-               <button>Ver más</button>
+               <a href="#">Amanecer Ecuatoriano</a> 
             </div>
         </div>
     </div>
     <div class="carta">
         <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
             <div class="contenido">
-               <h2>Mojito8</h2> 
-               
-               <button>Ver más</button>
+               <a href="#">Margarita Strawberry</a> 
             </div>
         </div>
     </div>
     <div class="carta">
         <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
             <div class="contenido">
-               <h2>Mojito9</h2> 
-               
-               <button>Ver más</button>
+               <a href="#">Long island Iced Tea</a> 
             </div>
         </div>
     </div>
     <div class="carta">
         <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
             <div class="contenido">
-               <h2>Mojito10</h2> 
-               
-               <button>Ver más</button>
+               <a href="#">Japonese Iced Tea</a> 
             </div>
         </div>
     </div>
     <div class="carta">
         <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
             <div class="contenido">
-               <h2>Mojito11</h2> 
-               
-               <button>Ver más</button>
+               <a href="#">GrapeFruit Mint Cooler</a> 
             </div>
         </div>
     </div>
     <div class="carta">
         <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
             <div class="contenido">
-               <h2>Mojito6</h2> 
-               
-               <button>Ver más</button>
+               <a href="#">Derby</a> 
+            </div>
+        </div>
+    </div>
+    <div class="carta">
+        <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
+            <div class="contenido">
+               <a href="#">Cuba Libre</a> 
+            </div>
+        </div>
+    </div>
+    <div class="carta">
+        <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
+            <div class="contenido">
+               <a href="#">Casino</a> 
+            </div>
+        </div>
+    </div>
+    <div class="carta">
+        <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
+            <div class="contenido">
+               <a href="#">Bacardi</a> 
+            </div>
+        </div>
+    </div>
+    <div class="carta">
+        <div class="caja">
+            <div class="imagen">
+               <img src={coctel} />
+            </div>
+            <div class="contenido">
+               <a href="#">Banana Daiquiri</a> 
             </div>
         </div>
     </div>
 
 </div>
-            
+
+//otra cosa
+
+
+
+</>           
 )
 }
 
