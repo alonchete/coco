@@ -2,6 +2,7 @@ import Nav from './Nav';
 import Cab from './Cabecera';
 import Categorias from './Categorias';
 import Barra from './Barra';
+import Popup from './Popup';
 import Footer from './Footer';
 
 import Cartas from './Cartas';
@@ -20,6 +21,7 @@ function App() {
         <Categorias />
         <Barra />
         <Cartas />
+        <Popup />
         <Footer />
 
       </>
