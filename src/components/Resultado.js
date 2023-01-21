@@ -1,9 +1,10 @@
-import coctel1 from '../img/img16.jpg';
+import coctelimg from '../img/img16.jpg';
 
 
-function Resultado(p1){
-    let name = p1.cocktail.name;
-    let prep = p1.cocktail.preparation
+function Resultado(p){
+    let name = p.cocktail.name;
+    let prep = p.cocktail.preparation
+    let img = p.cocktail.img;
 
 
 return(
@@ -14,12 +15,12 @@ return(
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src={coctel1} alt="..." />
+                                <img src={img} alt="..." />
 
                             </div>
                             <div class="flip-card-back">
                                 
-                                <img  src={coctel1} alt="..."/>
+                                <img  src={img} alt="..."/>
                                 
                                 <p>{name} <br/>Preparacion: {prep}</p> <br/>
                                     

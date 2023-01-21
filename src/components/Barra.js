@@ -4,88 +4,6 @@ import { useEffect } from 'react';
 
 import Resultado from './Resultado';
 
-const cocteles = [
-
-    {
-        title:'Mojito',
-        ObjectId: 0,
-        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
-        alcohol: 'miau'
-
-        
-
-    },
-
-    {
-        title:'Sex on the beach',
-        ObjectId: 1,
-        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
-        alcohol: 'si'
-
-
-
-
-    },
-    {
-        title:'Cuba libre',
-        ObjectId: 3,
-        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
-        alcohol: 'si'
-
-
-
-    },
-
-    {
-        title :'Blody Mary' ,
-        ObjectId: 4,
-        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
-        alcohol: 'si'
-
-
-
-    },
-    {
-        title:'Tom collins',
-        ObjectId: 5,
-        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
-        alcohol: 'si'
-
-
-
-    },
-    {
-        title:'Reburjito',
-        ObjectId: 6,
-        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
-        alcohol: 'si',
-        categoria: 'short drink'
-
-    },
-
-    {
-        title:'Amanecer ecuatoriano',
-        ObjectId: 7,
-        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
-        alcohol: 'si'
-
-
-    },
-
-    {
-        title:'Atardecer filipino',
-        ObjectId: 8,
-        ingredients: ['Azucar moreno','Gaseosa', 'Ron'],
-        alcohol: 'si'
- 
-
-    },
-
-
-
-]
-
-
  function Barra(){
 
 
@@ -136,14 +54,14 @@ console.log(filter)
           <input type="text" placeholder="Search..." defaultValue="Mojit" onChange={handleChange}  />
           <span>
               <i class="fa-solid fa-magnifying-glass"/>
-          </span>
-          
+          </span>          
       </div>
 
     </div>
+    <button onClick={alcoholClick}>{alcohol === true ? "Mostrar sin alcohol" : "Mostrar con alcohol"}</button>
+
 </div>
 
-    <button onClick={alcoholClick}>{alcohol === true ? "Mostrar sin alcohol" : "Mostrar con alcohol"}</button>
     <p align="center">{ posts.some(function(x){ return x.name === searchTerm }) || posts.some(function(x){ return x.id === searchTerm}) 
     ? "Resultados para " : "Sin coincidencias para " } {searchTerm} {
 } </p>

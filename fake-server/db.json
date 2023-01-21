@@ -4,27 +4,34 @@
 			"id": "1",
 			"name": "Americano",
 			"preparation": "Bitter Campari (30) Martini Red (30) Soda (30)",
-			"alcohol": true
+			"alcohol": true,
+			"img": "http://localhost:3000/medium_1580912079-Americano_______960_600.jpg"
+
 		},
 		{
 			"id": "2",
 			"name": "Angel Face",
 			"preparation": "Gin (30) Apricot Brandy (30) Calvados (30)",
-			"alcohol": true
+			"alcohol": true,
+			"img": "http://localhost:3000/angel-face.jpg"
+
 
 		},
 		{
 			"id": "3",
 			"name": "Aviation",
 			"preparation": "Gin (45) Maraschino (15) Lime (15)",
-			"alcohol": true
+			"alcohol": true,
+			"img": "http://localhost:3000/cocktail-aviation-1550154656.jpg"
 
 		},
 		{
 			"id": "4",
 			"name": "Bacardi",
 			"preparation": "Rum (White) (45) Sweet & Sour (20) Cranberry Juice (10)",
-			"alcohol": true
+			"alcohol": true,
+			"img": "http://localhost:3000/bacardi-coctel.jpg"
+
 
 		},
 		{
@@ -338,7 +345,8 @@
 			"id": "45",
 			"name": "Mojito",
 			"preparation": "Rum (White) (60) Lime (30) Soda (50)",
-			"alcohol":true
+			"alcohol":true,
+			"img": "http://localhost:3000/mojito.jpeg"
 		},
 		{
 			"id": "46",
