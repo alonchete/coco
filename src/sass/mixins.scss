@@ -7,6 +7,12 @@
     }
 }
 
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin colwidth {
     @for $size from 1 through $cols {
         @for $length from $size through $cols {
@@ -24,6 +30,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
+}
+
+@mixin imgResponsive{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 // MEDIA QUERY MANAGER
 /*
