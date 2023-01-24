@@ -1,0 +1,31 @@
+.popup{
+    color: aquamarine;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, .75);
+    transition: all .7s;
+    visibility: hidden;
+    opacity: 0;
+
+    popup-contenido{
+        position: relative;
+        background-color: aquamarine;
+        width: 500px;
+        max-width: 90%;
+        padding: 1em 2em;
+
+    }
+    
+}
+
+.popup:target{
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+}
