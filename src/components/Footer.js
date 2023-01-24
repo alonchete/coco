@@ -9,7 +9,8 @@ function footer(){
                 <li class="elemento"><spam class='fab fa-facebook-f'></spam></li>
              
                 <li class="elemento"><spam class='fab fa-twitter'></spam></li>
-             
+              </ul>
+              <ul>
                 <li class="elemento"><spam class='fab fa-instagram'></spam></li>
               
                 <li class="elemento"><spam class='fab fa-youtube'></spam></li>

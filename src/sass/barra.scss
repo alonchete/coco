@@ -14,9 +14,10 @@
 .input-container {
     width: 700px;
     height: 50px;
-    @media screen and (max-width: 787.5px){
-        width: 687.5px;
+    @media screen and (max-width: 720px){
+        width: 95%;
     }
+    
     @media screen and (max-width: 775px){
         width: 675px;
     }
@@ -89,6 +90,19 @@
     @media screen and (max-width: 487.5px){
         width: 387.5px;
     }
+    @media screen and (max-width: 475px){
+        width: 375px;
+    }
+    @media screen and (max-width: 462.5px){
+        width: 362.5px;
+    }
+    @media screen and (max-width: 450px){///////
+        width: 350px;
+    }
+    
+
+
+
     border-radius: 2px;
     border-bottom-right-radius: 25px;
     border-top-left-radius: 25px;
