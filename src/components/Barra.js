@@ -2,7 +2,8 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-import Resultado from './Resultado';
+import Cartas from './Cartas';
+import Popup from './Popup';
 
  function Barra(){
 
@@ -22,27 +23,27 @@ import Resultado from './Resultado';
 
     let searchCocktail;
     let alcoholFilter;
+    
     useEffect(() => {
         fetch(`http://localhost:3000/cocktails`)
           .then((res) => res.json())
           .then((result) => {
             setPosts(result);
-          });
+          });   
       }, []);
 
  searchCocktail = posts.find(function(x){
-    return x.name === searchTerm || x.id === searchTerm
+    return x.name ===  searchTerm || x.id === searchTerm
     })
 
  alcoholFilter = posts.filter(function(x){
 return x.alcohol === alcohol
     })
 
-let filter = [];
-filter = alcoholFilter
-var search = Array(searchCocktail);
-console.log(search)
-console.log(filter)
+    let filter = [];
+    filter = alcoholFilter
+    var search = Array(searchCocktail);
+
 
 
     return(
@@ -70,10 +71,13 @@ console.log(filter)
     {    
     
     (posts.some(function(x){ return x.name === searchTerm}) || posts.some(function(x){ return x.id === searchTerm})  ? 
-     search.map(function(x){ return( <div class="carta" id={x.id}> <Resultado cocktail={searchCocktail}/> </div> )})
-     :filter.map(function(x){ return( <div class="carta" id={x.id}> <Resultado cocktail={x}/> </div> )})) 
+     search.map(function(x){  return(  <Cartas cocktail={searchCocktail}/> )})
+     :filter.map(function(x){return( <Cartas cocktail={x}/> )})) 
      
      }
+
+
+
 
 
 </div>

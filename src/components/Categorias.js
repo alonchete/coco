@@ -32,7 +32,7 @@ const categorias = [
 ]
 
 function Categorias(){
-    return(
+    return( 
         <div class="categorias">
 
          {categorias.map(function(x){

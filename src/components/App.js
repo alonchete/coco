@@ -15,15 +15,13 @@ import '../sass/main.scss';
 function App() {
   return (
 
+
       <>
         <Nav />
         <Cab />
         <Categorias />
         <Barra />
-        <Cartas />
-        <Popup />
         <Footer />
-
       </>
     
   ) 
