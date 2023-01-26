@@ -3,14 +3,24 @@
     position: relative;
     height: 89vh;
     margin-top: 5rem;
-    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 90vh);
+    //1800 1200 900 600 500
+    
+    @media screen and (max-width: 1200px){
+        height: 80vh;
+        clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 80vh);
+    }
+    @media screen and (max-width: 900px){
+        height: 70vh;
+        clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 70vh);
+    }
     @media screen and (max-width: 600px){
         height: 60vh;
-        clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 60vh);
     }
     @media screen and (max-width: 500px){
-        height: 40vh;
-        clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+        height: 50vh;
+        clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 50vh);
     }
    img{
     position: fixed;
@@ -27,7 +37,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    font-size: 10rem;
+    font-size: 10rem;//10rem
     font-weight: 600;
 
     -webkit-text-stroke: 4px #fff;/*borde blanco*/
@@ -42,19 +52,29 @@
     background-position: -975px 0;/*inicio de relleno*/
     animation: backcolor 3s linear infinite alternate;
    //aqui
-        @media screen and (max-width: 1000px){
+   //1800 1200 900 600 500
+        @media screen and (max-width: 1200px){
             -webkit-text-stroke: 3px #fff;/*borde blanco*/
-            font-size: 7rem;   
+            font-size: 7rem;  
+            background-position: -750px 0;/*inicio de relleno*/ 
         }
 
-        @media screen and (max-width: 750px){
+        @media screen and (max-width: 900px){
+            -webkit-text-stroke: 3px #fff;/*borde blanco*/
+            font-size: 5.5rem;   
+            background-position: -550px 0;/*inicio de relleno*/ 
+        }
+
+        @media screen and (max-width: 600px){
             -webkit-text-stroke: 2px #fff;/*borde blanco*/
-            font-size: 5rem;  
+            font-size: 4.5rem;  
+            background-position: -460px 0;/*inicio de relleno*/ 
         }
 
         @media screen and (max-width: 500px){
             -webkit-text-stroke: 1px #fff;/*borde blanco*/
             font-size: 4rem;
+            background-position: -400px 0;/*inicio de relleno*/ 
         }
     }
     @keyframes backcolor{
