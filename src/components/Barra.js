@@ -76,10 +76,6 @@ return x.alcohol === alcohol
      
      }
 
-
-
-
-
 </div>
 </>
 
