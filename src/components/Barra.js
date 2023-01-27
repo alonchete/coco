@@ -50,17 +50,19 @@ return x.alcohol === alcohol
         
 <>
 <div class="barra">
-    <div class="container">
-      <div class="input-container">
-          <input type="text" placeholder="Search..." defaultValue="Mojit" onChange={handleChange}  />
-          <span>
-              <i class="fa-solid fa-magnifying-glass"/>
-          </span>          
-      </div>
-
+    
+    <div class="input-container">
+        <input type="text" placeholder="Search..." defaultValue="Mojit" onChange={handleChange}  />
+        <span>
+            <i class="fa-solid fa-magnifying-glass"/>
+        </span>          
     </div>
-    <button onClick={alcoholClick}>{alcohol === true ? "Mostrar sin alcohol" : "Mostrar con alcohol"}</button>
 
+   
+    <div class="boton">
+        <button onClick={alcoholClick}>{alcohol === true ? "Mostrar sin alcohol" : "Mostrar con alcohol"}</button>
+    </div>
+    
 </div>
 
     <p align="center">{ posts.some(function(x){ return x.name === searchTerm }) || posts.some(function(x){ return x.id === searchTerm}) 

@@ -9,4 +9,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: darkgoldenrod;
+    //para que no salga la barra de scroll horizontal
+    max-width: 100%;
+    overflow-x: hidden;
 }
