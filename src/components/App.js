@@ -3,6 +3,7 @@ import Cab from './Cabecera';
 import Categorias from './Categorias';
 import Barra from './Barra';
 import Popup from './Popup';
+import Topten from './Topten';
 import Footer from './Footer';
 
 import Cartas from './Cartas';
@@ -21,6 +22,7 @@ function App() {
         <Cab />
         <Categorias />
         <Barra />
+        <Topten />
         <Footer />
       </>
     

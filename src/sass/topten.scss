@@ -1,0 +1,83 @@
+.toptenSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    //background-color: darkcyan;
+
+    .topten{
+        position: relative;
+        width: 350px;
+        min-height: 500px;
+        border-radius: 30px;
+        padding: 50px;
+        background-color:darkgoldenrod;//rgb(0, 0, 0)
+        box-shadow: 25px 25px 75px  rgb(86, 63, 3),
+        10px 10px 70px  rgb(86, 63, 3),
+        inset 5px 5px 15px  rgb(133, 96, 3),
+        inset 5px 5px 20px rgb(242, 181, 27),
+        inset -5px -5px 15px  rgb(86, 63, 3)
+        ;
+
+        .titulotop{
+            color: white;
+            font-weight:900;
+            font-size: 22px;
+        }
+
+        .lista{
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            cursor: pointer;
+            color: black;
+
+            .ranking{
+                position: relative;
+                min-width: 45px;
+                height: 45px;
+               // background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                margin-right: 10px;
+                spam{
+                    position: relative;
+                    font-weight: 600;
+                    font-size: 20px;
+                    transition: 0.5s;
+                    color: black;
+                }
+            }
+            .ranking::before{//donut
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background-color: darkgoldenrod;
+                border-radius: 30px;
+                transform: scale(0);
+                transition: 0.5s;
+            }
+
+        }
+
+        .lista:hover .ranking::before{
+            transform: scale(1);
+        }
+
+        .lista::before{
+            content: '';
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 45px;
+            height: 45px;
+            border-radius: 22.5px;
+            background-color: white;
+            box-shadow: 5px 5px 7px rgba(0,0,0,0.25);   ///////////minuto 8.0
+        }
+    }
+}
