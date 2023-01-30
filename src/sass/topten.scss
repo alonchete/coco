@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-wrap: wrap;
     //background-color: darkcyan;
 
     .topten{
@@ -11,6 +12,29 @@
         min-height: 500px;
         border-radius: 30px;
         padding: 50px;
+        margin: auto auto ;
+
+        //en el caso de que hayya 2 listas meto medias
+
+        /*
+        @media screen and (max-width: 1200px){
+            margin: auto 70px;
+        }
+        @media screen and (max-width: 1000px){
+            margin: auto 60px;
+        }
+        @media screen and (max-width: 950px){
+            margin: auto 50px;
+        }
+        @media screen and (max-width: 900px){
+            margin: auto 20px;
+        }
+        @media screen and (max-width: 795px){
+            
+            margin-bottom: 20px;
+        }
+        */
+        
         background-color:darkgoldenrod;//rgb(0, 0, 0)
         box-shadow: 25px 25px 75px  rgb(86, 63, 3),
         10px 10px 70px  rgb(86, 63, 3),
