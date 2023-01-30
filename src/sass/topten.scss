@@ -54,6 +54,7 @@
             .ranking::before{//donut
                 content: '';
                 position: absolute;
+                top: 7px;
                 width: 30px;
                 height: 30px;
                 background-color: darkgoldenrod;
@@ -62,6 +63,24 @@
                 transition: 0.5s;
             }
 
+            .coctail{
+                position: relative;
+                line-height: 18.5px;
+                h4{
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+                p{
+                    font-weight: 500; 
+                    font-size: 15px;
+                    color: rgb(55, 55, 55);
+                    transition: 0.5s;
+                }
+            }
+
+        }
+        .lista:hover .coctail h4, .lista:hover .coctail p{
+          //  color: white;
         }
 
         .lista:hover .ranking::before{
@@ -77,7 +96,14 @@
             height: 45px;
             border-radius: 22.5px;
             background-color: white;
-            box-shadow: 5px 5px 7px rgba(0,0,0,0.25);   ///////////minuto 8.0
+            box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+               inset 2px 2px 5px rgba(255,255,255,0.25),
+               inset -3px -3px 5px rgba(0,0,0,0.5)
+            ;  
+            transition: 0.5s;
+        }
+        .lista:hover::before{
+            width: 100%;
         }
     }
 }
