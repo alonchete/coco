@@ -18,7 +18,7 @@
        // @include center();
         background-color: darkgoldenrod;
         display: grid;
-        grid-template-columns: 300px 1fr;
+        grid-template-columns: 1fr 1fr;
         place-content: center;
         align-self:flex-end;
          
@@ -32,14 +32,14 @@
         width: 800px;
         @media screen and (max-width: 700px){
            
-            grid-template-rows: 300px 1fr;
+            grid-template-rows: 1.5fr 1fr;
             grid-template-columns: 1fr;
             height: 600px;
             place-content: center;
         }
         @media screen and (max-width: 510px){
            
-            grid-template-rows: 280px 1fr;
+            grid-template-rows: 1.5fr 1fr;
             grid-template-columns: 1fr;
             height: 600px;
             place-content: center;
@@ -64,7 +64,8 @@
            
             
             .ingredientes{
-                padding: 10px;
+                padding-right: 20px;
+                margin-right: 0;
                 @media screen and (max-width: 700px){
                     height: 100%;
                 }
@@ -72,7 +73,7 @@
                 
                 h2{
                     text-transform: uppercase;
-                    padding: 20px;
+                    padding-right: 20px;
                     font-weight: bold;
                     font-size: 24px;
                     @media screen and (max-width: 700px){
@@ -90,7 +91,8 @@
                     }
                 }
                 p{
-                    padding: 20px;
+                    margin-top: 25px;
+                    padding-right: 20px;
                     font-size: 16px;
                     @media screen and (max-width: 700px){
                         padding: 10px 20px;
@@ -119,7 +121,37 @@
                 }
                 a:hover{
                     color: white;
-                    //transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+                button{
+                    justify-content: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding: auto;
+                    width: 150px;
+                    height: 40px;
+                    margin-top: 30px;
+                    text-align: center;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 3px;
+                    border-bottom-right-radius: 18px;
+                    border-top-left-radius: 18px;
+                    background-color: darkgoldenrod;
+                    box-shadow:.2rem .2rem .3rem rgb(113, 82, 4),//por  fuera
+                    -.2rem -.2rem .3rem rgb(242, 181, 27);//por fuera
+                    transition: all 250ms ease-in-out;
+                    @media screen and (max-width: 700px){
+                        margin-left: 20px;
+                    }
+                }
+                button.verReceta:hover{
+                    box-shadow:inset .4rem .4rem 1rem rgb(143, 103, 3),//por dentro
+                    inset -.4rem -.4rem 1rem rgb(242, 181, 27),//por dentro
+                }
+                .verReceta:hover{
+                    font-size: 14px;
+                    color: white;
                 }
     
             }
@@ -134,23 +166,24 @@
             align-self: center;
 
             @media screen and (max-width: 700px){
-                padding: 20px 0;
+                padding: 0;
                
             }
             .imagen{
                 height: 400px;
                 @media screen and (max-width: 700px){
-                    height: 200px;
+                    height: 300px;
                     position: relative;
                     margin: 0;
                     padding: 0;
                 }
+                img{
+                    @include imgResponsive();
+                    
+                }
             }
 
-            img{
-                @include imgResponsive();
-                
-            }
+            
         }
 
 

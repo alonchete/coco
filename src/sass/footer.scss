@@ -47,6 +47,10 @@ footer{
                     height: 50px;
                     width: 50px;
                     margin: 1.9rem;
+                    box-shadow: 0 0 0 .4rem darkgoldenrod,//grosor
+                            0 0 0 .4rem darkgoldenrod,//grosor
+                            .4rem .4rem .5rem rgb(113, 82, 4),//por  fuera
+                            -.4rem -.4rem .5rem rgb(242, 181, 27);//por fuera
                     
                 }
 

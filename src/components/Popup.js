@@ -16,6 +16,7 @@ import coctel from '../img/img16.jpg';
                         <p>{props.prep}</p>
                         
                         <a href="#cierro" >&times;</a> 
+                        <button class="verReceta">VER RECETA</button>
                     </div>
                 </div>
             </div>
