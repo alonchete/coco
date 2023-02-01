@@ -1,7 +1,8 @@
-import coctel from '../img/img16.jpg';
 
  function Popup(props){
-        
+
+    const hijoApadre = props.hijoApadre;
+
     return (props.trigger) ? (
         <div id="popupbox" class="popup">
             <div class="contenido">
@@ -14,8 +15,7 @@ import coctel from '../img/img16.jpg';
                     <div class="ingredientes">
                         <h2>{props.name}</h2>
                         <p>{props.prep}</p>
-                        
-                        <a href="#cierro" >&times;</a> 
+                        <a href="#cierro"  onClick={() => hijoApadre(false)} >&times;</a> 
                         <button class="verReceta">VER RECETA</button>
                     </div>
                 </div>

@@ -1,6 +1,5 @@
-import coctel from '../img/img16.jpg';
 import Popup from './Popup';
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 
 function Cartas(p){
 
@@ -10,12 +9,11 @@ function Cartas(p){
     let prep = p.cocktail.preparation;
  
     const [clicked, setClicked] = useState(false);
-/*
-    useEffect(() => {
-        setClicked(false);
-        console.log(">>>>>>>>>>>>>>>", name, clicked)
-    },[clicked])
-   */
+
+    const hijoApadre = (isclicked) => {
+        setClicked(isclicked)
+        console.log(isclicked)
+    }
 
 return(
 <>
@@ -36,7 +34,8 @@ return(
         name={name} 
         img={img} 
         prep={prep} 
-        trigger={clicked}>
+        trigger={clicked}
+        hijoApadre={hijoApadre}>
     </Popup> 
 </div>
 
