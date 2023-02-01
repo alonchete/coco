@@ -5,7 +5,7 @@
 			"name": "Americano",
 			"preparation": "Bitter Campari (30) Martini Red (30) Soda (30)",
 			"alcohol": true,
-			"img": "http://localhost:3000/medium_1580912079-Americano_______960_600.jpg"
+			"img": "http://localhost:3000/Americano.jpeg"
 
 		},
 		{
@@ -22,7 +22,7 @@
 			"name": "Aviation",
 			"preparation": "Gin (45) Maraschino (15) Lime (15)",
 			"alcohol": true,
-			"img": "http://localhost:3000/cocktail-aviation-1550154656.jpg"
+			"img": "http://localhost:3000/Aviation.jpeg"
 
 		},
 		{

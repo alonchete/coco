@@ -10,12 +10,12 @@ function Cartas(p){
     let prep = p.cocktail.preparation;
  
     const [clicked, setClicked] = useState(false);
-
+/*
     useEffect(() => {
         setClicked(false);
         console.log(">>>>>>>>>>>>>>>", name, clicked)
     },[clicked])
-   
+   */
 
 return(
 <>
