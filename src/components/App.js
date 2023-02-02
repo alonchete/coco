@@ -22,7 +22,7 @@ function App() {
         <Cab />
         <Categorias />
         <Barra />
-        <Topten />
+        
         <Footer />
       </>
     

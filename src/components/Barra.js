@@ -49,9 +49,9 @@ return x.alcohol === alcohol
     return(
         
 <>
-<div class="barra">
+<div class="barra" id="buscar">
     
-    <div class="input-container">
+    <div class="input-container" >
         <input type="text" placeholder="Search..." defaultValue="Mojit" onChange={handleChange}  />
         <span>
             <i class="fa-solid fa-magnifying-glass"/>

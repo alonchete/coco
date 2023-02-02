@@ -25,8 +25,8 @@
 }
 
 .nav__menu{
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    flex-direction: row;
     gap: 3em;/*espaciador*/
     .nav__item{
         color: #fff;
@@ -35,13 +35,14 @@
         font-weight: 900;
         --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
     }
-    .nav__item::after{
+    .nav__item::after{//subrrayado clippy css
         content: "";
         display: block;
         background-color: #fff;
         width: 100%;
         margin-top: 3px;
         height: 5px;
+        //creo la variable
         clip-path: var(--clippy);
         transition:  clip-path .5s;
     }
@@ -61,13 +62,10 @@
 
 @media screen and (max-width: 750px){
     .nav__label{
-        display: block;
+        display: block;//para que se muestre
         cursor: pointer;
     }
-    .nav__item{
-        color: #fff;
-    }
-    .nav__menu{
+    .nav__menu{//lo negro
         position: fixed;
         top: 5rem;
         bottom: 0;
@@ -77,13 +75,12 @@
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
-        clip-path: circle(0 at center);
+        clip-path: circle(0 at center);//cuando el menu no esta seleccionado
         transition: clip-path 1s ease;
     }
 
-    /*cuando input este seleccionado quiero que el menu sea tomato*/
+    //cuando input este seleccionado se ve
     .nav__input:checked + .nav__menu{
-        background-color:black;
        clip-path: circle(100% at center);
     }
     .nav__input + .nav__menu{

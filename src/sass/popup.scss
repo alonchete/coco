@@ -111,9 +111,16 @@
     
                 a{
                     position: fixed;
-                    top: 20px;
-                    right: 20px;
-                    font-size: 26px;
+                    top: 30px;
+                    right: 35px;
+                    font-size: 40px;
+                    @media screen and (max-width: 500px){
+                        font-size: 30px;
+                    }
+                    @media screen and (max-width: 400px){
+                        top: 20px;
+                        right: 25px;
+                    }
                     font-weight: 600;
                     color:black;
                     cursor: pointer;
