@@ -1,5 +1,5 @@
 
-import coctel1 from '../img/img16.jpg';
+import coctel1 from '../img/categoria4.jpg';
 
 
 function cardbg(){
