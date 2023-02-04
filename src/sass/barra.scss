@@ -106,11 +106,15 @@
 
         background-color: darkgoldenrod;
         box-shadow: inset .4rem .4rem 1rem rgb(143, 103, 3),//por dentro
+                    //shadow izq top blur-radius
                     inset -.4rem -.4rem 1rem rgb(242, 181, 27),//por dentro
+                    //shadow drch bottom blur-radius
                     0 0 0 .5rem darkgoldenrod,//grosor
-                    0 0 0 .5rem darkgoldenrod,//grosor
+                    //0 0 0 .5rem darkgoldenrod,//grosor
                     .4rem .4rem 1rem rgb(113, 82, 4),//por  fuera
+            //shadow drch botom blur-radius
                     -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuera
+            //shadow izqu top blur-radius
         position: relative;
         overflow: hidden;
         input {
@@ -134,7 +138,6 @@
             aspect-ratio: 1;
             border-radius: 50%;
             cursor: pointer;
-            box-shadow: 0 0 .3rem rgba(0, 0, 0, .3);
             transition: 200ms ease-in-out background-color,
                         200ms ease-in-out box-shadow;
             i {
@@ -166,23 +169,20 @@
     
     }
 
-    .elemento{
+    .boton{
         margin: 2.5rem;
-        height: 70px;
-        width: 70px;
-        background-color: aliceblue;
+        background-color: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
         outline: none;
         border:  none;
         
         //fuente del boton
         font-size: 1.2rem;
         font-weight: 600;
-        width: 9rem;
-        height: 3rem;
+        width: 10rem;
+        height: 2.5rem;
         //border-radius: 14px;
         border-bottom-right-radius: 25px;
         border-bottom-left-radius:2px ;
@@ -192,37 +192,21 @@
         transition: all 1s ease-out;
         
 
-        @media screen and (max-width: 900px){
-            height: 60px;
-            width: 60px;
-            margin: 2.25rem;
-            
-        }
-
-        @media screen and (max-width: 600px){
-            height: 50px;
-            width: 50px;
-            margin: 1.9rem;
-            box-shadow: 0 0 0 .4rem darkgoldenrod,//grosor
-                    0 0 0 .4rem darkgoldenrod,//grosor
-                    .4rem .4rem .5rem rgb(113, 82, 4),//por  fuera
-                    -.4rem -.4rem .5rem rgb(242, 181, 27);//por fuera
-            
-        }
-
         background: darkgoldenrod;
         box-shadow: 0 0 0 .5rem darkgoldenrod,//grosor
                     0 0 0 .5rem darkgoldenrod,//grosor
                     .4rem .4rem 1rem rgb(113, 82, 4),//por  fuera
                     -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuera
 
-        spam{
-            font-size: 2rem;
+        .elemento{
+            font-size: 15px;
+            background-color: transparent;
+            border: none;
+            color: white;
             cursor: pointer;
-            transition: .4s;
         }
 
-        &:hover{
+        &:active{
             box-shadow: inset .4rem .4rem 1rem rgb(143, 103, 3),//por dentro
             inset -.4rem -.4rem 1rem rgb(242, 181, 27),//por dentro
             0 0 0 .5rem darkgoldenrod,//grosor

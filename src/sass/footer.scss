@@ -31,9 +31,7 @@ footer{
                 border-bottom-right-radius: 25px;
                 border-bottom-left-radius:2px ;
                 border-top-left-radius: 25px;
-                border-top-right-radius: 2px;
-
-                transition: all 1s ease-out;
+                border-top-right-radius: 2px; 
                 
 
                 @media screen and (max-width: 900px){
@@ -60,21 +58,27 @@ footer{
                             .4rem .4rem 1rem rgb(113, 82, 4),//por  fuera
                             -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuera
 
+               // transition: all 1s ease-out ;
+               -webkit-transition: box-shadow 0.5s  ease-in-out; 
+               transition: box-shadow 0.5s  ease-in-out;
+               
                 spam{
                     font-size: 2rem;
                     cursor: pointer;
-                    transition: .4s;
+                    transition: .5s;
                 }
             }
             
         }
-        li.elemento:hover{
+        .elemento:hover{
             box-shadow: inset .4rem .4rem 1rem rgb(143, 103, 3),//por dentro
             inset -.4rem -.4rem 1rem rgb(242, 181, 27),//por dentro
             0 0 0 .5rem darkgoldenrod,//grosor
             0 0 0 .5rem darkgoldenrod,//grosor
             .4rem .4rem 1rem rgb(113, 82, 4),//por  fuera
-            -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuer
+            -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuera
+            -webkit-transition: box-shadow 0.5s  ease-in-out; 
+               transition: box-shadow 0.5s  ease-in-out;
         }
         .elemento:hover spam{
             font-size: 1.8rem;
