@@ -96,6 +96,7 @@
             width: 350px;
         }
         
+        // jajajaj quien es el genio que ha hecho este media query 🤣🤣🤣🤣
 
 
 
@@ -158,11 +159,77 @@
             box-shadow: none;
         }
         input:focus ~ span i {
-            color: #161616;
+            color: white;
             font-size: 1.5rem;
         }
 
     
+    }
+
+    .elemento{
+        margin: 2.5rem;
+        height: 70px;
+        width: 70px;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        outline: none;
+        border:  none;
+        
+        //fuente del boton
+        font-size: 1.2rem;
+        font-weight: 600;
+        width: 9rem;
+        height: 3rem;
+        //border-radius: 14px;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius:2px ;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 2px;
+
+        transition: all 1s ease-out;
+        
+
+        @media screen and (max-width: 900px){
+            height: 60px;
+            width: 60px;
+            margin: 2.25rem;
+            
+        }
+
+        @media screen and (max-width: 600px){
+            height: 50px;
+            width: 50px;
+            margin: 1.9rem;
+            box-shadow: 0 0 0 .4rem darkgoldenrod,//grosor
+                    0 0 0 .4rem darkgoldenrod,//grosor
+                    .4rem .4rem .5rem rgb(113, 82, 4),//por  fuera
+                    -.4rem -.4rem .5rem rgb(242, 181, 27);//por fuera
+            
+        }
+
+        background: darkgoldenrod;
+        box-shadow: 0 0 0 .5rem darkgoldenrod,//grosor
+                    0 0 0 .5rem darkgoldenrod,//grosor
+                    .4rem .4rem 1rem rgb(113, 82, 4),//por  fuera
+                    -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuera
+
+        spam{
+            font-size: 2rem;
+            cursor: pointer;
+            transition: .4s;
+        }
+
+        &:hover{
+            box-shadow: inset .4rem .4rem 1rem rgb(143, 103, 3),//por dentro
+            inset -.4rem -.4rem 1rem rgb(242, 181, 27),//por dentro
+            0 0 0 .5rem darkgoldenrod,//grosor
+            0 0 0 .5rem darkgoldenrod,//grosor
+            .4rem .4rem 1rem rgb(113, 82, 4),//por  fuera
+            -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuer
+        }
     }
 
 }

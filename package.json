@@ -38,7 +38,7 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.57.1",
+    "sass": "^1.58.0",
     "test-fake-server": "^2.7.0"
   }
 }

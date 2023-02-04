@@ -60,7 +60,8 @@ return x.alcohol === alcohol
 
    
     <div class="boton">
-        <button onClick={alcoholClick}>{alcohol === true ? "Mostrar sin alcohol" : "Mostrar con alcohol"}</button>
+        <button className='elemento' onClick={alcoholClick}>{alcohol === true ? "Mostrar sin alcohol" : "Mostrar con alcohol"}</button>
+        
     </div>
     
 </div>
