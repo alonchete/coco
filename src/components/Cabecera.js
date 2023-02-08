@@ -8,7 +8,7 @@ function cabecera(){
     return(
 <>
 
-    <div class="cabecera">
+    <div class="cabecera" id="home">
         <div class="imagenes">
            <div class="imagen"><img src={barra}/></div> 
            <div class="imagen"><img src={barra2}/></div> 

@@ -19,8 +19,8 @@ function App() {
         <Cab />
         <Categorias />
         <Barra />
-        
         <Footer />
+        
       </>
     
   ) 

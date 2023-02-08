@@ -8,13 +8,32 @@ import Popup from './Popup';
  function Barra(){
 
 
-    const [searchTerm, setSearchTerm] = useState('');
+    const [searchTerm, setSearchTerm] = useState('*');
     const [posts, setPosts] = useState([]);
     const [alcohol, setAlcohol] = useState(true);
+    const [message, setMessage] = useState(' ')
+
+    function messageChange(){
+        if( posts.some(function(x){ return x.name.toLowerCase().startsWith(searchTerm.toLowerCase()) })){
+            setMessage("Mostrando resultados")
+        }else {setMessage("Sin coincidencias")    
+        }
+
+    }
+
+    useEffect(() => {
+        if(searchTerm === ""){
+            setSearchTerm("*");
+        }
+    }, [searchTerm]);
+
 
     function handleChange (event){
+        messageChange()
         return setSearchTerm(event.target.value);
     }
+
+    
 
     function alcoholClick(event){
     alcohol === false ? setAlcohol(true) : setAlcohol(false)
@@ -32,18 +51,19 @@ import Popup from './Popup';
           });   
       }, []);
 
- searchCocktail = posts.find(function(x){
-    return x.name ===  searchTerm || x.id === searchTerm
+ searchCocktail = posts.filter(function(x){
+    return x.name.toLowerCase().startsWith(searchTerm.toLowerCase())
     })
 
  alcoholFilter = posts.filter(function(x){
 return x.alcohol === alcohol
     })
 
-    let filter = [];
-    filter = alcoholFilter
-    var search = Array(searchCocktail);
-
+    var filter = [];
+    filter = alcoholFilter;
+    var search = []
+    search = searchCocktail;
+    console.log(alcohol)
 
 
     return(
@@ -52,32 +72,29 @@ return x.alcohol === alcohol
 <div class="barra" id="buscar">
     
     <div class="input-container" >
-        <input type="text" placeholder="Search..." defaultValue="Mojit" onChange={handleChange}  />
+        <input type="text" placeholder="¿Que le apetece tomar?..."  onChange={handleChange}  />
         <span>
             <i class="fa-solid fa-magnifying-glass"/>
         </span>          
     </div>
 
    
-    <div class="boton">
-        <button className='elemento' onClick={alcoholClick}>{alcohol === true ? "Mostrar sin alcohol" : "Mostrar con alcohol"}</button>
+    <div class="boton" onClick={alcoholClick}>
+        <button className='elemento'>{alcohol === true ? "Mostrar sin alcohol" : "Mostrar con alcohol"}</button>
         
     </div>
     
 </div>
 
-    <p align="center">{ posts.some(function(x){ return x.name === searchTerm }) || posts.some(function(x){ return x.id === searchTerm}) 
-    ? "Resultados para " : "Sin coincidencias para " } {searchTerm} {
+    <p align="center">{ message }  {
 } </p>
 <div class="cartas">
 
+
     {    
-    
-    (posts.some(function(x){ return x.name === searchTerm}) || posts.some(function(x){ return x.id === searchTerm})  ? 
-     search.map(function(x){  return(  <Cartas cocktail={searchCocktail}/> )})
-     :filter.map(function(x){return( <Cartas cocktail={x}/> )})) 
-     
-     }
+    (filter.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase())  }) ? 
+     search.map(function(x){return(<Cartas cocktail={x}/> )})
+     :filter.map(function(x){return( <Cartas cocktail={x}/> )}))}
 
 </div>
 </>

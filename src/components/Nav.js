@@ -24,10 +24,10 @@ return(
     <input type="checkbox" id="menu" class="nav__input"/>
     
     <div class="nav__menu">
-      <a href="#" class="nav__item">Home</a>
+      <a href="#home" class="nav__item">Home</a>
       <a href="#categorias" class="nav__item">Categorias</a>
       <a href="#buscar" class="nav__item">buscar</a>
-      <a href="#" class="nav__item">contacto</a>
+      <a href="#contacto" class="nav__item">contacto</a>
      </div>
 
 </div>

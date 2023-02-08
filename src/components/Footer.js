@@ -4,7 +4,7 @@ function footer(){
     
     return(
         <footer>
-          <div class="social">
+          <div class="social" id="contacto">
              <ul>
                 <li class="elemento"><spam class='fab fa-facebook-f'></spam></li>
              
