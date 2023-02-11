@@ -1,6 +1,6 @@
 .popup{
     @include center();
-    color: black;
+    color: white;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -13,23 +13,27 @@
     visibility: hidden;
     opacity: 0;
 
+
     .contenido{
         position: relative;
        // @include center();
         background-color: darkgoldenrod;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         place-content: center;
-        align-self:flex-end;
-         
+        margin-top: auto;
+        justify-content: center;
+        
+        height: 650px;
+        width: 500px;
+        border-radius: 15px;
+     
        
         @media screen and (max-width: 830px){
             width: 99%;
         }
         
-        overflow: hidden;
-        height: 500px;
-        width: 800px;
+        
         @media screen and (max-width: 700px){
            
             grid-template-rows: 1.5fr 1fr;
@@ -57,25 +61,52 @@
         transition: all .7s;
         transform: translateY(-100px);
 
+        a{
+            position: fixed;
+            top: 30px;
+            right: 35px;
+            font-size: 40px;
+            @media screen and (max-width: 500px){
+                font-size: 30px;
+            }
+            @media screen and (max-width: 400px){
+                top: 20px;
+                right: 25px;
+            }
+            font-weight: 600;
+            color:black;
+            cursor: pointer;
+            transition: all 250ms ease-in-out;
+        }
+        a:hover{
+            color: white;
+            transform: rotate(360deg);
+        }
+
         .derecha{
-            position: relative;
-           
-            @include center();
-           
+            margin-top:5%;
             
+
             .ingredientes{
-                padding-right: 20px;
-                margin-right: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                justify-content: space-between;
+                margin: auto;
+                
+
                 @media screen and (max-width: 700px){
                     height: 100%;
                 }
                 
                 
-                h2{
+                .nombre_coco{
                     text-transform: uppercase;
-                    padding-right: 20px;
-                    font-weight: bold;
-                    font-size: 24px;
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    margin: auto;
+
                     @media screen and (max-width: 700px){
                         padding: 0 20px;
                        //font-size: 22px;
@@ -91,9 +122,10 @@
                     }
                 }
                 p{
-                    margin-top: 25px;
-                    padding-right: 20px;
-                    font-size: 16px;
+                    font-size: 1.5rem;
+                    margin: 3%;
+                    
+                
                     @media screen and (max-width: 700px){
                         padding: 10px 20px;
                        // font-size: 14px;
@@ -109,42 +141,23 @@
                     }
                 }
     
-                a{
-                    position: fixed;
-                    top: 30px;
-                    right: 35px;
-                    font-size: 40px;
-                    @media screen and (max-width: 500px){
-                        font-size: 30px;
-                    }
-                    @media screen and (max-width: 400px){
-                        top: 20px;
-                        right: 25px;
-                    }
-                    font-weight: 600;
-                    color:black;
-                    cursor: pointer;
-                    transition: all 250ms ease-in-out;
-                }
-                a:hover{
-                    color: white;
-                    transform: rotate(360deg);
-                }
-                button{
-                    justify-content: center;
+                
+                button{    
                     font-size: 16px;
-                    font-weight: 600;
-                    padding: auto;
+                    font-weight: 500;
+                    
                     width: 150px;
                     height: 40px;
-                    margin-top: 30px;
-                    text-align: center;
+                    margin: auto;
+                    
+
                     cursor: pointer;
                     border: none;
                     border-radius: 3px;
                     border-bottom-right-radius: 18px;
                     border-top-left-radius: 18px;
                     background-color: darkgoldenrod;
+                    color: white;
                     box-shadow:.2rem .2rem .3rem rgb(113, 82, 4),//por  fuera
                     -.2rem -.2rem .3rem rgb(242, 181, 27);//por fuera
                     transition: all 250ms ease-in-out;
@@ -166,23 +179,30 @@
         }
 
         .izquierda{
-            position: relative;
-            padding: 20px;
-            @include center();
-            overflow: hidden;
-            align-self: center;
+            display: flex;
+            justify-content: center;
+            margin-top:10%;
+
 
             @media screen and (max-width: 700px){
                 padding: 0;
                
             }
             .imagen{
-                height: 400px;
+                height: 370px;
+                width: 350px;
+
+                img{
+                    border-radius: 15px;
+                    object-fit: cover;
+                }
+                
                 @media screen and (max-width: 700px){
                     height: 300px;
                     position: relative;
                     margin: 0;
                     padding: 0;
+                    
                 }
                 img{
                     @include imgResponsive();
