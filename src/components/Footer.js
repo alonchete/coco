@@ -6,7 +6,7 @@ function footer(){
         <footer>
           <div class="social" id="contacto">
              <ul>
-                <li class="elemento"><spam class='fab fa-facebook-f'></spam></li>
+                <li class="elemento "><spam class='fab fa-facebook-f'></spam></li>
              
                 <li class="elemento"><spam class='fab fa-twitter'></spam></li>
               </ul>

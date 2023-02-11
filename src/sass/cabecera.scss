@@ -86,6 +86,7 @@
         /*relleno*/
         background-position: -975px 0;/*inicio de relleno*/
         animation: backcolor 3s linear infinite alternate;
+        
      //aqui
     //1800 1200 900 600 500
         @media screen and (max-width: 1200px){
@@ -111,6 +112,8 @@
             font-size: 4rem;
             background-position: -400px 0;/*inicio de relleno*/ 
         }
+
+        
     }
     @keyframes backcolor{
         100%{

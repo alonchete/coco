@@ -15,7 +15,7 @@ function cabecera(){
            <div class="imagen"><img src={barra3}/></div> 
            <div class="imagen"><img src={barra4}/></div> 
         </div >
-        <div class="COCOKTAIL">COCOKTAIL.</div>
+        <div class="COCOKTAIL"><p>COCO<span>KTAIL.</span></p></div>
     </div>
 
 </>
