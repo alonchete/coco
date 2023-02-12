@@ -10,14 +10,19 @@ import Popup from './Popup';
 
     const [searchTerm, setSearchTerm] = useState('*');
     const [posts, setPosts] = useState([]);
-    const [alcohol, setAlcohol] = useState(true);
-    const [message, setMessage] = useState(' ')
+    const [alcohol, setAlcohol] = useState(false);
+    const [message, setMessage] = useState('')
 
+ 
     function messageChange(){
-        if( posts.some(function(x){ return x.name.toLowerCase().startsWith(searchTerm.toLowerCase()) })){
-            setMessage("Mostrando resultados")
-        }else {setMessage("Sin coincidencias")    
+        
+        if( posts.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase()) })){
+            setMessage("Mostrando resultados");
+        }else {setMessage("Sin coincidencias: mostrando otros cocteles")    
         }
+        console.log(posts.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase()) }))
+
+        
 
     }
 
@@ -25,11 +30,19 @@ import Popup from './Popup';
         if(searchTerm === ""){
             setSearchTerm("*");
         }
+        messageChange();
     }, [searchTerm]);
+
+    useEffect(() => {
+        fetch(`http://localhost:3000/cocktails`)
+          .then((res) => res.json())
+          .then((result) => {
+            setPosts(result);
+          });   
+      }, []);
 
 
     function handleChange (event){
-        messageChange()
         return setSearchTerm(event.target.value);
     }
 
@@ -43,13 +56,7 @@ import Popup from './Popup';
     let searchCocktail;
     let alcoholFilter;
     
-    useEffect(() => {
-        fetch(`http://localhost:3000/cocktails`)
-          .then((res) => res.json())
-          .then((result) => {
-            setPosts(result);
-          });   
-      }, []);
+
 
  searchCocktail = posts.filter(function(x){
     return x.name.toLowerCase().startsWith(searchTerm.toLowerCase())
@@ -63,7 +70,6 @@ return x.alcohol === alcohol
     filter = alcoholFilter;
     var search = []
     search = searchCocktail;
-    console.log(alcohol)
 
 
     return(
@@ -92,9 +98,11 @@ return x.alcohol === alcohol
 
 
     {    
-    (filter.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase())  }) ? 
-     search.map(function(x){return(<Cartas cocktail={x}/> )})
-     :filter.map(function(x){return( <Cartas cocktail={x}/> )}))}
+    (posts.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase())  }) ? 
+     search.map(function(x){
+        return(<Cartas cocktail={x}/> )})
+     :filter.map(function(x){
+        return( <Cartas cocktail={x}/> )}))}
 
 </div>
 </>
