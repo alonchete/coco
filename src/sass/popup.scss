@@ -151,8 +151,6 @@
                     width: 150px;
                     height: 40px;
                     margin-top: 5%;
-                    
-                    
 
                     cursor: pointer;
                     border: none;
@@ -168,14 +166,19 @@
                         margin-left: 20px;
                     }
                 }
-                button.verReceta:hover{
+                button.favorito:hover{
                     box-shadow:inset .4rem .4rem 1rem rgb(143, 103, 3),//por dentro
                     inset -.4rem -.4rem 1rem rgb(242, 181, 27),//por dentro
                 }
-                .verReceta:hover{
+                .favorito:hover{
                     font-size: 14px;
                     color: white;
                 }
+
+                 
+
+
+
     
             }
 
@@ -188,11 +191,15 @@
                 height: 370px;
                 width: 350px;
                 margin: auto;
+                position: relative;
 
                 img{
                     border-radius: 15px;
                     object-fit: cover;
                     margin-top: 10%;
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
                 }
                 
                 @media screen and (max-width: 700px){
@@ -206,6 +213,155 @@
                     @include imgResponsive();
                     
                 }
+
+                //boton favorito
+
+
+                .heart{
+                    height: 50px;
+                    width: 50px;
+                    background: #f20044;
+                    
+
+                    box-shadow: -10px 10px 90px #f20044;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    
+                    border: none;
+                    /*
+                    top: 104%;
+                    right: -6%;
+                    */
+                    left: 50%;
+                    top: 60%;
+                
+                    transform:  translateX(-50%) translateY(-500%) rotate(-45deg);
+                    animation: heart 1s linear ;
+                }
+
+
+                .heart:hover{
+
+                    height: 50px;
+                    width: 50px;
+                    background: #f20044;
+                    
+
+                    box-shadow: -10px 10px 90px #f20044;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    
+                    border: none;
+                    /*
+                    top: 104%;
+                    right: -6%;
+                    */
+                    left: 50%;
+                    top: 60%;
+                
+                    transform:  translateX(-50%) translateY(-500%) rotate(-45deg);
+                    animation: heart 1.5s linear infinite;
+                    
+                }
+      
+                @keyframes heart{
+                
+                    0%{
+                       
+                        transform: translateX(-50%) translateY(-500%) rotate(-45deg) scale(1);
+                    }
+
+                
+                    80%{
+                        transform: translateX(-50%) translateY(-500%) rotate(-45deg)  scale(.8);
+                    }
+                
+                    100%{
+                        
+                        transform: translateX(-50%) translateY(-500%) rotate(-45deg)  scale(.7);
+                    }
+                
+                
+                }
+                
+                .heart::before{
+                    content: '';
+                    position: absolute;
+                    height: 50px;
+                    width: 50px;
+                    background: #f20044;
+                    top: -50%;
+                    border-radius: 50px;
+                    box-shadow: -3px -3px 90px #f20044;
+                    
+                    
+                }
+                
+                .heart::after{
+                    content: '';
+                    position: absolute;
+                    height: 50px;
+                    width: 50px;
+                    background: #f20044;
+                    right: -50%;
+                    border-radius: 50px;
+                    box-shadow: 3px 3px 90px #f20044;
+                    
+                   
+                }
+
+                .heart2{
+                    height: 40px;
+                    width: 40px;
+                    background: transparent;
+                    
+
+                  
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    
+                    
+                    top: 104%;
+                    right: -6%;
+                    transform:  rotate(-45deg);
+                    border:none;
+                }
+                .heart2::before{
+                    content: '';
+                    position: absolute;
+                    height: 40px;
+                    width: 40px;
+                    background: transparent;
+                    top: -50%;
+                    border-radius: 50px;
+                  
+                    border:none;
+                    
+                    
+                }
+                
+                .heart2::after{
+                    content: '';
+                    position: absolute;
+                    height: 40px;
+                    width: 40px;
+                    background: transparent;
+                    right: -50%;
+                    border-radius: 50px;
+                    
+                    border: none;
+                    
+                   
+                }
+
+                
+
             }
 
             
@@ -221,3 +377,6 @@
     opacity: 1;
     z-index: 2;
 }
+
+
+
