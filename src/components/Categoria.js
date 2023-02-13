@@ -8,7 +8,7 @@ function card(prop){
 
     return(
      <>   
-       <Cardbg />
+       <Cardbg cart={cart}/>
        <CardCont cart={cart}/>
     </>
 

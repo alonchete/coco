@@ -2,12 +2,13 @@
 import coctel1 from '../img/categoria4.jpg';
 
 
-function cardbg(){
+function cardbg(prop){
+  const cart = prop.cart;
     
 return(
     <div class="card-bg">
 
-      <img src={coctel1} alt="..."/>
+      <img src={cart.img} alt="..."/>
 
     </div>
 
