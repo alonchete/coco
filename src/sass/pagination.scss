@@ -1,0 +1,17 @@
+/*
+<ul class="pagination" >
+    {pages}  <li  class="page" style={style} key={i}>
+                <Pagina/>  <button class="page__button"></button>
+             </li>
+</ul>
+
+*/
+
+.pagination{
+    display: inline-block;
+    .pages{
+        display: inline-block;
+    }
+}
+
+

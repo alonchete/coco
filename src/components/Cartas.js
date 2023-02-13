@@ -10,7 +10,7 @@ function Cartas(p){
  
     const [clicked, setClicked] = useState(false);
 
-    const hijoApadre = (isclicked) => {
+    const popupAcarta = (isclicked) => {
         setClicked(isclicked)
         console.log(isclicked)
     }
@@ -35,7 +35,7 @@ return(
         img={img} 
         prep={prep} 
         trigger={clicked}
-        hijoApadre={hijoApadre}>
+        popupAcarta={popupAcarta}>
     </Popup> 
     
 </div>

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
  function Popup(props){
 
+<<<<<<< HEAD
     const hijoApadre = props.hijoApadre;
     const [style, setStyle] = useState("heart2");
 
@@ -26,12 +27,19 @@ import { useState, useEffect } from "react";
     }
 
      
+=======
+    const popupAcarta = props.popupAcarta;
+>>>>>>> 8f873f38a0c1ab3d3ca2eb9665dc898b404f8efa
 
     return (props.trigger) ? (
         <div id="popupbox" class="popup">
             
             <div class="contenido">
+<<<<<<< HEAD
                 <a href="#cierro"  onClick={() => hijoApadre(false)} >&times;</a> 
+=======
+            <a href="#cierro"  onClick={() => popupAcarta(false)} >&times;</a> 
+>>>>>>> 8f873f38a0c1ab3d3ca2eb9665dc898b404f8efa
                 
                     <div class="imagen">
                         <img  src={props.img} />
