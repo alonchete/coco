@@ -11,13 +11,13 @@ export default function Pagina({numeroPagina, paginaActual, seleccionada, setPag
   }
     return (
     <>
-    <button class="page__button" onClick={handleClick} style={ seleccionada ?  style : {
+   <a  href="#buscar"><button class="page__button"  onClick={handleClick}  style={ seleccionada ?  style : {
         backgroundColor: "darkgoldenrod",
         color:"black",
         padding: "8px 10px",
         border:"none"
-      }}>{numeroPagina}
-    </button>
+      }}><a>{numeroPagina}</a>
+    </button></a>
     </>
     )
 }

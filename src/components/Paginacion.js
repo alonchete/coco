@@ -3,8 +3,6 @@ import { useState } from "react";
 
 export default function Paginacion({paginasTotales, paginaActual, setPagina}){
     const pages = [];
-    const [isclicked, setClicked] = useState();
-
 
     const styleUL = {
         display:"flex",
@@ -27,7 +25,7 @@ export default function Paginacion({paginasTotales, paginaActual, setPagina}){
         
     }
 
-    for(let i = 0; i < paginasTotales; i++){
+    for(let i = 1; i < paginasTotales; i++){
         pages.push(<div style={styleLI} key={i}><Pagina numeroPagina={i} seleccionada={paginaActual === i} setPagina={setPagina}/></div>)
     }
     return (

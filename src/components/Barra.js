@@ -4,12 +4,12 @@ import { useEffect } from 'react';
 
 import Cartas from './Cartas';
 import Popup from './Popup';
+import Pagina from './Pagina';
 
- function Barra(){
+ function Barra({paginaActual, posts, getAlcohol, setPagina     }){
 
 
     const [searchTerm, setSearchTerm] = useState('*');
-    const [posts, setPosts] = useState([]);
     const [alcohol, setAlcohol] = useState(false);
     const [message, setMessage] = useState('')
 
@@ -21,9 +21,6 @@ import Popup from './Popup';
         }else {setMessage("Sin coincidencias: mostrando otros cocteles")    
         }
         console.log(posts.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase()) }))
-
-        
-
     }
 
     useEffect(() => {
@@ -33,45 +30,49 @@ import Popup from './Popup';
         messageChange();
     }, [searchTerm]);
 
-    useEffect(() => {
-        fetch(`http://localhost:3000/cocktails`)
-          .then((res) => res.json())
-          .then((result) => {
-            setPosts(result);
-          });   
-      }, []);
-
+  
 
     function handleChange (event){
         return setSearchTerm(event.target.value);
     }
 
-    
-
-    function alcoholClick(event){
-    alcohol === false ? setAlcohol(true) : setAlcohol(false)
-        console.log(alcohol)
-    }
+ 
+ 
 
     let searchCocktail;
     let alcoholFilter;
-    
 
 
- searchCocktail = posts.filter(function(x){
-    return x.name.toLowerCase().startsWith(searchTerm.toLowerCase())
+    searchCocktail = posts.filter(function(x){
+    return x.name.toLowerCase().startsWith(searchTerm.toLowerCase()) 
     })
 
  alcoholFilter = posts.filter(function(x){
-return x.alcohol === alcohol
+    return x.alcohol === alcohol;
     })
 
-    var filter = [];
-    filter = alcoholFilter;
+var Afilter = [];
+ Afilter = alcoholFilter;
+
+var filter = Afilter.filter(function(x){
+    return x.page === paginaActual
+})
+
     var search = []
     search = searchCocktail;
 
+    function alcoholClick(filtro){
+        alcohol === false ? setAlcohol(true) : setAlcohol(false);
+    }
 
+    useEffect(() => {
+        getAlcohol(Afilter)
+        if(alcohol === false){
+            setPagina(1)
+        }
+    }, [alcohol]);
+
+   
     return(
         
 <>
@@ -101,7 +102,7 @@ return x.alcohol === alcohol
     (posts.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase())  }) ? 
      search.map(function(x){
         return(<Cartas cocktail={x}/> )})
-     :filter.map(function(x){
+     :filter.map(function(x) { 
         return( <Cartas cocktail={x}/> )}))}
 
 </div>

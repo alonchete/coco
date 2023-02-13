@@ -3,740 +3,833 @@
 		{
 			"id": "1",
 			"name": "Americano",
-			"preparation": "Bitter Campari (30ML) Martini Red (30ML) Soda (30ML) Maraschino (15ML)",
+			"preparation": "Bitter Campari (30) Martini Red (30) Soda (30)",
 			"alcohol": true,
 			"img": "http://localhost:3000/Americano.jpeg",
-			"categoria":"categoria1"
+			"page": 1
 
 		},
 		{
 			"id": "2",
 			"name": "Angel Face",
-			"preparation": "Gin (30ML) Apricot Brandy (30ML) Calvados (30ML) Maraschino (15ML)",
+			"preparation": "Gin (30) Apricot Brandy (30) Calvados (30)",
 			"alcohol": true,
 			"img": "http://localhost:3000/angel-face.jpg",
-			"categoria":"categoria2"
+			"page": 1
+
+
 
 		},
 		{
 			"id": "3",
 			"name": "Aviation",
-			"preparation": "Gin (45ML) Maraschino (15ML) Lime (15ML) Galliano (15ML) Prosecco (50ML)",
+			"preparation": "Gin (45) Maraschino (15) Lime (15)",
 			"alcohol": true,
 			"img": "http://localhost:3000/Aviation.jpeg",
-			"categoria":"categoria3"
+			"page": 1
+
 
 		},
 		{
 			"id": "4",
 			"name": "Bacardi",
-			"preparation": "Rum (WhiteML) (45ML) Sweet & Sour (20ML) Cranberry Juice (10ML)",
+			"preparation": "Rum (White) (45) Sweet & Sour (20) Cranberry Juice (10)",
 			"alcohol": true,
 			"img": "http://localhost:3000/bacardi-coctel.jpg",
-			"categoria":"categoria4"
+			"page": 1
+
 
 
 		},
 		{
 			"id": "16",
 			"name": "Banana Daiquiri",
-			"preparation": "Rum (WhiteML) (45ML) Sweet & Sour (30ML) Galliano (15ML) Prosecco (50ML)",
+			"preparation": "Rum (White) (45) Sweet & Sour (30)",
 			"alcohol": true,
 			"img": "http://localhost:3000/banana-daiquiri.jpeg",
-			"categoria":"categoria1"
+			"page": 1
+
 
 		},
 		{
 			"id": "5",
 			"name": "Barracuda",
-			"preparation": "Rum White (45ML) Galliano (15ML) Pineapple Juice (60ML) Prosecco (50ML) Lime (10ML)",
+			"preparation": "Rum (White) (45) Galliano (15) Pineapple Juice (60) Prosecco (50) Lime (10)",
 			"alcohol": true,
 			"img": "http://localhost:3000/barracuda.jpeg",
-			"categoria":"categoria2"
+			"page": 1
+
 
 		},
 		{
 			"id": "6",
 			"name": "Between The Sheets",
-			"preparation": "Rum White (30ML) Cognac (40ML) Triple Sec (10ML) Lime (20ML) Cognac (40ML)",
+			"preparation": "Rum (White) (30) Cognac (40) Triple Sec (10) Lime (20)",
 			"alcohol": true,
 			"img": "http://localhost:3000/Between-The-Sheets.jpeg",
-			"categoria":"categoria3"
+			"page": 1
+
 
 		},
 		{
 			"id": "7",
 			"name": "Black Russian",
-			"preparation": "Vodka (50ML) Kahlua (20ML) Galliano (15ML) Pineapple Juice (60ML) Prosecco (50ML)",
+			"preparation": "Vodka (50) Kahlua (20)",
 			"alcohol": true,
 			"img": "http://localhost:3000/Black-Russian.jpeg",
-			"categoria":"categoria4"
+			"page": 1
+
 
 		},
 		{
 			"id": "8",
 			"name": "Bramble",
-			"preparation": "Gin (40ML) Sweet & Sour (20ML) Cranberry Juice (15ML) Cognac (40ML)",
+			"preparation": "Gin (40) Sweet & Sour (20) Cranberry Juice (15)",
 			"alcohol": true,
 			"img": "http://localhost:3000/Bramble.jpeg",
-			"categoria":"categoria1"
+			"page": 1
+
 
 		},
 		{
 			"id": "9",
 			"name": "Bronks",
-			"preparation": "Gin (40ML) Martini Dry (20ML) Martini White (20ML) Orange Juice (20ML)",
+			"preparation": "Gin (40) Martini Dry (20) Martini White (20) Orange Juice (20)",
 			"alcohol": true,
 			"img": "http://localhost:3000/Bronks.jpeg",
-			"categoria":"categoria2"
+			"page": 1
+
 
 		},
 		{
 			"id": "86",
 			"name": "Caipirinha",
-			"preparation": "Cachaca (60ML) Gin (30ML) Cherry (15ML) Triple Sec (7ML) Cognac (40ML)",
+			"preparation": "Cachaca (60)",
 			"alcohol": true,
 			"img": "http://localhost:3000/Caipirinha.jpeg",
-			"categoria":"categoria3"
+			"page": 1
+
 			
 		},
 		{
 			"id": "400",
 			"name": "Caipiroska",
-			"preparation": "Vodka (50ML) Disaronno (35ML) Cognac (35ML) Cherry (15ML) Cognac (40ML)",
+			"preparation": "Vodka (50)",
 			"alcohol": true,
 			"img": "http://localhost:3000/Caipiroska.jpeg",
-			"categoria":"categoria4"
+			"page": 1
+
+
 
 		},
 		{
 			"id": "401",
 			"name": "Caipiroska Strawberry",
-			"preparation": "Vodka (50ML) Strawberry Syrup (10ML) Cognac (35ML) Disaronno (35ML)",
+			"preparation": "Vodka (50) Strawberry Syrup (10)",
 			"alcohol": true,
             "img": "http://localhost:3000/Caipiroska-Strawberry.jpeg",
-			"categoria":"categoria1"
+			"page": 1
+
 		},
 		{
 			"id": "11",
 			"name": "Campari Orange",
-			"preparation": "Bitter Campari (60ML) Orange Juice (120ML) Galliano (15ML) Prosecco (50ML)",
+			"preparation": "Bitter Campari (60) Orange Juice (120)",
 			"alcohol": true,
             "img": "http://localhost:3000/Campari-Orange.jpeg",
-			"categoria":"categoria2"
+			"page": 1
+
 		},
 		{
 			"id": "402",
 			"name": "Cape Codder",
-			"preparation": "Vodka (50ML) Cranberry Juice (130ML) Cognac (35ML) Disaronno (35ML)",
+			"preparation": "Vodka (50) Cranberry Juice (130)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Cape-Codder.jpeg",
-			"categoria":"categoria3"
+			"page": 1
+
 		},
 		{
 			"id": "12",
 			"name": "Casino",
-			"preparation": "Gin (40ML) Maraschino (10ML) Bitter Orange (10ML) Sweet & Sour (10ML)",
+			"preparation": "Gin (40) Maraschino (10) Bitter Orange (10) Sweet & Sour (10)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Casino.jpeg",
-			"categoria":"categoria4"
+			"page": 1
+
 		},
 		{
 			"id": "13",
 			"name": "Cosmopolitan",
-			"preparation": "Vodka (40ML) Triple Sec (15ML) Lime (30ML) Cranberry Juice (60ML)",
+			"preparation": "Vodka (40) Triple Sec (15) Lime (30) Cranberry Juice (60)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Cosmopolitan.jpg",
-			"categoria":"categoria1"
+			"page": 1
+
 		},
 		{
 			"id": "14",
 			"name": "Cuba Libre",
-			"preparation": "Rum Dark (65ML) Martini Red (20ML) Bitter Campari (5ML) Maraschino (15ML)",
+			"preparation": "Rum (White) (65)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Cuba-Libre.jpeg",
-			"categoria":"categoria2"
+			"page": 1
+
 		},
 		{
 			"id": "403",
 			"name": "Cuban Manhattan",
-			"preparation": "Rum White (50ML) Martini Red (20ML) Bitter Campari (5ML) Maraschino (15ML)",
+			"preparation": "Rum (White) (50) Martini Red (20) Bitter Campari (5)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Cuban-Manhattan.jpeg",
-			"categoria":"categoria3"
+			"page": 1
+
 		},
 		{
 			"id": "15",
 			"name": "Daiquiri",
-			"preparation": "Rum Dark (15ML) Sweet & Sour (30ML) Martini Red (20ML) Bitter (45ML)",
+			"preparation": "Rum (White) (45) Sweet & Sour (30)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Daiquiri.jpeg",
-			"categoria":"categoria4"
+			"page": 1
+
 		},
 		{
 			"id": "18",
 			"name": "Daiquiri Hemingway",
-			"preparation": "Rum WhiteML (50ML) Grapefruit (30ML) Maraschino (5ML) Lime (15ML) Liquid Sugar (5ML)",
+			"preparation": "Rum (White) (50) Grapefruit Juice (30) Maraschino (5) Lime (15) Liquid Sugar (5)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Daiquiri-Hemingway.png",
-			"categoria":"categoria1"
+			"page": 1
+
 		},
 		{
 			"id": "17",
 			"name": "Daiquiri Strawberry",
-			"preparation": "Rum White (45ML) Strawberry Syrup (10ML) Sweet & Sour (20ML) Maraschino (15ML)",
+			"preparation": "Rum (White) (45) Strawberry Syrup (10) Sweet & Sour (20)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Daiquiri-Strawberry.jpeg",
-			"categoria":"categoria2"
+			"page": 1
+
 		},
 		{
 			"id": "19",
 			"name": "Dark 'N' Stormy",
-			"preparation": "Rum Dark (60ML) Ginger Beer (110ML) Cognac (35ML) Disaronno (35ML)",
+			"preparation": "Rum (White) (60) Ginger Beer (110)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Dark-N-Stormy.jpeg",
-			"categoria":"categoria3"
+			"page": 1
+
 		},
 		{
 			"id": "20",
 			"name": "Derby",
-			"preparation": "Gin (60ML) Apricot Peach (15ML) Cognac (35ML) Disaronno (35ML)",
+			"preparation": "Gin (60) Apricot Peach (15)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Derby.jpeg",
-			"categoria":"categoria4"
+			"page": 1
+
 		},
 		{
 			"id": "21",
 			"name": "Dry Martini",
-			"preparation": "Vodka (60ML) Martini Dry (10ML) Cognac (35ML) Disaronno (35ML) Maraschino (15ML)",
+			"preparation": "Vodka (60) Martini Dry (10)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Dry-Martini.jpeg",
-			"categoria":"categoria1"
+			"page": 2
+
 		},
 		{
 			"id": "22",
 			"name": "French 75",
-			"preparation": "Gin (30ML) Sweet & Sour (20ML) Champagne (60ML)Disaronno (12ML)",
+			"preparation": "Gin (30) Sweet & Sour (20) Champagne (60)",
 			"alcohol":true,
 			"img": "http://localhost:3000/French-75.png",
-			"categoria":"categoria2"
+			"page": 2
+
 		},
 		{
 			"id": "23",
 			"name": "French Connection",
-			"preparation": "Cognac (35ML) Disaronno (35ML) Juice (35ML) Disaronno (35ML) Maraschino (15ML)",
+			"preparation": "Cognac (35) Disaronno (35)",
 			"alcohol":true,
 			"img": "http://localhost:3000/French-Connection.jpeg",
-			"categoria":"categoria3"
+			"page": 2
+
 		},
 		{
 			"id": "80",
 			"name": "Fruit Punch",
-			"preparation": "Orange Juice (80ML) Strawberry Syrup (20ML) Pineapple Juice (80ML)",
+			"preparation": "Orange Juice (80) Strawberry Syrup (20) Pineapple Juice (80)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Fruit-Punch.jpeg",
-			"categoria":"categoria4"
+			"page": 2
+
 		},
 		{
 			"id": "24",
 			"name": "Gin Fizz",
-			"preparation": "Gin (45ML) Sweet & Sour (40ML) Orange Juice (80ML) Strawberry Syrup (20ML)",
+			"preparation": "Gin (45) Sweet & Sour (40)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Gin-Fizz.jpeg",
-			"categoria":"categoria1"
+			"page": 2
+
 		},
 		{
 			"id": "404",
 			"name": "Gin Lemon",
-			"preparation": "Gin (60ML) Orange Juice (80ML) Strawberry Syrup (20ML) Maraschino (15ML)",
+			"preparation": "Gin (60)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Gin-Lemon.jpeg",
-			"categoria":"categoria2"
+			"page": 2
+
 		},
 		{
 			"id": "25",
 			"name": "Gin Tonic",
-			"preparation": "Gin (60ML) Cognac (35ML) Disaronno (35ML) Cognac (35ML) Maraschino (15ML)",
+			"preparation": "Gin (60)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Gin-Tonic.jpeg",
-			"categoria":"categoria3"
+			"page": 2
+
 		},
 		{
 			"id": "26",
 			"name": "God Father",
-			"preparation": "Whisky (45ML) Disaronno (45ML) Cognac (35ML)  Cognac (35ML) ",
+			"preparation": "Whisky (45) Disaronno (45)",
 			"alcohol":true,
 			"img": "http://localhost:3000/God-Father.jpeg",
-			"categoria":"categoria4"
+			"page": 2
+
 		},
 		{
 			"id": "27",
 			"name": "God Mother",
-			"preparation": "Vodka (45ML) Disaronno (45ML) Cognac (35ML) Disaronno (35ML) Cognac (35ML) ",
+			"preparation": "Vodka (45) Disaronno (45)",
 			"alcohol":true,
 			"img": "http://localhost:3000/God-Mother.jpeg",
-			"categoria":"categoria1"
+			"page": 2
+
 		},
 		{
 			"id": "81",
 			"name": "GrapeFruit Mint Cooler",
-			"preparation": "Grapefruit Juice (60ML) Sweet & Sour (40ML) Soda (40ML) Mint Syrup (10ML)",
+			"preparation": "Grapefruit Juice (60) Sweet & Sour (40) Soda (40) Mint Syrup (10)",
 			"alcohol":true,
 			"img": "http://localhost:3000/GrapeFruit-Mint-Cooler.jpeg",
-			"categoria":"categoria2"
+			"page": 2
+
 		},
 		{
 			"id": "28",
 			"name": "Harvey Wallbenger",
-			"preparation": "Vodka (60ML) Galliano (20ML) Orange Juice (100ML) Vodka (34ML)",
+			"preparation": "Vodka (60) Galliano (20) Orange Juice (100)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Harvey-Wallbenger.jpeg",
-			"categoria":"categoria3"
+			"page": 2
+
 
 		},
 		{
 			"id": "29",
 			"name": "Havana Beach",
-			"preparation": "Rum (WhiteML) (40ML) Pineapple Juice (90ML) Ginger Beer (50ML)",
+			"preparation": "Rum (White) (40) Pineapple Juice (90) Ginger Beer (50)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Havana-Beach.jpeg",
-			"categoria":"categoria4"
+			"page": 2
+
 		},
 		{
 			"id": "69",
 			"name": "Honululu",
-			"preparation": "Gin (45ML) Orange Juice (15ML) Pineapple Juice (15ML) Cranberry Juice (10ML) Sweet & Sour (15ML)",
+			"preparation": "Gin (45) Orange Juice (15) Pineapple Juice (15) Cranberry Juice (10) Sweet & Sour (15)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Honululu.jpeg",
-			"categoria":"categoria1"
+			"page": 2
+
 		},
 		{
 			"id": "30",
 			"name": "Invisibile",
-			"preparation": "Rum (WhiteML) (36ML) Vodka (36ML) Gin (36ML) Triple Sec (36ML) Sweet & Sour (36ML)",
+			"preparation": "Rum (White) (36) Vodka (36) Gin (36) Triple Sec (36) Sweet & Sour (36)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Invisibile.jpeg",
-			"categoria":"categoria2"
+			"page": 2
+
 		},
 		{
 			"id": "31",
 			"name": "Invisibile Strawberry",
-			"preparation": "Rum (34ML) Gin (34ML)  Triple Sec (34ML) Sweet & Sour (34ML) Strawberry Syrup (10ML)",
+			"preparation": "Rum (White) (34) Gin (34) Vodka (34) Triple Sec (34) Sweet & Sour (34) Strawberry Syrup (10)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Invisibile-Strawberry.png",
-			"categoria":"categoria3"
+			"page": 2
+
 		},
 		{
 			"id": "32",
 			"name": "Italian Iced Tea",
-			"preparation": "Rum (WhiteML) (25ML) Vodka (25ML) Gin (25ML) Sweet & Sour (50ML) Cola (20ML) Disaronno (25ML)",
+			"preparation": "Rum (White) (25) Vodka (25) Gin (25) Sweet & Sour (50) Cola (20) Disaronno (25)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Italian-Iced-Tea.png",
-			"categoria":"categoria4"
+			"page": 2
+
 		},
 		{
 			"id": "33",
 			"name": "Japonese Iced Tea",
-			"preparation": "Rum (WhiteML) (25ML) Midori (25ML) Vodka (25ML) Gin (25ML) Sweet & Sour (50ML)",
+			"preparation": "Rum (White) (25) Midori (25) Vodka (25) Gin (25) Sweet & Sour (50)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Japonese-Iced-Tea.jpeg",
-			"categoria":"categoria1"
+			"page": 2
+
 		},
 		{
 			"id": "34",
 			"name": "John Collins",
-			"preparation": "Gin (45ML) Sweet & Sour (30ML) Soda (60ML) Vodka (25ML) Rum (WhiteML) (25ML)",
+			"preparation": "Gin (45) Sweet & Sour (30) Soda (60)",
 			"alcohol":true,
 			"img": "http://localhost:3000/John-Collins.jpeg",
-			"categoria":"categoria2"
+			"page": 2
+
 		},
 		{
 			"id": "35",
 			"name": "Kamikaze",
-			"preparation": "Vodka (30ML) Triple Sec (30ML) Lime (30ML) Vodka (25ML) Rum (WhiteML) (25ML)",
+			"preparation": "Vodka (30) Triple Sec (30) Lime (30)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Kamikaze.png",
-			"categoria":"categoria3"
+			"page": 2
+
 		},
 		{
 			"id": "36",
 			"name": "Leamon Drop Martini",
-			"preparation": "Vodka (50ML) Triple Sec (20ML) Lime (20ML) Bitter Orange (15ML) Orgeat syrup (15ML) ",
+			"preparation": "Vodka (50) Triple Sec (20) Lime (20)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Leamon-Drop-Martini.jpeg",
-			"categoria":"categoria4"
+			"page": 2
+
 		},
 		{
 			"id": "37",
 			"name": "Long island Iced Tea",
-			"preparation": "Cola (25ML) Vodka (25ML) Rum White (25ML) Gin (25ML) Triple Sec (25ML) Sweet & Sour (55ML)",
+			"preparation": "Cola (25) Vodka (25) Rum (White) (25) Gin (25) Triple Sec (25) Sweet & Sour (55)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Long-island-Iced-Tea.jpeg",
-			"categoria":"categoria1"
+			"page": 2
+
 		},
 		{
 			"id": "38",
 			"name": "Mai-Tai",
-			"preparation": "Rum WhiteML (40ML) Rum Dark (20ML) Bitter Orange (15ML) Orgeat syrup (15ML) Lime (10ML)",
+			"preparation": "Rum (White) (40) Rum (Dark) (20) Bitter Orange (15) Orgeat syrup (15) Lime (10)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Mai-Tai.jpg",
-			"categoria":"categoria2"
+			"page": 2
+
 		},
 		{
 			"id": "39",
 			"name": "Manhattan",
-			"preparation": "Whisky (50ML) Martini Red (20ML) Bitter Campari (5ML)",
+			"preparation": "Whisky (50) Martini Red (20) Bitter Campari (5)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Manhattan.png",
-			"categoria":"categoria3"
+			"page": 2
+
 
 		},
 		{
 			"id": "40",
 			"name": "Margarita",
-			"preparation": "Lime (25ML) Triple Sec (25ML) Tequila (50ML) Maraschino (10ML) Cranberry (30ML)",
+			"preparation": "Lime (25) Triple Sec (25) Tequila (50)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Margarita.jpeg",
-			"categoria":"categoria4"
+			"page": 2
+
 		},
 		{
 			"id": "41",
 			"name": "Margarita Strawberry",
-			"preparation": "Triple Sec (25ML) Tequila (50ML) Lime (25ML) Strawberry Syrup (20ML)",
+			"preparation": "Triple Sec (25) Tequila (50) Lime (25) Strawberry Syrup (20)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Margarita-Strawberry.jpeg",
-			"categoria":"categoria1"
+			"page": 3
+
 		},
 		{
 			"id": "42",
 			"name": "Mary PickFord",
-			"preparation": "Rum WhiteML (60ML) Maraschino (10ML) Cranberry Juice (30ML) Pineapple Juice (80ML)",
+			"preparation": "Rum (White) (60) Maraschino (10) Cranberry Juice (30) Pineapple Juice (80)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Mary-PickFord.png",
-			"categoria":"categoria2"
+			"page": 3
+
 		},
 		{
 			"id": "405",
 			"name": "Mexican Negroni",
-			"preparation": "Tequila (30ML) Bitter Campari (30ML) Martini Red (30ML) Absinth (5ML) Cranberry (5ML)",
+			"preparation": "Tequila (30) Bitter Campari (30) Martini Red (30)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Mexican-Negroni.jpeg",
-			"categoria":"categoria3"
+			"page": 3
+
 		},
 		{
 			"id": "406",
 			"name": "Milano-Torino",
-			"preparation": "Bitter Campari (45ML) Martini Red (45ML) Absinth (5ML) Cranberry Juice (5ML)",
+			"preparation": "Bitter Campari (45) Martini Red (45)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Milano-Torino.jpeg",
-			"categoria":"categoria4"
+			"page": 3
+
 		},
 		{
 			"id": "44",
 			"name": "Mint Julep",
-			"preparation": "Whisky (60ML) Sweet & Sour (20ML) Soda (10ML) Absinth (5ML) Cranberry Juice (5ML)",
+			"preparation": "Whisky (60) Sweet & Sour (20) Soda (10)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Mint-Julep.jpg",
-			"categoria":"categoria1"
+			"page": 3
+
 		},
 		{
 			"id": "45",
 			"name": "Mojito",
-			"preparation": "Rum (WhiteML) (60ML) Lime (30ML) Soda (50ML) Absinth (5ML) Cranberry Juice (5ML)",
+			"preparation": "Rum (White) (60) Lime (30) Soda (50)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Mojito.jpeg",
-			"categoria":"categoria2"
+			"page": 3
+
 		},
 		{
 			"id": "46",
 			"name": "Monkey Gland",
-			"preparation": "Gin (50ML) Orange Juice (30ML) Absinth (5ML) Cranberry Juice (5ML)",
+			"preparation": "Gin (50) Orange Juice (30) Absinth (5) Cranberry Juice (5)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Monkey-Gland.jpeg",
-			"categoria":"categoria3"
+			"page": 3
+
 		},
 		{
 			"id": "79",
 			"name": "Gland",
-			"preparation": "Orange Juice (30ML) Absinth (5ML) Cranberry Juice (5ML) Ginger Beer (110ML)",
+			"preparation": "Orange Juice (30) Absinth (5) Cranberry Juice (5)",
 			"alcohol":false,
 			"img": "http://localhost:3000/Gland.jpeg",
-			"categoria":"categoria4"
+			"page": 1
+
 		},
 
 		{
 			"id": "48",
 			"name": "Moscow Mule",
-			"preparation": "Vodka (50ML) Ginger Beer (110ML) Lime (20ML) Bitter Orange (15) Orgeat syrup (15)",
+			"preparation": "Vodka (50) Ginger Beer (110) Lime (20)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Moscow-Mule.jpeg",
-			"categoria":"categoria1"
+			"page": 3
+
 		},
 		{
 			"id": "49",
 			"name": "Negroni",
-			"preparation": "Gin (30ML) Bitter Campari (30ML) Martini Red (30ML) Ginger Beer (110ML)",
+			"preparation": "Gin (30) Bitter Campari (30) Martini Red (30)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Negroni.jpeg",
-			"categoria":"categoria2"
+			"page": 3
+
 		},
 		{
 			"id": "407",
 			"name": "Negrosky",
-			"preparation": "Vodka (30ML) Bitter (15) Orgeat syrup (15) Bitter Campari (30ML) Martini Red (30ML)",
+			"preparation": "Vodka (30) Bitter Campari (30) Martini Red (30)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Negrosky.jpeg",
-			"categoria":"categoria3"
+			"page": 3
+
 		},
 		{
 			"id": "408",
 			"name": "New Yorker",
-			"preparation": "Whisky (60ML) Sweet & Sour (30ML) Bitter Orange (15) Orgeat syrup (15) Lime (10)",
+			"preparation": "Whisky (60) Sweet & Sour (30)",
 			"alcohol":true,
 			"img": "http://localhost:3000/New-Yorker.jpeg",
-			"categoria":"categoria4"
+			"page": 3
+
 		},
 		{
 			"id": "50",
 			"name": "Old Fashioned",
-			"preparation": "Whisky (45ML) Bitter Campari (5ML) Soda (20ML) Bitter Orange (15) Orgeat syrup (15)",
+			"preparation": "Whisky (45) Bitter Campari (5) Soda (20)",
 			"alcohol":true,
 			"img": "http://localhost:3000/OldFashioned.jpeg",
-			"categoria":"categoria1"
+			"page": 3
+
 		},
 		{
 			"id": "74",
 			"name": "PainKiller",
-			"preparation": "Pineapple Juice (88ML) Orange Juice (24ML) Coconut Syrup (23ML) Rum White (45ML)",
+			"preparation": "Pineapple Juice (88) Orange Juice (24) Coconut Syrup (23) Rum (White) (45)",
 			"alcohol":true,
 			"img": "http://localhost:3000/PainKiller.jpeg",
-			"categoria":"categoria2"
+			"page": 3
+
 		},
 		{
 			"id": "51",
 			"name": "Paradise",
-			"preparation": "Gin (40ML) Apricot Brandy (20ML) Orange Juice (15ML) Bitter Orange (15)",
+			"preparation": "Gin (40) Apricot Brandy (20) Orange Juice (15)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Paradise.jpeg",
-			"categoria":"categoria3"
+			"page": 3
+
 		},
 		{
 			"id": "51",
 			"name": "Amanecer Ecuatoriano",
-			"preparation": "Apricot Brandy (20ML) Orange Juice (15ML) Bitter Orange (15) Orgeat syrup (15)",
+			"preparation": "Apricot Brandy (20) Orange Juice (15)",
 			"alcohol":false,
 			"img": "http://localhost:3000/Amanecer-Ecuatoriano.jpeg",
-			"categoria":"categoria4"
+			"page": 1
+
+			
+
 		},
 		{
 			"id": "70",
 			"name": "Phil Collins",
-			"preparation": "Gin (50ML) Sweet & Sour (20ML) Soda (60ML) Martini Red (60ML) Prosecco (60ML)",
+			"preparation": "Gin (50) Sweet & Sour (20) Soda (60)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Phil-Collins.jpeg",
-			"categoria":"categoria1"
+			"page": 3
+
 		},
 		{
 			"id": "53",
 			"name": "Pina Colada",
-			"preparation": "Rum Black (48ML) Pineapple Juice (100ML) Coconut Syrup (20ML) Orgeat syrup (15)",
+			"preparation": "rum (White) (48) Pineapple Juice (100) Coconut Syrup (20)",
 			"alcohol":false,
 			"img": "http://localhost:3000/Pina-Colada.jpeg",
-			"categoria":"categoria2"
+			"page": 1
+
 		},
 		{
 			"id": "55",
 			"name": "Plunter's Punch",
-			"preparation": "Rum White(45ML) Orange Juice (35ML) Pineapple Juice (35ML) Sweet & Sour (20ML)",
+			"preparation": "Rum (White) (45) Orange Juice (35) Pineapple Juice (35) Sweet & Sour (20) Cranberry Juice (10) Bitter Campari (5)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Plunters-Punch.png",
-			"categoria":"categoria3"
+			"page": 3
+
 		},
 		{
 			"id": "72",
 			"name": "President Margarita",
-			"preparation": "Tequila (35ML) Triple Sec (20ML) Sweet & Sour (20ML) Brandy (15ML)",
+			"preparation": "Tequila (35) Triple Sec (20) Sweet & Sour (20) Brandy (15)",
 			"alcohol":true,
 			"img": "http://localhost:3000/President-Margarita.jpeg",
-			"categoria":"categoria4"
+			"page": 3
+
 		},
 		{
 			"id": "409",
 			"name": "Rum Sidecar",
-			"preparation": "Sweet & Sour (20ML) Triple Sec (20ML) Cranberry Juice (10ML) Bitter Campari (5ML)",
+			"preparation": "Sweet & Sour (20) Triple Sec (20)",
 			"alcohol":false,
 			"img": "http://localhost:3000/Rum-Sidecar.png",
-			"categoria":"categoria1"
+			"page": 1
+
+
 		},
 		{
 			"id": "56",
 			"name": "Sbagliato",
-			"preparation": "Bitter Campari (60ML) Martini Red (60ML) Prosecco (60ML)",
+			"preparation": "Bitter Campari (60) Martini Red (60) Prosecco (60)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Sbagliato.jpeg",
-			"categoria":"categoria2"
+			"page": 3
+
 		},
 		{
 			"id": "57",
 			"name": "Screwdriver",
-			"preparation": "Vodka (60ML) Orange Juice (120ML) Benedictine (7ML) Tequila (35ML) ",
+			"preparation": "Vodka (60) Orange Juice (120)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Screwdriver.jpeg",
-			"categoria":"categoria3"
+			"page": 3
+
 		},
 		{
 			"id": "58",
 			"name": "Sea Breeze",
-			"preparation": "Vodka (40ML) Cranberry Juice (110ML) Grapefruit Juice (30ML)",
+			"preparation": "Vodka (40) Cranberry Juice (110) Grapefruit Juice (30)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Sea-Breeze.jpeg",
-			"categoria":"categoria4"
+			"page": 3
+
 		},
 		{
 			"id": "59",
 			"name": "Sex On The Beach",
-			"preparation": "Vodka (50ML) Cranberry Juice (50ML) Orange Juice (50ML) Apricot Peach (30ML)",
+			"preparation": "Vodka (50) Cranberry Juice (50) Orange Juice (50) Apricot Peach (30)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Sex-On-The-Beach.jpeg",
-			"categoria":"categoria1"
+			"page": 3
+
 		},
 		{
 			"id": "60",
 			"name": "Sidecar",
-			"preparation": "Cognac (50ML) Triple Sec (20ML) Sweet & Sour (20ML) Tequila (50ML)",
+			"preparation": "Cognac (50) Triple Sec (20) Sweet & Sour (20)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Sidecar.png",
-			"categoria":"categoria2"
+			"page": 3
+
 		},
 		{
 			"id": "61",
 			"name": "Singapure Sling",
-			"preparation": "Pineapple Juice (120ML) Lime (10ML) Cranberry Juice (10ML) Bitter Campari (1ML)",
+			"preparation": "Benedictine (7) Gin (30) Cherry (15) Triple Sec (7) Pineapple Juice (120) Lime (10) Cranberry Juice (10) Bitter Campari (1)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Singapure-Sling.jpeg",
-			"categoria":"categoria3"
+			"page": 3
+
 		},
 		{
 			"id": "62",
 			"name": "Spritz Veneziano",
-			"preparation": "Prosecco (90ML) Aperol (60ML) Soda (30ML) Cognac (50ML) Triple Sec (20ML)",
+			"preparation": "Prosecco (90) Aperol (60) Soda (30)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Spritz-Veneziano.jpeg",
-			"categoria":"categoria4"
+			"page": 3
+
 		},
 		{
 			"id": "63",
 			"name": "Stinger",
-			"preparation": "Cognac (50ML) Creme de menthe (20ML)  Sweet & Sour (70ML) Gin (30ML)",
+			"preparation": "Cognac (50) Creme de menthe (20)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Stinger.jpeg",
-			"categoria":"categoria1"
+			"page": 4
 		},
 		{
 			"id": "64",
 			"name": "Tequila Sunrise",
-			"preparation": "Tequila (50ML) Orange Juice (110ML) Cranberry Juice (20ML) Maraschino (15ML)",
+			"preparation": "Tequila (50) Orange Juice (110) Cranberry Juice (20)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Tequila-Sunrise.jpeg",
-			"categoria":"categoria2"
+			"page": 4
+
 		},
 		{
 			"id": "65",
 			"name": "Texas Iced Tea",
-			"preparation": "Rum White (25ML) Triple Sec (25ML) Sweet & Sour (55ML) Cola (20ML)",
+			"preparation": "Rum (White) (25) Vodka (25) Gin (25) Tequila (25) Triple Sec (25) Sweet & Sour (55) Cola (20)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Texas-Iced-Tea.jpeg",
-			"categoria":"categoria3"
+			"page": 4
+
 		},
 		{
 			"id": "79",
 			"name": "Tropical",
-			"preparation": "Pineapple Juice (90ML) Sweet & Sour (70ML) Coconut Syrup (20ML)",
+			"preparation": "Pineapple Juice (90) Sweet & Sour (70) Coconut Syrup (20)",
 			"alcohol":false,
 			"img": "http://localhost:3000/Tropical.jpeg",
-			"categoria":"categoria4"
+			"page": 1
+
 		},
 		{
 			"id": "77",
 			"name": "Virgin Colada",
-			"preparation": "Strawberry Syrup (30ML) Coconut Syrup (30ML) Pineapple Juice (120ML)",
+			"preparation": "Strawberry Syrup (30) Coconut Syrup (30) Pineapple Juice (120)",
 			"alcohol":false,
 			"img": "http://localhost:3000/Virgin-Colada.jpeg",
-			"categoria":"categoria1"
+			"page": 1
+
 		},
 		{
 			"id": "410",
 			"name": "Vodka Leamon",
-			"preparation": "Vodka (60ML) Syrup (25ML) Gin (25ML) Tequila (25ML)  Sweet & Sour (70ML)",
+			"preparation": "Vodka (60)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Vodka-Leamon.jpeg",
-			"categoria":"categoria2"
+			"page": 4
+
 		},
 		{
 			"id": "411",
 			"name": "Vodka Saur",
-			"preparation": "Vodka (45ML) Sweet & Sour (75ML) Triple Sec (25ML) Sweet & Sour (55ML)",
+			"preparation": "Vodka (45) Sweet & Sour (75)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Vodka-Saur.jpeg",
-			"categoria":"categoria3"
+			"page": 4
+
 		},
 		{
 			"id": "85",
 			"name": "Vodka Tonic",
-			"preparation": "Vodka (60ML) Triple Sec (27ML) Sweet & Sour (18ML) Maraschino (15ML)",
+			"preparation": "Vodka (60)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Vodka-Tonic.jpeg",
-			"categoria":"categoria4"
+			"page": 4
+
 		},
 		{
 			"id": "412",
 			"name": "Whisky Cola",
-			"preparation": "Whisky (60ML) Rum White (60ML) Lime (20ML) Sweet (18ML) Maraschino (15ML)",
+			"preparation": "Whisky (60)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Whisky-Cola.jpeg",
-			"categoria":"categoria1"
+			"page": 4
+
 		},
 		{
 			"id": "413",
 			"name": "Whisky Sour",
-			"preparation": "Whisky (45ML) Sweet & Sour (75ML) Apricot Brandy (30ML) Maraschino (15ML)",
+			"preparation": "Whisky (45) Sweet & Sour (75)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Whisky-Sour.jpeg",
-			"categoria":"categoria2"
+			"page": 4
+
 		},
 		{
 			"id": "66",
 			"name": "White Lady",
-			"preparation": "Gin (45ML) Triple Sec (27ML) Sweet & Sour (18ML) Maraschino (15ML)",
+			"preparation": "Gin (45) Triple Sec (27) Sweet & Sour (18)",
 			"alcohol":true,
 			"img": "http://localhost:3000/White-Lady.jpeg",
-			"categoria":"categoria3"
+			"page": 4
+
 
 		},
 		{
 			"id": "414",
 			"name": "White Russian Lady",
-			"preparation": "Vodka (45ML) Triple Sec (27ML) Sweet & Sour (18ML) Maraschino (15ML)",
+			"preparation": "Vodka (45) Triple Sec (27) Sweet & Sour (18)",
 			"alcohol":true,
 			"img": "http://localhost:3000/White-Russian-Lady.jpeg",
-			"categoria":"categoria4"
+			"page": 4
+
 
 		},
 		{
 			"id": "67",
 			"name": "Yellow Bird",
-			"preparation": "Rum White (35ML) Triple Sec (15ML) Galliano (15ML) Lime (15ML)",
+			"preparation": "Rum (White) (35) Triple Sec (15) Galliano (15) Lime (15)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Yellow-Bird.jpeg",
-			"categoria":"categoria1"
+			"page": 4
+
 		},
 		{
 			"id": "68",
 			"name": "Zombie",
-			"preparation": "Rum White (60ML) Lime (20ML) Coconut Syrup (2ML) Pineapple Juice (60ML)",
+			"preparation": "Rum (White) (60) Lime (20) Coconut Syrup (2) Apricot Brandy (30) Pineapple Juice (60)",
 			"alcohol":true,
 			"img": "http://localhost:3000/Zombie.jpeg",
-			"categoria":"categoria2"
+			"page": 4
+
 		}
 	]
 }

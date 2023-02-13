@@ -1,13 +1,13 @@
 
  function Popup(props){
 
-    const hijoApadre = props.hijoApadre;
+    const popupAcarta = props.popupAcarta;
 
     return (props.trigger) ? (
         <div id="popupbox" class="popup">
             
             <div class="contenido">
-            <a href="#cierro"  onClick={() => hijoApadre(false)} >&times;</a> 
+            <a href="#cierro"  onClick={() => popupAcarta(false)} >&times;</a> 
                 
                     <div class="imagen">
                         <img  src={props.img} />
