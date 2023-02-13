@@ -46,6 +46,132 @@
                 }
     
             }
+
+             //boton favorito
+            .imagen:hover{
+                .heart{
+                    height: 50px;
+                    width: 50px;
+                    background: #f20044;
+                    
+    
+                    box-shadow: -10px 10px 90px #f20044;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    
+                    border: none;
+                    /*
+                    top: 104%;
+                    right: -6%;
+                    */
+                    left: 50%;
+                    top: 60%;
+                
+                    transform:  translateX(-50%) translateY(-500%) rotate(-45deg);
+                    animation: heart 1s linear ;
+                }
+    
+      
+                @keyframes heart{
+                
+                    0%{
+                       
+                        transform: translateX(-50%) translateY(-500%) rotate(-45deg) scale(1);
+                    }
+    
+                
+                    80%{
+                        transform: translateX(-50%) translateY(-500%) rotate(-45deg)  scale(.8);
+                    }
+                
+                    100%{
+                        
+                        transform: translateX(-50%) translateY(-500%) rotate(-45deg)  scale(.7);
+                    }
+                
+                
+                }
+                
+                .heart::before{
+                    content: '';
+                    position: absolute;
+                    height: 50px;
+                    width: 50px;
+                    background: #f20044;
+                    top: -50%;
+                    border-radius: 50px;
+                    box-shadow: -3px -3px 90px #f20044;
+                    
+                    
+                }
+                
+                .heart::after{
+                    content: '';
+                    position: absolute;
+                    height: 50px;
+                    width: 50px;
+                    background: #f20044;
+                    right: -50%;
+                    border-radius: 50px;
+                    box-shadow: 3px 3px 90px #f20044;
+                    
+                   
+                }
+    
+                .heart2{
+                    height: 40px;
+                    width: 40px;
+                    background: transparent;
+                    
+    
+                  
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    
+                    
+                    top: 104%;
+                    right: -6%;
+                    transform:  rotate(-45deg);
+                    border:none;
+                }
+                .heart2::before{
+                    content: '';
+                    position: absolute;
+                    height: 40px;
+                    width: 40px;
+                    background: transparent;
+                    top: -50%;
+                    border-radius: 50px;
+                  
+                    border:none;
+                    
+                    
+                }
+                
+                .heart2::after{
+                    content: '';
+                    position: absolute;
+                    height: 40px;
+                    width: 40px;
+                    background: transparent;
+                    right: -50%;
+                    border-radius: 50px;
+                    
+                    border: none;
+    
+                }
+
+            }
+
+             
+
+            
+
+        
     
             .contenido{
                 border-top: darkgoldenrod 2px solid;

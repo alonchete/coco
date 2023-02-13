@@ -23,6 +23,7 @@ return(
         <div class="caja">
             <div class="imagen">
                <img src={img} />
+               <div class="heart"></div>
             </div>
             <div className="contenido">
                <a id='nombre' href="#popupbox"  onClick={() => setClicked(true)}>{name}</a> 
