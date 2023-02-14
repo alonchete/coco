@@ -39,7 +39,8 @@
 			"preparation": "Rum (WhiteML) (45ML) Sweet & Sour (20ML) Cranberry Juice (10ML)",
 			"alcohol": true,
 			"img": "http://localhost:3000/bacardi-coctel.jpg",
-			"categoria":"categoria4"
+			"categoria":"categoria4",
+			"page" : 1
 
 
 		},
@@ -179,7 +180,7 @@
 			"alcohol":true,
 			"img": "http://localhost:3000/Cosmopolitan.jpg",
 			"categoria":"categoria1",
-			"page": 1
+			"page": 2
 
 		},
 		{
@@ -259,7 +260,7 @@
 			"alcohol":true,
 			"img": "http://localhost:3000/Dry-Martini.jpeg",
 			"categoria":"categoria1",
-			"page": 2
+			"page": 1
 
 		},
 		{
@@ -541,7 +542,7 @@
 			"alcohol":false,
 			"img": "http://localhost:3000/Gland.jpeg",
 			"categoria":"categoria4",
-			"page": 3
+			"page": 1
 		},
 
 		{
@@ -614,7 +615,7 @@
 			"alcohol":false,
 			"img": "http://localhost:3000/Amanecer-Ecuatoriano.jpeg",
 			"categoria":"categoria4",
-			"page": 3
+			"page": 1
 		},
 		{
 			"id": "65",
@@ -632,7 +633,7 @@
 			"alcohol":false,
 			"img": "http://localhost:3000/Pina-Colada.jpeg",
 			"categoria":"categoria2",
-			"page": 3
+			"page": 1
 		},
 		{
 			"id": "67",
@@ -659,7 +660,7 @@
 			"alcohol":false,
 			"img": "http://localhost:3000/Rum-Sidecar.png",
 			"categoria":"categoria1",
-			"page": 3
+			"page": 1
 		},
 		{
 			"id": "70",
@@ -758,7 +759,7 @@
 			"alcohol":false,
 			"img": "http://localhost:3000/Tropical.jpeg",
 			"categoria":"categoria4",
-			"page": 4
+			"page": 1
 		},
 		{
 			"id": "81",
@@ -767,7 +768,7 @@
 			"alcohol":false,
 			"img": "http://localhost:3000/Virgin-Colada.jpeg",
 			"categoria":"categoria1",
-			"page": 4
+			"page": 1
 		},
 		{
 			"id": "82",
