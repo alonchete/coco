@@ -2,6 +2,7 @@ import Nav from './Nav';
 import Cab from './Cabecera';
 import Categorias from './Categorias';
 import Barra from './Barra';
+import Formulario from './Formulario';
 import Footer from './Footer';
 import Paginacion from './Paginacion';
 
@@ -47,6 +48,7 @@ totalPaginas = Math.max(...paginas) + 1;
         <Categorias/>
         <Barra  paginaActual={paginaActual} posts={posts} getAlcohol={getAlcohol} setPagina={setPagina} />
         <Paginacion paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina}/>
+        <Formulario />
         <Footer />
         
       </>
