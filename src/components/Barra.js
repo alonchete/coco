@@ -16,17 +16,13 @@ import Pagina from './Pagina';
  
     function messageChange(){
         
-        if( posts.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase()) })){
+        if( posts.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase()) }) && searchTerm.length > 0){
             setMessage("Mostrando resultados");
         }else {setMessage("Sin coincidencias: mostrando otros cocteles")    
         }
-        console.log(posts.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase()) }))
     }
 
     useEffect(() => {
-        if(searchTerm === ""){
-            setSearchTerm("*");
-        }
         messageChange();
     }, [searchTerm]);
 
@@ -99,7 +95,7 @@ var filter = Afilter.filter(function(x){
 
 
     {    
-    (posts.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase())  }) ? 
+    (posts.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase())}) && searchTerm.length > 0? 
      search.map(function(x){
         return(<Cartas cocktail={x}/> )})
      :filter.map(function(x) { 

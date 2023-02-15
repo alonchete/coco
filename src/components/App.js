@@ -20,7 +20,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetch(`http://localhost:3000/cocktails`)
+    fetch(`http://localhost:3002/cocktails`)
       .then((res) => res.json())
       .then((result) => {
         setPosts(result);
