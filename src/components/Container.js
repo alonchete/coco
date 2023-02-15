@@ -1,5 +1,16 @@
 function Container(){
-    
+    let login= document.querySelector('.login');
+    let create= document.querySelector('.create');
+    let contenedor= document.querySelector('.contenedor')
+
+    login.onclick = function(){
+        contenedor.classList.add('signinForm')
+    }
+
+    create.onclick = function(){
+        contenedor.classList.remove('signinForm')
+    }
+
     return(
 
         <>
@@ -57,24 +68,9 @@ function Container(){
 
             </div>
 
-            {/* Un comentario JSX 
+           
         
 
-        <script>
-            let login= document.querySelector('.login');
-            let create= document.querySelector('.create');
-            let contenedor= document.querySelector('.contenedor');
-
-            login.onclick = function(){
-                contenedor.classList.add('signinForm')
-            }
-
-            create.onclick = function(){
-                contenedor.classList.remove('signinForm')
-            }
-
-        </script>
-        */}
 
         </>
     

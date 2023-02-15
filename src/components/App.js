@@ -5,8 +5,6 @@ import Barra from './Barra';
 import Formulario from './Formulario';
 import Footer from './Footer';
 import Paginacion from './Paginacion';
-
-
 import '../sass/main.scss';
 import { useEffect, useState } from 'react';
 
@@ -40,6 +38,21 @@ paginas = alcoholList.map(function(x){
 
 totalPaginas = Math.max(...paginas) + 1;
 
+const addFavorite = (objectID, userid = 23) => fetch(`http://localhost:3002/cocktails`, {
+  method: 'POST',
+  headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+      objectID,
+      userid
+  })
+}).then(response => response.json());
+
+
+
+
   return (
 
       <>
@@ -49,6 +62,7 @@ totalPaginas = Math.max(...paginas) + 1;
         <Barra  paginaActual={paginaActual} posts={posts} getAlcohol={getAlcohol} setPagina={setPagina} />
         <Paginacion paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina}/>
         <Formulario />
+        <button onClick={() => addFavorite(23)}>xxxx</button>
         <Footer />
         
       </>
