@@ -6,16 +6,13 @@ import Cartas from './Cartas';
 import Popup from './Popup';
 import Pagina from './Pagina';
 
- function Barra({paginaActual, posts, getAlcohol, setPagina     }){
+ function Barra({paginaActual, posts, getAlcohol, setPagina, setSearchTerm, searchTerm}){
 
-
-    const [searchTerm, setSearchTerm] = useState('*');
     const [alcohol, setAlcohol] = useState(false);
-    const [message, setMessage] = useState('')
-
+    const [message, setMessage] = useState('');
+    const [value, setValue] = useState(searchTerm);
  
     function messageChange(){
-        
         if( posts.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase()) }) && searchTerm.length > 0){
             setMessage("Mostrando resultados");
         }else {setMessage("Sin coincidencias: mostrando otros cocteles")    
@@ -23,46 +20,23 @@ import Pagina from './Pagina';
     }
 
     useEffect(() => {
+            setSearchTerm(value);
+    }, [value]);
+
+
+    useEffect(() => {
         messageChange();
     }, [searchTerm]);
 
-  
-
     function handleChange (event){
-        return setSearchTerm(event.target.value);
+        return setValue(event.target.value);
     }
-
- 
- 
-
-    let searchCocktail;
-    let alcoholFilter;
-
-
-    searchCocktail = posts.filter(function(x){
-    return x.name.toLowerCase().startsWith(searchTerm.toLowerCase()) 
-    })
-
- alcoholFilter = posts.filter(function(x){
-    return x.alcohol === alcohol;
-    })
-
-var Afilter = [];
- Afilter = alcoholFilter;
-
-var filter = Afilter.filter(function(x){
-    return x.page === paginaActual
-})
-
-    var search = []
-    search = searchCocktail;
 
     function alcoholClick(filtro){
         alcohol === false ? setAlcohol(true) : setAlcohol(false);
     }
 
     useEffect(() => {
-        getAlcohol(Afilter)
         if(alcohol === false){
             setPagina(1)
         }
@@ -94,12 +68,10 @@ var filter = Afilter.filter(function(x){
 <div class="cartas">
 
 
-    {    
-    (posts.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase())}) && searchTerm.length > 0? 
-     search.map(function(x){
-        return(<Cartas cocktail={x}/> )})
-     :filter.map(function(x) { 
-        return( <Cartas cocktail={x}/> )}))}
+    {
+     posts.map(function(x){
+        return(<Cartas cocktail={x}/> )})  
+    }
 
 </div>
 </>
