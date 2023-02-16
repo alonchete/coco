@@ -29,7 +29,8 @@ return(
                <a id='nombre' href="#popupbox"  onClick={() => setClicked(true)}>{name}</a> 
             </div>
         </div>
-    </div>
+    </div>    
+
 
     <Popup 
         name={name} 

@@ -9,60 +9,47 @@ import '../sass/main.scss';
 import { useEffect, useState, useCallback } from 'react';
 
 function App() {
+  const [allCocktails, setAllCocktails] = useState([]);
   const [posts, setPosts] = useState([]);
   const [paginaActual, setPagina] = useState(1);
-  const [alcoholList, setAlcoholList] = useState([])
-  const [searchTerm, setSearchTerm] = useState('*');
-  const [cocktailsLoaded, setCocktailsLoaded] = useState(false);
-
+  const [searchTerm, setSearchTerm] = useState('');
+  const [alcohol, setAlcohol] = useState(false);
+  const [totalPaginas, setTotalPaginas] = useState();
 
  var URL = `http://localhost:3002/cocktails`;
- var m = searchTerm;
-
-
-  function getAlcohol (list) {
-    setAlcoholList(list)
-  }
-
-
+ let paginas;
+ 
+console.log(alcohol)
 
   useEffect(() => {
-    fetch(`${URL}?name="Mojito"`)
+    fetch(`${URL}?name_like=${searchTerm} `)
       .then((res) => res.json())
       .then((result) => {
         setPosts(result);
-      });   
-  }, []);
+      });
+      
+  }, [searchTerm]);
+    
+ function AllCocktails(fill){
+  fetch(`${URL}?alcohol=${fill}`)
+  .then((res) => res.json())
+  .then((result) => {
+    setAllCocktails(result);
+  });
+ }
 
+  useEffect(() => {
 
-  console.log(m)
-  console.log(posts)
+    AllCocktails(alcohol);
+    if(alcohol === false){setPagina(1)}
 
-let totalPaginas;
-let paginas; 
+    fetch(`${URL}?page=${paginaActual}&alcohol=${alcohol}`)
+      .then((res) => res.json())
+      .then((result) => {
+        setPosts(result);
+      });  
 
-paginas = alcoholList.map(function(x){
-  return x.page;
-})
-
-totalPaginas = Math.max(...paginas) + 1;
-
-const changeSearchTerm = useCallback((term) => {
-  setSearchTerm(term);
-}, [setSearchTerm]);
-
-
-const addFavorite = (objectID, userid = 23) => fetch(`http://localhost:3002/cocktails`, {
-  method: 'POST',
-  headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({
-      objectID,
-      userid
-  })
-}).then(response => response.json());
+  }, [searchTerm === '', alcohol, paginaActual]);
 
 
   return (
@@ -71,9 +58,10 @@ const addFavorite = (objectID, userid = 23) => fetch(`http://localhost:3002/cock
         <Nav />
         <Cab />
         <Categorias/>
-        <Barra  paginaActual={paginaActual} posts={posts} getAlcohol={getAlcohol} setPagina={setPagina}
-         setSearchTerm={changeSearchTerm} searchTerm={searchTerm} />
-        <Paginacion paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina}/>
+        <Barra  paginaActual={paginaActual} posts={posts} setPagina={setPagina}
+         setSearchTerm={setSearchTerm} setAlcohol={setAlcohol} alcohol={alcohol}/>
+         -
+        <Paginacion setTotalPaginas={setTotalPaginas} allCocktails={allCocktails} alcohol={alcohol} paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina}/>
         <Formulario />
         <Footer />
         

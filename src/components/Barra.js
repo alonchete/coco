@@ -6,43 +6,27 @@ import Cartas from './Cartas';
 import Popup from './Popup';
 import Pagina from './Pagina';
 
- function Barra({paginaActual, posts, getAlcohol, setPagina, setSearchTerm, searchTerm}){
+ function Barra({ posts,setAlcohol,alcohol , setSearchTerm}){
 
-    const [alcohol, setAlcohol] = useState(false);
-    const [message, setMessage] = useState('');
-    const [value, setValue] = useState(searchTerm);
+    const [verMas, setVerMas] = useState(2);
  
-    function messageChange(){
-        if( posts.some(function(x){return x.name.toLowerCase().startsWith(searchTerm.toLowerCase()) }) && searchTerm.length > 0){
-            setMessage("Mostrando resultados");
-        }else {setMessage("Sin coincidencias: mostrando otros cocteles")    
-        }
-    }
-
-    useEffect(() => {
-            setSearchTerm(value);
-    }, [value]);
-
-
-    useEffect(() => {
-        messageChange();
-    }, [searchTerm]);
 
     function handleChange (event){
-        return setValue(event.target.value);
+        return setSearchTerm(event.target.value);
     }
 
-    function alcoholClick(filtro){
+    function alcoholClick(){
         alcohol === false ? setAlcohol(true) : setAlcohol(false);
     }
 
-    useEffect(() => {
-        if(alcohol === false){
-            setPagina(1)
-        }
-    }, [alcohol]);
-
    
+var count = 0;
+var mess = "XXXX";
+
+   function VerMas(){
+    
+    verMas === 2 ? setVerMas(1):setVerMas(2);
+   }
     return(
         
 <>
@@ -63,15 +47,19 @@ import Pagina from './Pagina';
     
 </div>
 
-    <p align="center">{ message }  {
+    <p align="center">{  }  {
 } </p>
 <div class="cartas">
 
 
     {
      posts.map(function(x){
-        return(<Cartas cocktail={x}/> )})  
+        count++;
+        return(posts.length > 20 ? (count < posts.length/verMas ? <Cartas cocktail={x}/> : " ") : <Cartas cocktail={x}/> )})
+ 
+          
     }
+    <br/>{posts.length > 20 ? <button onClick={VerMas}>{verMas === 2 ? "Ver mas ": "Ver menos"}</button> : " "}
 
 </div>
 </>
