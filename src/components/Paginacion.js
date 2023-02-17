@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import Pagina from "./Pagina";
-import { useState } from "react";
 
-export default function Paginacion({setTotalPaginas, allCocktails, alcohol, paginasTotales, paginaActual, setPagina}){
+export default function Paginacion({setTotalPaginas, allCocktails, paginasTotales, paginaActual, setPagina, posts, searchTerm}){
     const pages = [];
 
     const styleUL = {
@@ -28,14 +27,13 @@ export default function Paginacion({setTotalPaginas, allCocktails, alcohol, pagi
 
     useEffect(() => {
         setTotalPaginas(Math.max(...allCocktails.map(function(x){return x.page})) + 1);
-    }, [allCocktails])
+    }, [allCocktails][paginaActual])
 
-  
-
+ 
     console.log(paginasTotales)
 
     
-if(paginasTotales > 2){
+if(paginasTotales > 2 && posts.length > 10){
     for(let i = 1; i < paginasTotales; i++){
         pages.push(<div style={styleLI} key={i}><Pagina numeroPagina={i} seleccionada={paginaActual === i} setPagina={setPagina}/></div>)
     }

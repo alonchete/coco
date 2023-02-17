@@ -16,26 +16,26 @@ function Container(){
         <>
             <div class="contenedor">
                 <div class="form signup">
-                    <h2>Crear cuenta</h2>
+                    <h2>Añade tu cocoktel!!</h2>
                     <div class="inputBox">
                         <input type="text" required="required" />
                         <i class="fa-regular fa-user"></i>
-                        <spam>usuario</spam>
+                        <spam>Nombre de tu cocktail</spam>
                     </div>
                     <div class="inputBox">
                         <input type="text" required="required" />
                         <i class="fa-regular fa-envelope"></i>
-                        <spam>email</spam>
+                        <spam>Categoría</spam>
                     </div>
                     <div class="inputBox">
                         <input type="password" required="required" />
                         <i class="fa-solid fa-lock"></i>
-                        <spam>crear contraseña</spam>
+                        <spam>Ingredientes</spam>
                     </div>
                     <div class="inputBox">
                         <input type="password" required="required" />
                         <i class="fa-solid fa-lock"></i>
-                        <spam>confirmar contraseña</spam>
+                        <spam>Inserte </spam>
                     </div>
                     <div class="inputBox">
                         <input type="submit" value="Crear Cuenta" />

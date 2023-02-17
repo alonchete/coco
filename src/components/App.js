@@ -28,7 +28,7 @@ console.log(alcohol)
         setPosts(result);
       });
       
-  }, [searchTerm]);
+  }, [searchTerm.length > 1]);
     
  function AllCocktails(fill){
   fetch(`${URL}?alcohol=${fill}`)
@@ -60,8 +60,8 @@ console.log(alcohol)
         <Categorias/>
         <Barra  paginaActual={paginaActual} posts={posts} setPagina={setPagina}
          setSearchTerm={setSearchTerm} setAlcohol={setAlcohol} alcohol={alcohol}/>
-         -
-        <Paginacion setTotalPaginas={setTotalPaginas} allCocktails={allCocktails} alcohol={alcohol} paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina}/>
+        <Paginacion setTotalPaginas={setTotalPaginas} allCocktails={allCocktails} alcohol={alcohol} 
+        paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina} posts={posts} searchTerm={searchTerm}/>
         <Formulario />
         <Footer />
         

@@ -6,7 +6,7 @@ import Cartas from './Cartas';
 import Popup from './Popup';
 import Pagina from './Pagina';
 
- function Barra({ posts,setAlcohol,alcohol , setSearchTerm}){
+ function Barra({ posts,setAlcohol,alcohol,setSearchTerm, paginaActual}){
 
     const [verMas, setVerMas] = useState(2);
  
@@ -27,6 +27,10 @@ var mess = "XXXX";
     
     verMas === 2 ? setVerMas(1):setVerMas(2);
    }
+
+   useEffect(() => {
+    setVerMas(2)
+   }, [paginaActual])
     return(
         
 <>
@@ -55,13 +59,15 @@ var mess = "XXXX";
     {
      posts.map(function(x){
         count++;
-        return(posts.length > 20 ? (count < posts.length/verMas ? <Cartas cocktail={x}/> : " ") : <Cartas cocktail={x}/> )})
- 
-          
+        return(posts.length > 20 ? (count < posts.length/verMas ? <Cartas cocktail={x}/> : " ") : <Cartas cocktail={x}/> )})          
     }
-    <br/>{posts.length > 20 ? <button onClick={VerMas}>{verMas === 2 ? "Ver mas ": "Ver menos"}</button> : " "}
-
+</div><br/>
+<div class="barra" id="buscar">
+ {posts.length > 20  ?<div class="boton"><button className='elemento'  onClick={VerMas}>{verMas === 2 ? "Ver mas ": "Ver menos"}
+    </button> 
+</div> : " "}
 </div>
+
 </>
 
 
