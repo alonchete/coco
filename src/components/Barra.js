@@ -21,7 +21,6 @@ import Pagina from './Pagina';
 
    
 var count = 0;
-var mess = "XXXX";
 
    function VerMas(){
     

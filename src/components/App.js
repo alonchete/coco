@@ -17,18 +17,17 @@ function App() {
   const [totalPaginas, setTotalPaginas] = useState();
 
  var URL = `http://localhost:3002/cocktails`;
- let paginas;
+ let m = searchTerm;
  
-console.log(alcohol)
+console.log(searchTerm)
 
-  useEffect(() => {
-    fetch(`${URL}?name_like=${searchTerm} `)
-      .then((res) => res.json())
-      .then((result) => {
-        setPosts(result);
-      });
-      
-  }, [searchTerm.length > 1]);
+    useEffect(() => {
+      fetch(`${URL}?name_like=${searchTerm}`)
+        .then((res) => res.json())
+        .then((result) => {
+          setPosts(result);
+        });
+    }, [searchTerm, searchTerm > 1]);
     
  function AllCocktails(fill){
   fetch(`${URL}?alcohol=${fill}`)
@@ -51,7 +50,18 @@ console.log(alcohol)
 
   }, [searchTerm === '', alcohol, paginaActual]);
 
-
+  const updateCocktail = (id,name) => fetch(`http://localhost:3002/cocktails/90`, {
+    method: 'PATCH',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+       name: "sdsa",
+    })
+  }).then(response => response.json());
+  
+  
   return (
 
       <>
@@ -64,6 +74,7 @@ console.log(alcohol)
         paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina} posts={posts} searchTerm={searchTerm}/>
         <Formulario />
         <Footer />
+        <button onClick={updateCocktail} >cccc</button>
         
       </>
     

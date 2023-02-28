@@ -8,6 +8,7 @@ export default function Pagina({numeroPagina, paginaActual, seleccionada, setPag
 
   const handleClick = (e) => {
     setPagina(numeroPagina)
+    
   }
     return (
     <>
