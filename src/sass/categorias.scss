@@ -153,6 +153,11 @@
                     width: 185px;
                     height: 285px;
                 }
+                @media screen and (max-width: 499px){
+                    min-width: 170px;
+                    width: 170px;
+                    height: 220px;
+                }
 
     .card-bg {
         width: 100%;
@@ -178,21 +183,29 @@
 
         @media screen and (max-width: 1500px){
             height: 50%;
+            transform: translateY(70%);
         }
         @media screen and (max-width: 1150px){
             height: 55%;
+            transform: translateY(75%);
         }
         @media screen and (max-width: 1000px){
             height: 57%;
+            transform: translateY(77%);
         }
         @media screen and (max-width: 900px){
            // height: 60%;
+           transform: translateY(70%);
         }
         @media screen and (max-width: 800px){
             height: 55%;
         }
         @media screen and (max-width: 600px){
             height: 60%;
+        }
+        @media screen and (max-width: 499px){
+            transform: translateY(70%);
+            height: 90%;
         }
         
 

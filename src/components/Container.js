@@ -19,22 +19,35 @@ function Container(){
                     <h2>Añade tu cocoktel!!</h2>
                     <div class="inputBox">
                         <input type="text" required="required" />
-                        <i class="fa-regular fa-user"></i>
+                        <i class="	fas fa-cocktail"></i>
                         <spam>Nombre de tu cocktail</spam>
                     </div>
-                    <div class="inputBox">
-                        <input type="text" required="required" />
-                        <i class="fa-regular fa-envelope"></i>
-                        <spam>Categoría</spam>
+                    <div class="radiogroup">
+                        <div class="wrapper">
+                            <input type="radio" class="state" checked />
+                            <span class="text">a) Short Drinks</span>
+                        </div>
+                        <div class="wrapper">
+                            <input type="radio" class="state" />
+                            <span class="text">b) Long drinks</span>
+                        </div>
+                        <div class="wrapper">
+                            <input type="radio" class="state" />
+                            <span class="text">c) Aperitivos</span>
+                        </div>
+                        <div class="wrapper">
+                            <input type="radio" class="state" />
+                            <span class="text">d) Digestivos</span>
+                        </div>
                     </div>
                     <div class="inputBox">
                         <input type="password" required="required" />
-                        <i class="fa-solid fa-lock"></i>
+                        <i class="fas fa-grip-horizontal"></i>
                         <spam>Ingredientes</spam>
                     </div>
                     <div class="inputBox">
                         <input type="password" required="required" />
-                        <i class="fa-solid fa-lock"></i>
+                        <i class="fas fa-pizza-slice"></i>
                         <spam>Inserte </spam>
                     </div>
                     <div class="inputBox">

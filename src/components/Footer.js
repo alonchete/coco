@@ -13,7 +13,7 @@ function footer(){
               <ul>
                 <li class="elemento"><spam class='fab fa-instagram'></spam></li>
               
-                <li class="elemento" ><a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank"><spam class='fab fa-youtube'></spam></a></li>
+                <li class="elemento" ><a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank" ><spam class='fab fa-youtube'></spam></a></li>
              </ul>
           </div>
           <div class="derechos">
