@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 70vh;
     background: darkgoldenrod;
 
     .contenedor .form.signin,
@@ -77,7 +77,7 @@
                     outline:none;//adios bordes feos
                 }
 
-                input[type="submit"]{
+                input[type="submit"], input[type="radio"]{
                     background:  rgb(83, 60, 1);
                     color: darkgoldenrod;
                     padding: 10px 0;
@@ -130,3 +130,55 @@
 }
 
 
+.radiogroup {
+    padding: 20px 48px;
+    border-radius: 16px;
+    background: darkgoldenrod;
+    box-shadow: -5px -5px 15px rgb(242, 181, 27),
+                    5px 5px 15px rgb(113, 82, 4);
+    width: 300px;
+    .wrapper {
+        margin: 8px 0;
+        /*
+            .state {
+                
+             
+                
+                //pointer-events: none;
+                
+                width: 30px;
+                height: 20px ;
+                background: darkgoldenrod;
+                outline: none;
+                cursor: pointer;
+            
+            }
+        */
+        input[type="radio"] {
+            /* ...existing styles */
+            display: grid;
+            place-content: center;
+          }
+          
+          input[type="radio"]::before {
+            content: "";
+            width: 0.65em;
+            height: 0.65em;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+            box-shadow: inset 1em 1em var(--form-control-color);
+          }
+          
+          input[type="radio"]:checked::before {
+            transform: scale(1);
+          }
+    }
+}
+  
+  
+  
+  
+  
+  
+ 
