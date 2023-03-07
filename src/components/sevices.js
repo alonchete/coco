@@ -1,4 +1,6 @@
-export const addCocktail = (name, categoria, preparation, alcohol, page = 4 ) => fetch(`http://localhost:3002/cocktails`, {
+
+
+export const addCocktail = (name, categoria, preparation, alcohol, page ) => fetch(`http://localhost:3002/cocktails`, {
   method: 'POST',
   headers: {
       'Accept': 'application/json',

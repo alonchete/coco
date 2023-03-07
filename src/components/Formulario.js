@@ -1,15 +1,13 @@
 import Container from './Container';
 
-function Formulario(){
-    
+function Formulario({AllCocktailsAlc,allCocktails, setCocktelPag, cocktelPag}){
+
     return(
 
         
         <div class="formulario">
-        <Container />
-        </div>
-
-        
+        <Container AllCocktailsAlc={AllCocktailsAlc} allCocktails={allCocktails} setCocktelPag={setCocktelPag} cocktelPag={cocktelPag} />
+        </div>   
     
     )
     

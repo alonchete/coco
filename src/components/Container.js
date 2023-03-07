@@ -1,10 +1,11 @@
 import {addCocktail} from './sevices'
-import { useState } from 'react';
-function Container(){
+import { useState, useEffect } from 'react';
+function Container({AllCocktailsAlc, allCocktails, setCocktelPag, cocktelPag}){
     const [cocktelName, setCocktelName] = useState('');
     const [cocktelCat, setCocktelCat] = useState(1);
     const [cocktelPrep, setCocktelPrep] = useState('');
     const [cocktelAlc, setCocktelAlc] = useState(true);
+
 
     function handleChange (event){
          setCocktelName(event.target.value);
@@ -17,21 +18,21 @@ function Container(){
   }
   function alcoholChange (event){
     setCocktelAlc(event.target.value)   ;
-    cocktelAlc === "true" ? setCocktelAlc(true) : setCocktelAlc(false)
+    cocktelAlc === false ? setCocktelAlc(true) : setCocktelAlc(false)
+    AllCocktailsAlc(cocktelAlc)
 
-
+  
     }
 
     const agregarCocktel= ( () =>{
-        addCocktail(cocktelName, cocktelCat, cocktelPrep, cocktelAlc)
-        console.log("Agregado")
-    }) 
-       
+   AllCocktailsAlc(cocktelAlc).then((res) => )
+    setCocktelPag(Math.max(...allCocktails.map(function(x){return x.page})))
 
-    console.log(cocktelName)
-    console.log(cocktelCat)
-    console.log(cocktelPrep)
-    console.log(cocktelAlc)
+        addCocktail(cocktelName, cocktelCat, cocktelPrep, cocktelAlc, cocktelPag)
+
+    }) 
+    console.log(allCocktails)
+
 
     return(
 
@@ -47,7 +48,7 @@ function Container(){
                     </div>
                     <div class="inputBox">
                         <input type="radio" required="required" id="Categoría1" onChange={CatChange}  
-                        value="Categoría1" checked={cocktelCat === "Categoría1" ? true : false} />
+                        value="Categoría1" checked={cocktelCat === "Categoría1" ? true : false}     />
                         <spam>Categoría1</spam>
                         <input type="radio" required="required" id="Categoría2" onChange={CatChange}
                          value="Categoría2" checked={cocktelCat === "Categoría2" ? true : false} />
@@ -65,14 +66,14 @@ function Container(){
                         <spam>Ingredientes</spam>
                     </div>
                     <div class="inputBox">
-                    <input type="radio" required="required" id="true"  value="true"
-                    checked={cocktelAlc === "true" ? true : false} onChange={alcoholChange} />
+                    <input type="radio" required="required" id="true"  value="true" 
+                    checked={cocktelAlc === true ? true : false} onChange={alcoholChange} />
                         <spam>Con alcohol</spam>
                     <input type="radio" required="required" id="false"  value="false"
-                     checked={cocktelAlc === "false" ? true : false}  onChange={alcoholChange}  />
-                        <spam>Sin alcohol</spam>
-                    
+                     checked={cocktelAlc === false ? true : false}  onChange={alcoholChange}  />
+                        <spam>Sin alcohol</spam>          
                     </div>
+                    
                     <div class="inputBox">
                         <input type="submit" value="Agregar cocoktel" onClick={agregarCocktel} />
                     </div>

@@ -29,9 +29,6 @@ export default function Paginacion({setTotalPaginas, allCocktails, paginasTotale
         setTotalPaginas(Math.max(...allCocktails.map(function(x){return x.page})) + 1);
     }, [allCocktails][paginaActual])
 
- 
-    console.log(paginasTotales)
-
     
 if(paginasTotales > 2 && posts.length > 10){
     for(let i = 1; i < paginasTotales; i++){
