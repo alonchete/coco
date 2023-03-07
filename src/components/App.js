@@ -6,7 +6,8 @@ import Formulario from './Formulario';
 import Footer from './Footer';
 import Paginacion from './Paginacion';
 import '../sass/main.scss';
-import { useEffect, useState, useCallback } from 'react';
+import {AllCocktailsAlc, getCocktails} from './sevices'
+import { useEffect, useState } from 'react';
 
 function App() {
   const [allCocktails, setAllCocktails] = useState([]);
@@ -19,61 +20,22 @@ function App() {
 
 
  var URL = `http://localhost:3002/cocktails`;
- let m = searchTerm;
  
-    useEffect(() => {
-      fetch(`${URL}?name_like=${searchTerm}`)
-        .then((res) => res.json())
-        .then((result) => {
-          setPosts(result);
-        });
-    }, [searchTerm, searchTerm > 1]);
-    
- function AllCocktailsAlc(fill){
-  fetch(`${URL}?alcohol=${fill}`)
-  .then((res) => res.json())
-  .then((result) => {
-    setAllCocktails(result);
-  });
- }
+useEffect(() => {
+  fetch(`${URL}?name_like=${searchTerm}`)
+    .then((res) => res.json())
+    .then((result) => {
+      setPosts(result);
+    });
+}, [searchTerm, searchTerm > 1]);
 
+useEffect(() => {
+  if(alcohol === false){setPagina(1)}
+  getCocktails(alcohol, paginaActual).then((result) => {setPosts(result)});
+  AllCocktailsAlc(alcohol).then((result) => {setAllCocktails(result)})
+}, [searchTerm === '', alcohol, paginaActual]);
 
-
- function lastPageCocktails(page){
-
-    fetch(`${URL}?page=${totalPaginas}&alcohol=${alcohol}`)
-      .then((res) => res.json())
-      .then((result) => {
-        setPosts(result);
-      });  
-
- }
-
-  useEffect(() => {
-
-    AllCocktailsAlc(alcohol);
-    if(alcohol === false){setPagina(1)}
-
-    fetch(`${URL}?page=${paginaActual}&alcohol=${alcohol}`)
-      .then((res) => res.json())
-      .then((result) => {
-        setPosts(result);
-      });  
-
-  }, [searchTerm === '', alcohol, paginaActual]);
-
-  const updateCocktail = (id,name) => fetch(`http://localhost:3002/cocktails/90`, {
-    method: 'PATCH',
-    headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-       name: "sdsa",
-    })
-  }).then(response => response.json());
-    
-  return (
+return (
 
       <>
         <Nav />
@@ -84,9 +46,7 @@ function App() {
         <Paginacion setTotalPaginas={setTotalPaginas} allCocktails={allCocktails} alcohol={alcohol} 
         paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina} posts={posts} searchTerm={searchTerm}/>
         <Formulario AllCocktailsAlc={AllCocktailsAlc} allCocktails={allCocktails} setCocktelPag={setCocktelPag} cocktelPag={cocktelPag} />
-        <Footer />
-        <button onClick={updateCocktail} >cccc</button>
-        
+        <Footer />        
       </>
     
   ) 

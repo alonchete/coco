@@ -1,3 +1,4 @@
+var URL = `http://localhost:3002/cocktails`;
 
 
 export const addCocktail = (name, categoria, preparation, alcohol, page ) => fetch(`http://localhost:3002/cocktails`, {
@@ -16,22 +17,13 @@ export const addCocktail = (name, categoria, preparation, alcohol, page ) => fet
   })
 }).then(response => response.json());
 
+export const AllCocktailsAlc = (alcohol) => (
+  fetch(`${URL}?alcohol=${alcohol}`)
+  .then((res) => res.json())
 
-const getCocktails = (searchTerm) => fetch(`${URL}?name=${searchTerm}`)
-.then((response) => response.json())
-.then((result) => ({ name: result.name, preparation: result.preparation, page: result.page },
-  console.log(result)
-  ));
-  
+)
 
-  const updateCocktail = (id,name) => fetch(`http://localhost:3002/cocktails/90`, {
-    method: 'PATCH',
-    headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-       name: "sdsa",
-    })
-  }).then(response => response.json());
-  
+export const getCocktails = (alcohol, pagina) =>
+ ( fetch(`${URL}?alcohol=${alcohol}&page=${pagina}`)
+  .then((res) => res.json())
+)

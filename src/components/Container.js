@@ -20,24 +20,17 @@ function Container({AllCocktailsAlc, allCocktails, setCocktelPag, cocktelPag}){
     setCocktelAlc(event.target.value)   ;
     cocktelAlc === false ? setCocktelAlc(true) : setCocktelAlc(false)
     AllCocktailsAlc(cocktelAlc)
-
-  
     }
 
     const agregarCocktel= ( () =>{
-   AllCocktailsAlc(cocktelAlc).then((res) => )
+   AllCocktailsAlc(cocktelAlc)
     setCocktelPag(Math.max(...allCocktails.map(function(x){return x.page})))
-
         addCocktail(cocktelName, cocktelCat, cocktelPrep, cocktelAlc, cocktelPag)
-
     }) 
-    console.log(allCocktails)
-
-
+ 
     return(
 
         <>
-        
             <div class="contenedor">
                 <div class="form signup">
                     <h2>Añade tu cocoktel!!</h2>
@@ -82,9 +75,6 @@ function Container({AllCocktailsAlc, allCocktails, setCocktelPag, cocktelPag}){
             </div>
         </>
     
-    )
-    
-    
-    }
+    )}
     
     export default Container;
