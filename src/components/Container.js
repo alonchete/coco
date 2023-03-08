@@ -1,10 +1,15 @@
 import {addCocktail} from './sevices'
 import { useState, useEffect } from 'react';
-function Container({AllCocktailsAlc, allCocktails, setCocktelPag, cocktelPag}){
+import {AllCocktailsAlc} from './sevices'
+
+function Container({AllCocktailsAlc, allCocktails, setCocktelPag, allData, cocktelPag}){
     const [cocktelName, setCocktelName] = useState('');
     const [cocktelCat, setCocktelCat] = useState(1);
     const [cocktelPrep, setCocktelPrep] = useState('');
     const [cocktelAlc, setCocktelAlc] = useState(true);
+    const [cocktelByAlc, setCocktelByAlc] = useState([]);
+    const [maxPag, setMaxPag] = useState([]);
+    
 
 
     function handleChange (event){
@@ -19,14 +24,25 @@ function Container({AllCocktailsAlc, allCocktails, setCocktelPag, cocktelPag}){
   function alcoholChange (event){
     setCocktelAlc(event.target.value)   ;
     cocktelAlc === false ? setCocktelAlc(true) : setCocktelAlc(false)
-    AllCocktailsAlc(cocktelAlc)
     }
 
+
+    useEffect(() => {
+        AllCocktailsAlc(cocktelAlc).then((result) => {setCocktelByAlc(result)}) 
+        setMaxPag(cocktelByAlc.map(function(x){return x.page}))     
+      }, [cocktelAlc]);
+
     const agregarCocktel= ( () =>{
-   AllCocktailsAlc(cocktelAlc)
-    setCocktelPag(Math.max(...allCocktails.map(function(x){return x.page})))
-        addCocktail(cocktelName, cocktelCat, cocktelPrep, cocktelAlc, cocktelPag)
+        console.log(cocktelByAlc)
+
+        console.log(maxPag)
+console.log()
+if(allData.some(function(x){return x.name === cocktelName})){
+    console.log("nombre repetido")
+}else addCocktail(cocktelName, cocktelCat, cocktelPrep, cocktelAlc, 4)
+
     }) 
+
  
     return(
 

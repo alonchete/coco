@@ -6,11 +6,12 @@ import Formulario from './Formulario';
 import Footer from './Footer';
 import Paginacion from './Paginacion';
 import '../sass/main.scss';
-import {AllCocktailsAlc, getCocktails} from './sevices'
+import {AllCocktailsAlc, getCocktails, getAllCocktails} from './sevices'
 import { useEffect, useState } from 'react';
 
 function App() {
   const [allCocktails, setAllCocktails] = useState([]);
+  const [allData, setAllData] = useState([]);
   const [posts, setPosts] = useState([]);
   const [paginaActual, setPagina] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
@@ -33,6 +34,8 @@ useEffect(() => {
   if(alcohol === false){setPagina(1)}
   getCocktails(alcohol, paginaActual).then((result) => {setPosts(result)});
   AllCocktailsAlc(alcohol).then((result) => {setAllCocktails(result)})
+  getAllCocktails().then((result) => {setAllData(result)});
+
 }, [searchTerm === '', alcohol, paginaActual]);
 
 return (
@@ -45,7 +48,7 @@ return (
          setSearchTerm={setSearchTerm} setAlcohol={setAlcohol} alcohol={alcohol}/>
         <Paginacion setTotalPaginas={setTotalPaginas} allCocktails={allCocktails} alcohol={alcohol} 
         paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina} posts={posts} searchTerm={searchTerm}/>
-        <Formulario AllCocktailsAlc={AllCocktailsAlc} allCocktails={allCocktails} setCocktelPag={setCocktelPag} cocktelPag={cocktelPag} />
+        <Formulario AllCocktailsAlc={AllCocktailsAlc} allData={allData}  allCocktails={allCocktails} setCocktelPag={setCocktelPag} cocktelPag={cocktelPag} />
         <Footer />        
       </>
     

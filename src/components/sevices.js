@@ -27,3 +27,9 @@ export const getCocktails = (alcohol, pagina) =>
  ( fetch(`${URL}?alcohol=${alcohol}&page=${pagina}`)
   .then((res) => res.json())
 )
+
+export const getAllCocktails = () =>
+ ( fetch(`${URL}`)
+  .then((res) => res.json())
+)
+
