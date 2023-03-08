@@ -6,6 +6,7 @@
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .carta{
     @include clearfix;

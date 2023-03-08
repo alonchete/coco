@@ -4,6 +4,7 @@
     align-items: center;
     min-height: 70vh;
     background: darkgoldenrod;
+    overflow: hidden;
 
     .contenedor .form.signin,
     .contenedor.signinForm .form.signup{//ESCONDO EL 2º FORMULARIO

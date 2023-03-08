@@ -6,6 +6,9 @@
     width: 100%;
     position: fixed;
     z-index: 1;
+    @media screen and (max-height: 512px){
+        height: 4rem;
+    }
     
 }
 
@@ -60,7 +63,7 @@
     background-color:black;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 800px){
     .nav__label{
         display: block;//para que se muestre
         cursor: pointer;
@@ -68,6 +71,9 @@
     .nav__menu{//lo negro
         position: fixed;
         top: 5rem;
+        @media screen and (max-height: 512px){
+            top: 4rem;
+        }
         bottom: 0;
         width: 100%;
         left: 0;

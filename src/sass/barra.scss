@@ -4,100 +4,22 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    min-height: 15vh;
-    //background-color: antiquewhite;
+    min-height: 200px;
     position: relative;
     width: 100%;
+    overflow: hidden;
+    //background-color: antiquewhite;
 
 
     .input-container {
+        position: relative;
         width: 700px;
         height: 50px;
-        
-        @media screen and (max-width: 775px){
-            width: 675px;
-        }
-        @media screen and (max-width: 762.5px){
-            width: 662.5px;
-        }
-        @media screen and (max-width: 750px){////
-            width: 650px;
-        }
-        @media screen and (max-width: 737.5px){
-            width: 637.5px;
-        }
-        @media screen and (max-width: 725px){
-            width: 625px;
-        }
-        @media screen and (max-width: 712.5px){
-            width: 612.5px;
-        }
-        @media screen and (max-width: 700px){//////////
-            width: 600px;
-        }
-        @media screen and (max-width: 687.5px){
-            width: 587.5px;
-        }
-        @media screen and (max-width: 675px){
-            width: 575px;
-        }
-        @media screen and (max-width: 662.5px){
-            width: 562.5px;
-        }
-        @media screen and (max-width: 650px){/////
-            width: 550px;
-        }
-        @media screen and (max-width: 637.5px){
-            width: 537.5px;
-        }
-        @media screen and (max-width: 625px){
-            width: 525px;
-        }
-        @media screen and (max-width: 612.5px){
-            width: 512.5px;
-        }
-        @media screen and (max-width: 600px){/////////////////
-            width: 500px;
-        }
-        @media screen and (max-width: 587.5px){
-            width: 487.5px;
-        }
-        @media screen and (max-width: 575px){
-            width: 475px;
-        }
-        @media screen and (max-width: 562.5px){
-            width: 462.5px;
-        }
-        @media screen and (max-width: 550px){///////
-            width: 450px;
-        }
-        @media screen and (max-width: 537.5px){
-            width: 437.5px;
-        }
-        @media screen and (max-width: 525px){
-            width: 425px;
-        }
-        @media screen and (max-width: 512.5px){
-            width: 412.5px;
-        }
-        @media screen and (max-width: 500px){/////////////////
-            width: 400px;
-        }
-        @media screen and (max-width: 487.5px){
-            width: 387.5px;
-        }
-        @media screen and (max-width: 475px){
-            width: 375px;
-        }
-        @media screen and (max-width: 462.5px){
-            width: 362.5px;
-        }
-        @media screen and (max-width: 450px){///////
-            width: 350px;
+        //width: 95%;
+        @media screen and (max-width: 760px){
+            width: 95%;
         }
         
-        // jajajaj quien es el genio que ha hecho este media query 🤣🤣🤣🤣
-
 
 
         border-radius: 2px;
@@ -115,8 +37,20 @@
             //shadow drch botom blur-radius
                     -.4rem -.4rem 1rem rgb(242, 181, 27);//por fuera
             //shadow izqu top blur-radius
-        position: relative;
         overflow: hidden;
+        @media screen and (max-width: 400px){//.3rem
+            box-shadow: inset .3rem .3rem 1rem rgb(143, 103, 3),//por dentro
+            //shadow izq top blur-radius
+            inset -.3rem -.3rem 1rem rgb(242, 181, 27),//por dentro
+            //shadow drch bottom blur-radius
+            0 0 0 .3rem darkgoldenrod,//grosor
+            //0 0 0 .5rem darkgoldenrod,//grosor
+            .3rem .3rem 1rem rgb(113, 82, 4),//por  fuera
+             //shadow drch botom blur-radius
+            -.3rem -.3rem 1rem rgb(242, 181, 27);//por fuera
+            //shadow izqu top blur-radius
+        }
+
         input {
             position: absolute;
             width: 100%;

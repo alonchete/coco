@@ -6,15 +6,21 @@
     overflow: hidden;
     clip-path: polygon(0 0, 100% 0, 100% 91.5vh, 0 91.5vh);
     //1800 1200 900 600 500
+    @media screen and (max-height: 512px){
+        margin-top: 4rem;
+        height: 96vh;
+    }
     
     @media screen and (max-width: 1200px){
         height: 80vh;
         clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 80vh);
     }
+    /*
     @media screen and (max-width: 900px){
         height: 70vh;
         clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 70vh);
     }
+    */
     @media screen and (max-width: 600px){
         height: 60vh;
         clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 60vh);
@@ -111,6 +117,12 @@
             -webkit-text-stroke: 1px #fff;/*borde blanco*/
             font-size: 4rem;
             background-position: -400px 0;/*inicio de relleno*/ 
+        }
+
+        @media screen and (max-width: 300px){
+            -webkit-text-stroke: 1px #fff;/*borde blanco*/
+            font-size: 2.7rem;
+            background-position: -280px 0;/*inicio de relleno*/ 
         }
 
         

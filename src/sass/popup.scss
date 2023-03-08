@@ -18,19 +18,23 @@
 
 
     .contenido{
-        position: relative;
+        position: absolute;//ES POSITION ABSOLUTE NO POSITION RELATIVE
         background-color: darkgoldenrod;
         display: grid;
         grid-template-rows: 1fr 1fr;
         margin-top: auto;
         justify-content: center;
-        justify-content: space-around;
+        //justify-content: space-around;
         
 
         height: 650px;
         width: 500px;
         border-radius: 15px;
      
+        
+        @media screen and (max-height: 700px){
+            height: 96%;
+        }
         @media screen and (max-width: 515px){
             width: 98%;
         }
@@ -60,21 +64,23 @@
         
         
         transition: all .7s;
-        transform: translateY(-100px);
+       // transform: translateY(-100px);
 
         a{
-            position: fixed;
+            position: absolute;//ERA PONER POSISTION ABSOLUTEEE
             top: 10px;
             right: 20px;
             font-size: 40px;
 
+            /*
             @media screen and (max-width: 400px){
                 font-size: 30px;
             }
+            
             @media screen and (max-width: 350px){
                 top: 20px;
                 right: 25px;
-            }
+            }*/
             font-weight: 600;
             color:black;
             cursor: pointer;
@@ -160,6 +166,22 @@
                 width: 300px;
                 margin: auto;
                 position: relative;
+                @media screen and (max-height: 512px){
+                    height: 250px;
+                    width: 200px;
+                }
+                @media screen and (max-width: 450px){
+                    height: 300px;
+                    width: 250px;
+                    margin-top: 40px;
+                }
+                @media screen and (max-width: 300px){
+                    height: 300px;
+                    width: 200px;
+                    margin-top: 40px;
+                }
+                
+               
 
                 img{
                     border-radius: 15px;
