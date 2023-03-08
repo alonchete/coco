@@ -18,7 +18,9 @@
         ;
         // background-color: aliceblue;
         border-radius: 15px;
-       
+        @media screen and (max-height: 500px){
+            height: 300px;
+        }
 
         .caja{
             position: absolute;

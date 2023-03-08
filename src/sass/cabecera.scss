@@ -119,6 +119,12 @@
             background-position: -400px 0;/*inicio de relleno*/ 
         }
 
+        @media screen and (max-width: 380px){
+            -webkit-text-stroke: 1px #fff;/*borde blanco*/
+            font-size: 3rem;
+            background-position: -300px 0;/*inicio de relleno*/ 
+        }
+
         @media screen and (max-width: 300px){
             -webkit-text-stroke: 1px #fff;/*borde blanco*/
             font-size: 2.7rem;

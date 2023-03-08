@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    min-height: 550px;
     background: darkgoldenrod;
     overflow: hidden;
 
@@ -18,6 +18,9 @@
 
     .contenedor{
         padding: 40px;
+        @media screen and (max-width: 400px){//.3rem
+            padding: 20px;
+        }
         border-radius: 20px;
         box-shadow:inset .5rem .5rem 15px rgb(143, 103, 3),//por dentro
         inset -.4rem -.4rem 15px rgb(242, 181, 27),//por dentro
@@ -43,6 +46,9 @@
             .inputBox{
                 position: relative;
                 width: 300px;
+                @media screen and (max-width: 400px){//.3rem
+                    width: 100%;
+                }
 
                 input:valid ~ spam,
                 input:focus ~ spam{
@@ -55,6 +61,11 @@
                     border-radius: 10px;
                     letter-spacing: 0.1em;
                     transition: 0.5s;
+                }
+                //spam de radio para arriba colocado
+                input[type="radio"]:valid ~ spam,
+                input[type="radio"]:focus ~ spam{
+                    transform: translateY(1.5px);
                 }
                 input:valid,
                 input:focus{
@@ -71,14 +82,18 @@
                     font-weight: 300;
                     border-radius: 25px;
                     font-size: 1em;
-                    box-shadow: -5px -5px 15px rgb(242, 181, 27),
-                    5px 5px 15px rgb(113, 82, 4);
+                    
                     transition: 0.5s;
                     text-decoration: none;
                     outline:none;//adios bordes feos
                 }
 
-                input[type="submit"], input[type="radio"]{
+                input[type="text"]{
+                    box-shadow: -5px -5px 15px rgb(242, 181, 27),
+                    5px 5px 15px rgb(113, 82, 4);
+                }
+
+                input[type="submit"]{
                     background:  rgb(83, 60, 1);
                     color: darkgoldenrod;
                     padding: 10px 0;
@@ -100,6 +115,11 @@
                     font-weight: 300;
                     letter-spacing: 0,05em;
                     color: rgba(255,255,255,0.5);
+                    @media screen and (max-width: 300px){
+                        font-size: .95em;
+                        transform: translateY(3px);//pososcionar letras
+
+                    }
                 }
 
                 i{
@@ -111,6 +131,10 @@
                     padding-right: 8px;
                     color:  rgb(83, 60, 1);
                     border-right: 1px solid  rgb(83, 60, 1);
+                    @media screen and (max-width: 300px){
+                        transform: translateY(-2px);//posicionar dibujos
+
+                    }
                 }
             }
 
@@ -118,6 +142,7 @@
                 color: rgba(255,255,255, 0.5);
                 font-size: 0.75em;
                 font-weight: 300;
+                
 
                 a{
                     font-weight: 500;
@@ -135,8 +160,10 @@
     padding: 20px 48px;
     border-radius: 16px;
     background: darkgoldenrod;
+    /*
     box-shadow: -5px -5px 15px rgb(242, 181, 27),
                     5px 5px 15px rgb(113, 82, 4);
+                    */
     width: 300px;
     .wrapper {
         margin: 8px 0;
@@ -159,6 +186,7 @@
             /* ...existing styles */
             display: grid;
             place-content: center;
+            color: red;
           }
           
           input[type="radio"]::before {
@@ -168,7 +196,7 @@
             border-radius: 50%;
             transform: scale(0);
             transition: 120ms transform ease-in-out;
-            box-shadow: inset 1em 1em var(--form-control-color);
+           // box-shadow: inset 1em 1em var(--form-control-color);
           }
           
           input[type="radio"]:checked::before {

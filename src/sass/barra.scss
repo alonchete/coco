@@ -39,15 +39,15 @@
             //shadow izqu top blur-radius
         overflow: hidden;
         @media screen and (max-width: 400px){//.3rem
-            box-shadow: inset .3rem .3rem 1rem rgb(143, 103, 3),//por dentro
+            box-shadow: inset .3rem .3rem .5rem rgb(143, 103, 3),//por dentro
             //shadow izq top blur-radius
-            inset -.3rem -.3rem 1rem rgb(242, 181, 27),//por dentro
+            inset -.3rem -.3rem .5rem rgb(242, 181, 27),//por dentro
             //shadow drch bottom blur-radius
             0 0 0 .3rem darkgoldenrod,//grosor
             //0 0 0 .5rem darkgoldenrod,//grosor
-            .3rem .3rem 1rem rgb(113, 82, 4),//por  fuera
+            .3rem .3rem .5rem rgb(113, 82, 4),//por  fuera
              //shadow drch botom blur-radius
-            -.3rem -.3rem 1rem rgb(242, 181, 27);//por fuera
+            -.3rem -.3rem .5rem rgb(242, 181, 27);//por fuera
             //shadow izqu top blur-radius
         }
 
