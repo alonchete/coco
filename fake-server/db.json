@@ -809,6 +809,14 @@
       "img": "http://localhost:3002/Zombie.jpeg",
       "categoria": "categoria2",
       "page": 4
+    },
+    {
+      "name": "MojitoCVX",
+      "categoria": "Categoría2",
+      "preparation": "CXVX",
+      "alcohol": true,
+      "page": 5,
+      "id": "a_1XZTb"
     }
   ]
 }

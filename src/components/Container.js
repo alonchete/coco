@@ -1,15 +1,14 @@
 import {addCocktail} from './sevices'
 import { useState, useEffect } from 'react';
-import {AllCocktailsAlc} from './sevices'
+import {AllCocktailsAlc, getCocktails, getAllCocktails} from './sevices'
 
-function Container({AllCocktailsAlc, allCocktails, setCocktelPag, allData, cocktelPag}){
+function Container({AllCocktailsAlc, allCocktails, setCocktelPag, cocktelPag}){
     const [cocktelName, setCocktelName] = useState('');
-    const [cocktelCat, setCocktelCat] = useState(1);
+    const [cocktelCat, setCocktelCat] = useState();
     const [cocktelPrep, setCocktelPrep] = useState('');
     const [cocktelAlc, setCocktelAlc] = useState(true);
     const [cocktelByAlc, setCocktelByAlc] = useState([]);
-    const [maxPag, setMaxPag] = useState([]);
-    
+    const [allData, setAllData] = useState([]);
 
 
     function handleChange (event){
@@ -26,20 +25,40 @@ function Container({AllCocktailsAlc, allCocktails, setCocktelPag, allData, cockt
     cocktelAlc === false ? setCocktelAlc(true) : setCocktelAlc(false)
     }
 
-
     useEffect(() => {
-        AllCocktailsAlc(cocktelAlc).then((result) => {setCocktelByAlc(result)}) 
-        setMaxPag(cocktelByAlc.map(function(x){return x.page}))     
+        AllCocktailsAlc(cocktelAlc).then((result) => {setCocktelByAlc(result)});
+     
       }, [cocktelAlc]);
 
-    const agregarCocktel= ( () =>{
-        console.log(cocktelByAlc)
 
-        console.log(maxPag)
-console.log()
-if(allData.some(function(x){return x.name === cocktelName})){
+      useEffect(() => {
+        getAllCocktails().then((result) => {setAllData(result)});
+      }, [addCocktail]);
+
+
+      let paginas = cocktelByAlc.filter(function(x){
+        return x.page === cocktelByAlc[cocktelByAlc.length - 1].page;
+      })
+
+      function addPage(){
+       
+          if(paginas.length > 25) return 1;
+          else return 0;
+    
+      }
+      console.log(paginas)
+
+     const agregarCocktel=  ( () =>{
+        console.log(addPage())
+        console.log(allData)
+        console.log(cocktelByAlc[cocktelByAlc.length - 1].page)
+if(allData.some(function(x){return x.name === cocktelName}) || cocktelPrep === "" || cocktelName === "" || cocktelCat === undefined){
     console.log("nombre repetido")
-}else addCocktail(cocktelName, cocktelCat, cocktelPrep, cocktelAlc, 4)
+}else {
+    addCocktail(cocktelName, cocktelCat, cocktelPrep, cocktelAlc,(cocktelByAlc[cocktelByAlc.length - 1].page + addPage()))
+window.location.reload()
+    
+}
 
     }) 
 
@@ -51,7 +70,7 @@ if(allData.some(function(x){return x.name === cocktelName})){
                 <div class="form signup">
                     <h2>Añade tu cocoktel!!</h2>
                     <div class="inputBox">
-                        <input type="text" required="required" onChange={handleChange} />
+                        <input type="text" required="required" defaultValue={"Mojito"} onChange={handleChange} />
                         <i class="fa-regular fa-user"></i>
                         <spam>Nombre de tu cocktail</spam>
                     </div>

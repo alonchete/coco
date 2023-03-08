@@ -1,12 +1,12 @@
 import Container from './Container';
 
-function Formulario({AllCocktailsAlc,allCocktails, setCocktelPag, cocktelPag, allData}){
+function Formulario({AllCocktailsAlc,allCocktails, setCocktelPag, cocktelPag}){
 
     return(
 
         
         <div class="formulario">
-        <Container allData={allData} AllCocktailsAlc={AllCocktailsAlc} allCocktails={allCocktails} setCocktelPag={setCocktelPag} cocktelPag={cocktelPag} />
+        <Container  AllCocktailsAlc={AllCocktailsAlc} allCocktails={allCocktails} setCocktelPag={setCocktelPag} cocktelPag={cocktelPag} />
         </div>   
     
     )
