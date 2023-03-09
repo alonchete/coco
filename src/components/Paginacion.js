@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Pagina from "./Pagina";
 
-export default function Paginacion({setTotalPaginas, allCocktails, paginasTotales, paginaActual, setPagina, posts, searchTerm}){
+export default function Paginacion({setTotalPaginas, allCocktails, paginasTotales, paginaActual, setPagina}){
     const pages = [];
 
     const styleUL = {

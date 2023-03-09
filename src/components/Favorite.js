@@ -20,6 +20,7 @@ function Favorite({favorites}){
                 });
             });
         } 
+
       , [showFavs]);
 
      
@@ -29,17 +30,16 @@ return(
         <>
         <h1>favorites siuuu</h1>
         <div className="cartas">
-            {console.log(resultFav)}
     
     {
 
 showFavs  === true ?  resultFav.map(function(x){
-        return <Cartas cocktail={x[0]}/> })  : ""         
+        return <Cartas cocktail={x[0]} showFavs={showFavs}/> })  : ""         
     }
     <div class="barra" id="buscar">
 
         <div className="boton"><button className="elemento"  onClick={() =>{
-            showFavs === false ? setShowFavs(true) : setShowFavs(false)
+            showFavs === false ? setShowFavs(true) : setShowFavs(false);
         }} >Show Favs</button></div>
         </div>
     </div>

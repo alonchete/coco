@@ -1,34 +1,44 @@
 import { useState, useEffect } from "react";
-import { addCocktailFavorite, removeFavorite} from "./sevices";
+import { addCocktailFavorite, removeFavorite, getFavorites} from "./sevices";
 
  function Popup(props){
 
 
     const hijoApadre = props.hijoApadre;
-    const [style, setStyle] = useState("heart2");
+    const [style, setStyle] = useState();
+    const [favs, setFavs] = useState([]);
+    const [favorite, setFavorite] = useState();
 
-    const [favorite, setFavorite] = useState(false);
+    const popupAcarta = props.popupAcarta;
 
-   
+
+    useEffect(() => {
+        getFavorites().then((result) => {setFavs(result)})
+        
+        if(favs.some(function(isFav){return isFav.cocktelId === props.id})){
+            setStyle("heart");
+        }else{
+            setStyle("heart2")
+        } 
+        
+    }, [popupAcarta])
+
 
     function favoritoClick(){
-
-    if(favorite === true){
-        setFavorite(false);
+    if(favs.some(function(isFav){return isFav.cocktelId === props.id})){
+        setFavorite(false)
         setStyle("heart2");
-        removeFavorite(props.id)
 
+        removeFavorite(props.id)
     }
     else{
         setFavorite(true)
         setStyle("heart");
+
         addCocktailFavorite(props.id)
+
     }
     }
-
-
-    const popupAcarta = props.popupAcarta;
-
 
     return (props.trigger) ? (
         <div id="popupbox" class="popup">
@@ -51,8 +61,7 @@ import { addCocktailFavorite, removeFavorite} from "./sevices";
                         <p>{props.prep}</p>
                         <button class="favorito"
                          onClick={favoritoClick}>
-                            {favorite === false ? "Añadir a Favoritos"
-                             : "Quitar a Favoritos"}</button>
+                            {"Favorito"}</button>
                         
                     </div>
                     

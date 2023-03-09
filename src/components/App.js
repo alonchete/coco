@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [allCocktails, setAllCocktails] = useState([]);
-  const [posts, setPosts] = useState([]);
+  const [cocktails, setCocktails] = useState([]);
   const [paginaActual, setPagina] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const [alcohol, setAlcohol] = useState(false);
@@ -27,14 +27,15 @@ useEffect(() => {
   fetch(`${URL}?name_like=${searchTerm}`)
     .then((res) => res.json())
     .then((result) => {
-      setPosts(result);
+      setCocktails(result);
     });
 }, [searchTerm, searchTerm > 1]);
 
 useEffect(() => {
   if(alcohol === false){setPagina(1)}
-  getCocktails(alcohol, paginaActual).then((result) => {setPosts(result)});
+  getCocktails(alcohol, paginaActual).then((result) => {setCocktails(result)});
   AllCocktailsAlc(alcohol).then((result) => {setAllCocktails(result)})
+
 
 }, [searchTerm === '', alcohol, paginaActual]);
 
@@ -42,17 +43,18 @@ useEffect(() => {
   getFavorites().then((result) => {setFavs(result)})
 }, []);
 
+
 return (
 
       <>
         <Nav />
         <Cab />
         <Categorias/>
-        <Barra  paginaActual={paginaActual} posts={posts} setPagina={setPagina}
+        <Barra  paginaActual={paginaActual} cocktails={cocktails} setPagina={setPagina}
          setSearchTerm={setSearchTerm} setAlcohol={setAlcohol} alcohol={alcohol}/>
+         <Paginacion setTotalPaginas={setTotalPaginas} allCocktails={allCocktails} alcohol={alcohol} 
+        paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina} searchTerm={searchTerm}/>
         <Favorite favorites={favs}/>
-        <Paginacion setTotalPaginas={setTotalPaginas} allCocktails={allCocktails} alcohol={alcohol} 
-        paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina} posts={posts} searchTerm={searchTerm}/>
         <Formulario AllCocktailsAlc={AllCocktailsAlc} allCocktails={allCocktails} setCocktelPag={setCocktelPag} cocktelPag={cocktelPag} />
         <Footer />        
       
