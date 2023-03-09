@@ -2,12 +2,12 @@ import Popup from './Popup';
 import {  useState, useEffect} from 'react';
 import { AllCocktailsAlc } from './sevices';
 
-function Cartas(p, favorites){
+function Cartas(prop, favorites){
 
-    let name = p.cocktail.name;
-    let img = p.cocktail.img;
-    let id = p.cocktail.id;
-    let prep = p.cocktail.preparation;
+    let name = prop.cocktail.name;
+    let img = prop.cocktail.img;
+    let id = prop.cocktail.id;
+    let prep = prop.cocktail.preparation;
  
     const [clicked, setClicked] = useState(false);
 

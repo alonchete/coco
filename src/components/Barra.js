@@ -56,9 +56,10 @@ var count = 0;
 
 
     {
-     cocktails.map(function(x){
+     cocktails.map(function(cock){
         count++;
-        return(cocktails.length > 20 ? (count < cocktails.length/verMas ? <Cartas cocktail={x}/> : " ") : <Cartas cocktail={x}/> )})          
+        return(cocktails.length > 20 ? (count < cocktails.length/verMas ? <Cartas key={cock.name} cocktail={cock}/> 
+        : " ") : <Cartas key={cock.name}  cocktail={cock}/> )})          
     }
     </div><br/>
 

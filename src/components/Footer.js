@@ -4,14 +4,14 @@ function footer(){
         <footer>
           <div className="social" id="contacto">
              <ul>
-                <li className="elemento "><spam className='fab fa-facebook-f'></spam></li>
+                <li className="elemento "><span className='fab fa-facebook-f'></span></li>
              
-                <li className="elemento"><spam className='fab fa-twitter'></spam></li>
+                <li className="elemento"><span className='fab fa-twitter'></span></li>
               </ul>
               <ul>
-                <li className="elemento"><spam className='fab fa-instagram'></spam></li>
+                <li className="elemento"><span className='fab fa-instagram'></span></li>
               
-                <li className="elemento" ><a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank" ><spam className='fab fa-youtube'></spam></a></li>
+                <li className="elemento" ><a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank" ><span className='fab fa-youtube'></span></a></li>
              </ul>
           </div>
           <div className="derechos">

@@ -38,9 +38,6 @@ import { addCocktailFavorite, removeFavorite, getFavorites} from "./sevices";
 
         setFavorite(true)
         addCocktailFavorite(props.id)
-
-
-
     }
     }
 

@@ -37,14 +37,14 @@ return(
     
     {
 
-showFavs  === true ?  resultFav.map(function(x){
-        return <Cartas cocktail={x[0]} showFavs={showFavs}/> })  : ""         
+showFavs  === true ?  resultFav.map(function(cock){
+        return <Cartas key={cock[0].name} cocktail={cock[0]} showFavs={showFavs}/> })  : ""         
     }
-    <div class="barra">
+    <div className="barra">
 
         <div className="boton"><button className="elemento"  onClick={() =>{
             showFavs === false ? setShowFavs(true) : setShowFavs(false);
-        }} >Show Favs</button></div>
+        }} >Mostrar Favoritos</button></div>
         </div>
     </div>
         

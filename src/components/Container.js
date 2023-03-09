@@ -46,14 +46,12 @@ function Container({AllCocktailsAlc, allCocktails, setCocktelPag, cocktelPag}){
           else return 0;
     
       }
-      console.log(paginas)
 
      const agregarCocktel=  ( () =>{
         console.log(addPage())
         console.log(allData)
         console.log(cocktelByAlc[cocktelByAlc.length - 1].page)
 if(allData.some(function(x){return x.name === cocktelName}) || cocktelPrep === "" || cocktelName === "" || cocktelCat === undefined){
-    console.log("nombre repetido")
 }else {
     addCocktail(cocktelName, cocktelCat, cocktelPrep, cocktelAlc,(cocktelByAlc[cocktelByAlc.length - 1].page + addPage()))
 window.location.reload()

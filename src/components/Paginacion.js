@@ -26,7 +26,7 @@ export default function Paginacion({setTotalPaginas, allCocktails, paginasTotale
     }
 
     useEffect(() => {
-        setTotalPaginas(Math.max(...allCocktails.map(function(x){return x.page})) + 1);
+        setTotalPaginas(Math.max(...allCocktails.map(function(list){return list.page})) + 1);
     }, [allCocktails][paginaActual])
 
     
