@@ -41,7 +41,7 @@ useEffect(() => {
 
 useEffect(() => {
   getFavorites().then((result) => {setFavs(result)})
-}, []);
+}, [favs]);
 
 
 return (

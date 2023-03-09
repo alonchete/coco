@@ -2,7 +2,7 @@ import Popup from './Popup';
 import {  useState, useEffect} from 'react';
 import { AllCocktailsAlc } from './sevices';
 
-function Cartas(p){
+function Cartas(p, favorites){
 
     let name = p.cocktail.name;
     let img = p.cocktail.img;
@@ -34,6 +34,7 @@ return(
 
 
     <Popup 
+        favorites={favorites}
         id={id}
         name={name} 
         img={img} 
