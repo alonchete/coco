@@ -8,6 +8,7 @@ function Favorite({favorites}){
     const [showFavs, setShowFavs] = useState(false);
 
 
+ 
 
     useEffect(() => {
        
@@ -30,23 +31,9 @@ function Favorite({favorites}){
 
 
 return(    
-    <>
-
+        <>
         <h1>favorites siuuu</h1>
         <div className="cartas">
-<<<<<<< HEAD
-
-        {
-            showFavs  === true ?  resultFav.map(function(x){
-            return <Cartas cocktail={x[0]}/> })  : ""         
-        }
-        <div className="barra" id="buscar">
-
-            <div className="boton"><button className="elemento"  onClick={() =>{
-                showFavs === false ? setShowFavs(true) : setShowFavs(false)
-            }} >Show Favs</button></div>
-            </div>
-=======
     
     {
 
@@ -58,8 +45,8 @@ showFavs  === true ?  resultFav.map(function(x){
         <div className="boton"><button className="elemento"  onClick={() =>{
             showFavs === false ? setShowFavs(true) : setShowFavs(false);
         }} >Show Favs</button></div>
->>>>>>> 256352062bf8413e28ad7f40bf78526edfaeb80d
         </div>
+    </div>
         
     </>   
 )

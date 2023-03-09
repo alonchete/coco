@@ -52,17 +52,11 @@ return (
         <Categorias/>
         <Barra  paginaActual={paginaActual} cocktails={cocktails} setPagina={setPagina}
          setSearchTerm={setSearchTerm} setAlcohol={setAlcohol} alcohol={alcohol}/>
-<<<<<<< HEAD
-        
-        <Paginacion setTotalPaginas={setTotalPaginas} allCocktails={allCocktails} alcohol={alcohol} 
-        paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina} posts={posts} searchTerm={searchTerm}/>
-
+    
         <Favorite favorites={favs}/>
-=======
          <Paginacion setTotalPaginas={setTotalPaginas} allCocktails={allCocktails} alcohol={alcohol} 
         paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina} searchTerm={searchTerm}/>
         <Favorite favorites={favs} setFavs={setFavs}/>
->>>>>>> 256352062bf8413e28ad7f40bf78526edfaeb80d
         <Formulario AllCocktailsAlc={AllCocktailsAlc} allCocktails={allCocktails} setCocktelPag={setCocktelPag} cocktelPag={cocktelPag} />
         <Footer />        
       
