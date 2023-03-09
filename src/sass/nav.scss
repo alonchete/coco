@@ -6,8 +6,16 @@
     width: 100%;
     position: fixed;
     z-index: 1;
+    margin: 0;
+    overflow: hidden;
     @media screen and (max-height: 600px){
         height: 4rem;
+    }
+    @media screen and (max-height: 550px){
+        left: 0;
+        height: 100%;
+        width: 4rem;
+        overflow: hidden;
     }
    
     
@@ -29,6 +37,9 @@
         }
 
     }
+    @media screen and (max-height: 550px){
+        flex-direction: column-reverse;
+    }
     
 }
 
@@ -36,12 +47,16 @@
     display: flex;
     flex-direction: row;
     gap: 4em;/*espaciador*/
+    @media screen and (max-height: 300px){
+        flex-wrap: wrap;
+    }
     .nav__item{
         color: #fff;
         font-size: 1.2rem;
         text-transform: uppercase;
         font-weight: 900;
         --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        
     }
     .nav__item::after{//subrrayado clippy css
         content: "";
@@ -67,6 +82,7 @@
 .nav__input:checked + .nav__menu{
     background-color:black;
 }
+
 
 @media screen and (max-width: 800px){
     .nav__label{
@@ -100,3 +116,48 @@
     }
     
 }
+
+@media screen and (max-height: 550px){
+    .nav__label{
+        display: block;//para que se muestre
+        cursor: pointer;
+        padding-top: 10px;
+    }
+    .nav__menu{//lo negro
+        position: fixed;
+        left: 5rem;
+        
+        @media screen and (max-height: 600px){
+            left: 4rem;
+            top: 0;
+        }
+        
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);//cuando el menu no esta seleccionado
+        transition: clip-path 1s ease;
+        @media screen and (max-height: 300px){
+            padding: 40px 0;
+            justify-content: space-between;
+            align-content: space-around;
+        }
+    }
+
+    //cuando input este seleccionado se ve
+    .nav__input:checked + .nav__menu{
+       clip-path: circle(100% at center);
+    }
+    .nav__input + .nav__menu{
+        background-color:black;
+    }
+    
+}
+
+
+
