@@ -6,9 +6,12 @@
     overflow: hidden;
     clip-path: polygon(0 0, 100% 0, 100% 91.5vh, 0 91.5vh);
     //1800 1200 900 600 500
-    @media screen and (max-height: 512px){
+    @media screen and (max-height: 600px){
         margin-top: 4rem;
         height: 96vh;
+    }
+    @media screen and (max-height: 550px){///NAV VERTICAL
+       margin: 0;
     }
     
     @media screen and (max-width: 1200px){

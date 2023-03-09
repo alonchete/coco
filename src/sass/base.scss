@@ -12,4 +12,7 @@ body{
     //para que no salga la barra de scroll horizontal
     max-width: 100%;
     overflow-x: hidden;
+    @media screen and (max-height: 550px){
+        margin-left: 4rem;
+    }
 }
