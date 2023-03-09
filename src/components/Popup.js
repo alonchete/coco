@@ -50,8 +50,8 @@ import { addCocktailFavorite, removeFavorite, getFavorites} from "./sevices";
     }
 
     return (props.trigger) ? (
-        <div id="popupbox" class="popup">
-            <div class="contenido">
+        <div id="popupbox" className="popup">
+            <div className="contenido">
 
                 <a href="#cierro"  onClick={() => hijoApadre(false)} >&times;</a> 
 
@@ -60,15 +60,15 @@ import { addCocktailFavorite, removeFavorite, getFavorites} from "./sevices";
                 popupAcarta(false)} >&times;</a> 
 
                 
-                    <div class="imagen">
+                    <div className="imagen">
                         <img  src={props.img} />
-                        <div class={style}></div>
+                        <div className={style}></div>
                     </div>
 
-                    <div class="ingredientes">
+                    <div className="ingredientes">
                         <p className="nombre_coco">{props.name}</p>
                         <p>{props.prep}</p>
-                        <button class="favorito"
+                        <button className="favorito"
                          onClick={favoritoClick}>
                             {"Favorito"}</button>
                         

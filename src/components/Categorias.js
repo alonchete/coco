@@ -35,11 +35,11 @@ const categorias = [
 
 function Categorias(){
     return( 
-        <div class="categorias" id="categorias">
+        <div className="categorias" id="categorias">
 
          {categorias.map(function(x){
             return(
-                    <div key={x.ObjectId} class="card">
+                    <div key={x.ObjectId} className="card">
                         <Categoria cart={x}  />
                     </div>
                  )

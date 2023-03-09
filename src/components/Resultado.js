@@ -10,15 +10,15 @@ function Resultado(p){
 return(
     
             <section>
-                <div class="contenedor u-margin-bottom-big">
+                <div className="contenedor u-margin-bottom-big">
 
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
+                    <div className="flip-card">
+                        <div className="flip-card-inner">
+                            <div className="flip-card-front">
                                 <img src={img} alt="..." />
 
                             </div>
-                            <div class="flip-card-back">
+                            <div className="flip-card-back">
                                 
                                 <img  src={img} alt="..."/>
                                 
