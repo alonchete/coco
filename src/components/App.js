@@ -54,7 +54,7 @@ return (
          setSearchTerm={setSearchTerm} setAlcohol={setAlcohol} alcohol={alcohol}/>
          <Paginacion setTotalPaginas={setTotalPaginas} allCocktails={allCocktails} alcohol={alcohol} 
         paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina} searchTerm={searchTerm}/>
-        <Favorite favorites={favs}/>
+        <Favorite favorites={favs} setFavs={setFavs}/>
         <Formulario AllCocktailsAlc={AllCocktailsAlc} allCocktails={allCocktails} setCocktelPag={setCocktelPag} cocktelPag={cocktelPag} />
         <Footer />        
       

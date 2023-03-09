@@ -1,13 +1,19 @@
 import { useState, useEffect } from "react";
 import Cartas from "./Cartas";
-import { findCoktel } from "./sevices";
+import { findCoktel, getFavorites } from "./sevices";
 
-function Favorite({favorites}){
+function Favorite({favorites, setFavs}){
   
     const [resultFav, setFavRes] = useState(favorites.map(favorite => ({ objectID: favorite.cocktelId})));
     const [showFavs, setShowFavs] = useState(false);
+
+
+  
+
+
     useEffect(() => {
-       
+        getFavorites().then((result) => {setFavs(result)})
+
             favorites.forEach(async (favorites, i) => {
                 const fav = await findCoktel(favorites.cocktelId);
                 setFavRes(favs => {
