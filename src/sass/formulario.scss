@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 550px;
+    min-height:650px;
     background: darkgoldenrod;
     overflow: hidden;
     font-size: 1.5rem;
@@ -79,6 +79,7 @@
                 input[type="radio"]{
                     accent-color: #000;
                     color: #000;
+                    transform: translateX(40px);
                 }
 
                 input{

@@ -47,8 +47,9 @@
     display: flex;
     flex-direction: row;
     gap: 4em;/*espaciador*/
-    @media screen and (max-height: 300px){
+    @media screen and (max-height: 550px){
         flex-wrap: wrap;
+        gap: 2em;/*espaciador*/
     }
     .nav__item{
         color: #fff;
