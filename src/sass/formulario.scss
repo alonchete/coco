@@ -46,12 +46,13 @@
             .inputBox{
                 position: relative;
                 width: 300px;
+                
                 @media screen and (max-width: 400px){//.3rem
                     width: 100%;
                 }
 
-                input:valid ~ spam,
-                input:focus ~ spam{
+                input:valid ~ span,
+                input:focus ~ span{
                     color:  rgb(83, 60, 1);
                     border: 1px solid rgb(83, 60, 1);
                     background:darkgoldenrod ;
@@ -62,9 +63,9 @@
                     letter-spacing: 0.1em;
                     transition: 0.5s;
                 }
-                //spam de radio para arriba colocado
-                input[type="radio"]:valid ~ spam,
-                input[type="radio"]:focus ~ spam{
+                //span de radio para arriba colocado
+                input[type="radio"]:valid ~ span,
+                input[type="radio"]:focus ~ span{
                     transform: translateY(1.5px);
                 }
                 input:valid,
@@ -93,6 +94,21 @@
                     5px 5px 15px rgb(113, 82, 4);
                 }
 
+                .opciones{
+                    //appearance: none;
+
+                    //border-radius: 50%;
+                    //width: 16px;
+                   // height: 16px;
+                  
+                    border: 2px solid #999;
+                    transition: 0.2s all linear;
+                    //margin-right: 5px;
+                  
+                   // position: relative;
+                    //top: 4px;
+                }
+
                 input[type="submit"]{
                     background:  rgb(83, 60, 1);
                     color: darkgoldenrod;
@@ -106,7 +122,7 @@
 
                 }
 
-                spam{
+                span{
                     position: absolute;
                     left: 0;
                     padding: 12px 10px 12px 48px;
@@ -186,7 +202,6 @@
             /* ...existing styles */
             display: grid;
             place-content: center;
-            color: red;
           }
           
           input[type="radio"]::before {

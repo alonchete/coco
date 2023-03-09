@@ -32,7 +32,7 @@ function Favorite({favorites}){
 
 return(    
         <>
-        <h1>favorites siuuu</h1>
+        <h1>Tus Favoritos</h1>
         <div className="cartas">
     
     {

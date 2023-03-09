@@ -14,7 +14,7 @@ const categorias = [
     },
 
     {
-        title:'Long drinks',
+        title:'Long Drinks',
         ObjectId: 1,
         img:categoria2
 

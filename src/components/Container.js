@@ -46,6 +46,7 @@ function Container({AllCocktailsAlc, allCocktails, setCocktelPag, cocktelPag}){
           else return 0;
     
       }
+      console.log(paginas)
 
      const agregarCocktel=  ( () =>{
         console.log(addPage())
@@ -76,16 +77,16 @@ window.location.reload()
                     <div className="inputBox">
                         <input type="radio" required="required" id="Categoría1" onChange={CatChange}  
                         value="Categoría1" checked={cocktelCat === "Categoría1" ? true : false}     />
-                        <span>Categoría1</span>
+                        <span>Short Drinks</span>
                         <input type="radio" required="required" id="Categoría2" onChange={CatChange}
                          value="Categoría2" checked={cocktelCat === "Categoría2" ? true : false} />
-                        <span>Categoría2</span>
+                        <span>Long Drinks</span>
                         <input type="radio" required="required" id="Categoría3"onChange={CatChange}
                          value="Categoría3" checked={cocktelCat === "Categoría3" ? true : false} />
-                        <span>Categoría3</span>
+                        <span>Aperitivos</span>
                         <input type="radio" required="required" id="Categoría4" onChange={CatChange} 
                         value="Categoría4" checked={cocktelCat === "Categoría4" ? true : false} />
-                        <span>Categoría4</span>
+                        <span>Digestivos</span>
                     </div>
                     <div className="inputBox">
                         <input type="text" required="required" onChange={PrepChange} />

@@ -17,17 +17,17 @@ return(
 
   
 
-    <label form="menu" className="nav__label">
+    <label for="menu" className="nav__label">
         <img src={menu}/>
     </label>
 
     <input type="checkbox" id="menu" className="nav__input"/>
     
-    <div className="nav__menu">
+    <div class="nav__menu">
       <a href="#home" className="nav__item">Home</a>
       <a href="#categorias" className="nav__item">Categorias</a>
-      <a href="#buscar" className="nav__item">buscar</a>
-      <a href="#favorites" className="nav__item">Favoritos</a>
+      <a href="#buscar" className="nav__item">Buscar</a>
+      <a href="#contacto" className="nav__item">Contacto</a>
      </div>
 
 </div>
