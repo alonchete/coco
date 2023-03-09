@@ -1,5 +1,6 @@
 import Popup from './Popup';
-import {  useState } from 'react';
+import {  useState, useEffect} from 'react';
+import { AllCocktailsAlc } from './sevices';
 
 function Cartas(p){
 
@@ -11,8 +12,10 @@ function Cartas(p){
     const [clicked, setClicked] = useState(false);
 
     const popupAcarta = (isclicked) => {
-        setClicked(isclicked)
+        setClicked(isclicked)    
     }
+
+    
 
 return(
 <>

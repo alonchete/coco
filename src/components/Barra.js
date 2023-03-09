@@ -6,7 +6,7 @@ import Cartas from './Cartas';
 import Popup from './Popup';
 import Pagina from './Pagina';
 
- function Barra({ posts,setAlcohol,alcohol,setSearchTerm, paginaActual}){
+ function Barra({ cocktails,setAlcohol,alcohol,setSearchTerm, paginaActual}){
 
     const [verMas, setVerMas] = useState(2);
  
@@ -16,14 +16,14 @@ import Pagina from './Pagina';
     }
 
     function alcoholClick(){
-        alcohol === false ? setAlcohol(true) : setAlcohol(false);
+        alcohol === true ? setAlcohol(false) : setAlcohol(true);
+
     }
 
    
 var count = 0;
 
    function VerMas(){
-    
     verMas === 2 ? setVerMas(1):setVerMas(2);
    }
 
@@ -56,13 +56,18 @@ var count = 0;
 
 
     {
-     posts.map(function(x){
+     cocktails.map(function(x){
         count++;
-        return(posts.length > 20 ? (count < posts.length/verMas ? <Cartas cocktail={x}/> : " ") : <Cartas cocktail={x}/> )})          
+        return(cocktails.length > 20 ? (count < cocktails.length/verMas ? <Cartas cocktail={x}/> : " ") : <Cartas cocktail={x}/> )})          
     }
 </div><br/>
+<<<<<<< HEAD
 <div className="barra" id="buscar" >
  {posts.length > 20  ?<div className="boton"><button className='elemento'  onClick={VerMas}>{verMas === 2 ? "Ver mas ": "Ver menos"}
+=======
+<div class="barra" id="buscar">
+ {cocktails.length > 20  ?<div class="boton"><button className='elemento'  onClick={VerMas}>{verMas === 2 ? "Ver mas ": "Ver menos"}
+>>>>>>> 256352062bf8413e28ad7f40bf78526edfaeb80d
     </button> 
 </div> : " "}
 </div>

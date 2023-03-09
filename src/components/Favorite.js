@@ -1,13 +1,19 @@
 import { useState, useEffect } from "react";
 import Cartas from "./Cartas";
-import { findCoktel } from "./sevices";
+import { findCoktel, getFavorites } from "./sevices";
 
-function Favorite({favorites}){
+function Favorite({favorites, setFavs}){
   
     const [resultFav, setFavRes] = useState(favorites.map(favorite => ({ objectID: favorite.cocktelId})));
     const [showFavs, setShowFavs] = useState(false);
+
+
+  
+
+
     useEffect(() => {
-       
+        getFavorites().then((result) => {setFavs(result)})
+
             favorites.forEach(async (favorites, i) => {
                 const fav = await findCoktel(favorites.cocktelId);
                 setFavRes(favs => {
@@ -20,6 +26,7 @@ function Favorite({favorites}){
                 });
             });
         } 
+
       , [showFavs]);
 
      
@@ -30,6 +37,7 @@ return(
 
         <h1>favorites siuuu</h1>
         <div className="cartas">
+<<<<<<< HEAD
 
         {
             showFavs  === true ?  resultFav.map(function(x){
@@ -41,6 +49,19 @@ return(
                 showFavs === false ? setShowFavs(true) : setShowFavs(false)
             }} >Show Favs</button></div>
             </div>
+=======
+    
+    {
+
+showFavs  === true ?  resultFav.map(function(x){
+        return <Cartas cocktail={x[0]} showFavs={showFavs}/> })  : ""         
+    }
+    <div class="barra" id="buscar">
+
+        <div className="boton"><button className="elemento"  onClick={() =>{
+            showFavs === false ? setShowFavs(true) : setShowFavs(false);
+        }} >Show Favs</button></div>
+>>>>>>> 256352062bf8413e28ad7f40bf78526edfaeb80d
         </div>
         
     </>   
