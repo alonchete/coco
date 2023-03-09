@@ -11,7 +11,8 @@ import { addCocktailFavorite, removeFavorite, getFavorites} from "./sevices";
 
     const popupAcarta = props.popupAcarta;
     useEffect(() => {
-       
+        getFavorites().then((result) => {setFavs(result)})
+
         
         if(favs.some(function(isFav){return isFav.cocktelId === props.id})){
             setStyle("heart");
@@ -19,7 +20,7 @@ import { addCocktailFavorite, removeFavorite, getFavorites} from "./sevices";
             setStyle("heart2")
         } 
         
-    }, [favorite,popupAcarta, favoritoClick])
+    }, [favorite, popupAcarta])
 
 
     
@@ -27,15 +28,18 @@ import { addCocktailFavorite, removeFavorite, getFavorites} from "./sevices";
 
     function favoritoClick(){
     if(favs.some(function(isFav){return isFav.cocktelId === props.id})){
-        setFavorite(false)
-        setStyle("heart2");
-        removeFavorite(props.id)
-    }
-    else{
-        setFavorite(true)
-        setStyle("heart");
 
+        setFavorite(false)
+
+        removeFavorite(props.id)
+
+    }
+    else{       
+
+        setFavorite(true)
         addCocktailFavorite(props.id)
+
+
 
     }
     }

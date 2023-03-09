@@ -809,33 +809,9 @@
       "img": "http://localhost:3002/Zombie.jpeg",
       "categoria": "categoria2",
       "page": 4
-    },
-    {
-      "name": "MojitoCVX",
-      "categoria": "Categoría2",
-      "preparation": "CXVX",
-      "alcohol": true,
-      "page": 5,
-      "id": "a_1XZTb"
-    },
-    {
-      "name": "MojitA",
-      "categoria": "Categoría2",
-      "preparation": "xdfhg",
-      "alcohol": true,
-      "page": 5,
-      "id": "xSQc-xM"
     }
   ],
   "favorites": [
-    {
-      "cocktelId": "81",
-      "id": "81"
-    },
-    {
-      "cocktelId": "56",
-      "id": "56"
-    },
     {
       "cocktelId": "69",
       "id": "69"

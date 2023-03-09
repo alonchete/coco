@@ -33,14 +33,14 @@ function Favorite({favorites}){
 return(    
         <>
         <h1>Tus Favoritos</h1>
-        <div className="cartas">
+        <div className="cartas"  id="favoritos">
     
     {
 
 showFavs  === true ?  resultFav.map(function(x){
         return <Cartas cocktail={x[0]} showFavs={showFavs}/> })  : ""         
     }
-    <div class="barra" id="buscar">
+    <div class="barra">
 
         <div className="boton"><button className="elemento"  onClick={() =>{
             showFavs === false ? setShowFavs(true) : setShowFavs(false);

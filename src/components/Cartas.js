@@ -12,7 +12,9 @@ function Cartas(p, favorites){
     const [clicked, setClicked] = useState(false);
 
     const popupAcarta = (isclicked) => {
-        setClicked(isclicked)    
+        setClicked(isclicked)   
+        window.location.reload()
+ 
     }
 
     

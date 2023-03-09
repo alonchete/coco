@@ -27,7 +27,7 @@ return(
       <a href="#home" className="nav__item">Home</a>
       <a href="#categorias" className="nav__item">Categorias</a>
       <a href="#buscar" className="nav__item">Buscar</a>
-      <a href="#contacto" className="nav__item">Contacto</a>
+      <a href="#favoritos" className="nav__item">Favoritos</a>
      </div>
 
 </div>

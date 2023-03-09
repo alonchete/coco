@@ -1,8 +1,8 @@
-var URL = `http://localhost:3002/cocktails`;
-var URL_Fav = `http://localhost:3002/favorites`;
+const URL = `http://localhost:3002/cocktails`;
+const URL_Fav = `http://localhost:3002/favorites`;
+const URL_img = `http://localhost:3002/DEFAULT.jpg`;
 
-
-export const addCocktail = (name, categoria, preparation, alcohol, page ) => fetch(`http://localhost:3002/cocktails`, {
+export const addCocktail = (name, categoria, preparation, alcohol, page, img = URL_img) => fetch(`http://localhost:3002/cocktails`, {
   method: 'POST',
   headers: {
       'Accept': 'application/json',
@@ -14,7 +14,8 @@ export const addCocktail = (name, categoria, preparation, alcohol, page ) => fet
       categoria,
       preparation,
       alcohol,
-      page
+      page,
+      img
   })
 }).then(response => response.json());
 
