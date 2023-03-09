@@ -813,12 +813,12 @@
   ],
   "favorites": [
     {
-      "cocktelId": "69",
-      "id": "69"
-    },
-    {
       "cocktelId": "80",
       "id": "80"
+    },
+    {
+      "cocktelId": "81",
+      "id": "81"
     }
   ]
 }

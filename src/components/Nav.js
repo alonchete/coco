@@ -28,6 +28,9 @@ return(
       <a href="#categorias" className="nav__item">Categorias</a>
       <a href="#buscar" className="nav__item">Buscar</a>
       <a href="#favoritos" className="nav__item">Favoritos</a>
+      <a href="#formulario" className="nav__item">Cocktel Especial</a>
+      <a href="#contacto" className="nav__item">Contacto</a>
+      
      </div>
 
 </div>

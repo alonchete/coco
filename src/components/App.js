@@ -36,8 +36,7 @@ useEffect(() => {
   getCocktails(alcohol, paginaActual).then((result) => {setCocktails(result)});
   AllCocktailsAlc(alcohol).then((result) => {setAllCocktails(result)})
 
-
-}, [searchTerm === '', alcohol, paginaActual]);
+}, [searchTerm === '', alcohol, paginaActual, totalPaginas]);
 
 useEffect(() => {
   getFavorites().then((result) => {setFavs(result)})
@@ -54,9 +53,10 @@ return (
          setSearchTerm={setSearchTerm} setAlcohol={setAlcohol} alcohol={alcohol}/>
          <Paginacion setTotalPaginas={setTotalPaginas} allCocktails={allCocktails} alcohol={alcohol} 
         paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina} searchTerm={searchTerm}/>
-
+        <br/><br/>
         <Favorite favorites={favs} setFavs={setFavs}/>
         <Formulario AllCocktailsAlc={AllCocktailsAlc} allCocktails={allCocktails} setCocktelPag={setCocktelPag} cocktelPag={cocktelPag} />
+        <br/><br/>
         <Footer />        
       
       </>

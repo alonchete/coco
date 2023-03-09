@@ -64,7 +64,7 @@ window.location.reload()
     return(
 
         <>
-            <div className="contenedor">
+            <div className="contenedor" id="formulario">
                 <div className="form signup">
                     <h2>Añade tu cocoktel!!</h2>
                     <div className="inputBox">

@@ -5,6 +5,7 @@
     min-height: 550px;
     background: darkgoldenrod;
     overflow: hidden;
+    font-size: 1.5rem;
 
     .contenedor .form.signin,
     .contenedor.signinForm .form.signup{//ESCONDO EL 2º FORMULARIO
@@ -41,6 +42,7 @@
                 color:white;
                 font-weight: 500;
                 letter-spacing: 0,1rem;
+                
             }
 
             .inputBox{
@@ -50,6 +52,7 @@
                 @media screen and (max-width: 400px){//.3rem
                     width: 100%;
                 }
+                
 
                 input:valid ~ span,
                 input:focus ~ span{
@@ -67,10 +70,15 @@
                 input[type="radio"]:valid ~ span,
                 input[type="radio"]:focus ~ span{
                     transform: translateY(1.5px);
+                   
                 }
                 input:valid,
                 input:focus{
                     border: 1px solid rgb(83, 60, 1);
+                }
+                input[type="radio"]{
+                    accent-color: #000;
+                    color: #000;
                 }
 
                 input{
@@ -88,6 +96,7 @@
                     text-decoration: none;
                     outline:none;//adios bordes feos
                 }
+               
 
                 input[type="text"]{
                     box-shadow: -5px -5px 15px rgb(242, 181, 27),
@@ -108,9 +117,9 @@
                    // position: relative;
                     //top: 4px;
                 }
-
+              
                 input[type="submit"]{
-                    background:  rgb(83, 60, 1);
+                    background:  rgb(83, 60, 1);  
                     color: darkgoldenrod;
                     padding: 10px 0;
                     font-weight: 500;
@@ -176,6 +185,7 @@
     padding: 20px 48px;
     border-radius: 16px;
     background: darkgoldenrod;
+    
     /*
     box-shadow: -5px -5px 15px rgb(242, 181, 27),
                     5px 5px 15px rgb(113, 82, 4);
