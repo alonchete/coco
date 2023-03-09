@@ -17,10 +17,10 @@ function Cartas(p){
 return(
 <>
  
-<div class="cartas" id={id}> 
-    <div class="carta" id="cierro">
-        <div class="caja">
-            <div class="imagen">
+<div className="cartas" id={id} key ={id}> 
+    <div className="carta" id="cierro">
+        <div className="caja">
+            <div className="imagen">
                <img src={img} />
             </div>
             <div className="contenido">

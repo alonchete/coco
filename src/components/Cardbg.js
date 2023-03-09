@@ -6,7 +6,7 @@ function cardbg(prop){
   const cart = prop.cart;
     
 return(
-    <div class="card-bg">
+    <div className="card-bg">
 
       <img src={cart.img} alt="..."/>
 

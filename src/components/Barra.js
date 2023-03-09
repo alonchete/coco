@@ -33,17 +33,17 @@ var count = 0;
     return(
         
 <>
-<div class="barra" id="buscar">
+<div className="barra" id="buscar" >
     
-    <div class="input-container" >
+    <div className="input-container" >
         <input type="text" placeholder="¿Que le apetece tomar?..."  onChange={handleChange}  />
         <span>
-            <i class="fa-solid fa-magnifying-glass"/>
+            <i className="fa-solid fa-magnifying-glass"/>
         </span>          
     </div>
 
    
-    <div class="boton" onClick={alcoholClick}>
+    <div className="boton" onClick={alcoholClick}>
         <button className='elemento'>{alcohol === true ? "Mostrar sin alcohol" : "Mostrar con alcohol"}</button>
         
     </div>
@@ -52,7 +52,7 @@ var count = 0;
 
     <p align="center">{  }  {
 } </p>
-<div class="cartas">
+<div className="cartas"key={posts.name} >
 
 
     {
@@ -61,8 +61,8 @@ var count = 0;
         return(posts.length > 20 ? (count < posts.length/verMas ? <Cartas cocktail={x}/> : " ") : <Cartas cocktail={x}/> )})          
     }
 </div><br/>
-<div class="barra" id="buscar">
- {posts.length > 20  ?<div class="boton"><button className='elemento'  onClick={VerMas}>{verMas === 2 ? "Ver mas ": "Ver menos"}
+<div className="barra" id="buscar" >
+ {posts.length > 20  ?<div className="boton"><button className='elemento'  onClick={VerMas}>{verMas === 2 ? "Ver mas ": "Ver menos"}
     </button> 
 </div> : " "}
 </div>

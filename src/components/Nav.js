@@ -7,27 +7,27 @@ import menu from '../assets/menu.svg';
 function Nav(){
 return(
 
-<header class="nav">
+<header className="nav">
 
-<div class="nav__container">
+<div className="nav__container">
 
-    <h1 class="nav__logo">
+    <h1 className="nav__logo">
         <img src={logo}/>
     </h1>
 
   
 
-    <label for="menu" class="nav__label">
+    <label form="menu" className="nav__label">
         <img src={menu}/>
     </label>
 
-    <input type="checkbox" id="menu" class="nav__input"/>
+    <input type="checkbox" id="menu" className="nav__input"/>
     
-    <div class="nav__menu">
-      <a href="#home" class="nav__item">Home</a>
-      <a href="#categorias" class="nav__item">Categorias</a>
-      <a href="#buscar" class="nav__item">buscar</a>
-      <a href="#favorites" class="nav__item">Favoritos</a>
+    <div className="nav__menu">
+      <a href="#home" className="nav__item">Home</a>
+      <a href="#categorias" className="nav__item">Categorias</a>
+      <a href="#buscar" className="nav__item">buscar</a>
+      <a href="#favorites" className="nav__item">Favoritos</a>
      </div>
 
 </div>

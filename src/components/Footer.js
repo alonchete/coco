@@ -4,19 +4,19 @@ function footer(){
     
     return(
         <footer>
-          <div class="social" id="contacto">
+          <div className="social" id="contacto">
              <ul>
-                <li class="elemento "><spam class='fab fa-facebook-f'></spam></li>
+                <li className="elemento "><span className='fab fa-facebook-f'></span></li>
              
-                <li class="elemento"><spam class='fab fa-twitter'></spam></li>
+                <li className="elemento"><span className='fab fa-twitter'></span></li>
               </ul>
               <ul>
-                <li class="elemento"><spam class='fab fa-instagram'></spam></li>
+                <li className="elemento"><span className='fab fa-instagram'></span></li>
               
-                <li class="elemento" ><a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank" ><spam class='fab fa-youtube'></spam></a></li>
+                <li className="elemento" ><a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank" ><span className='fab fa-youtube'></span></a></li>
              </ul>
           </div>
-          <div class="derechos">
+          <div className="derechos">
             <small>&copy; 2022 <b>Cococtail Libre</b> - Todos los derechos reservados </small>
           </div>
         </footer>

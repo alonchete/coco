@@ -8,14 +8,14 @@ function cabecera(){
     return(
 <>
 
-    <div class="cabecera" id="home">
-        <div class="imagenes">
-           <div class="imagen"><img src={barra}/></div> 
-           <div class="imagen"><img src={barra2}/></div> 
-           <div class="imagen"><img src={barra3}/></div> 
-           <div class="imagen"><img src={barra4}/></div> 
+    <div className="cabecera" id="home">
+        <div className="imagenes">
+           <div className="imagen"><img src={barra}/></div> 
+           <div className="imagen"><img src={barra2}/></div> 
+           <div className="imagen"><img src={barra3}/></div> 
+           <div className="imagen"><img src={barra4}/></div> 
         </div >
-        <div class="COCOKTAIL"><p>COCO<span>KTAIL.</span></p></div>
+        <div className="COCOKTAIL"><p>COCO<span>KTAIL.</span></p></div>
     </div>
 
 </>

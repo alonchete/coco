@@ -65,43 +65,43 @@ window.location.reload()
     return(
 
         <>
-            <div class="contenedor">
-                <div class="form signup">
+            <div className="contenedor">
+                <div className="form signup">
                     <h2>Añade tu cocoktel!!</h2>
-                    <div class="inputBox">
+                    <div className="inputBox">
                         <input type="text" required="required" defaultValue={"Mojito"} onChange={handleChange} />
-                        <i class="fa-regular fa-user"></i>
-                        <spam>Nombre de tu cocktail</spam>
+                        <i className="fa-regular fa-user"></i>
+                        <span>Nombre de tu cocktail</span>
                     </div>
-                    <div class="inputBox">
+                    <div className="inputBox">
                         <input type="radio" required="required" id="Categoría1" onChange={CatChange}  
                         value="Categoría1" checked={cocktelCat === "Categoría1" ? true : false}     />
-                        <spam>Categoría1</spam>
+                        <span>Categoría1</span>
                         <input type="radio" required="required" id="Categoría2" onChange={CatChange}
                          value="Categoría2" checked={cocktelCat === "Categoría2" ? true : false} />
-                        <spam>Categoría2</spam>
+                        <span>Categoría2</span>
                         <input type="radio" required="required" id="Categoría3"onChange={CatChange}
                          value="Categoría3" checked={cocktelCat === "Categoría3" ? true : false} />
-                        <spam>Categoría3</spam>
+                        <span>Categoría3</span>
                         <input type="radio" required="required" id="Categoría4" onChange={CatChange} 
                         value="Categoría4" checked={cocktelCat === "Categoría4" ? true : false} />
-                        <spam>Categoría4</spam>
+                        <span>Categoría4</span>
                     </div>
-                    <div class="inputBox">
+                    <div className="inputBox">
                         <input type="text" required="required" onChange={PrepChange} />
-                        <i class="fa-solid fa-lock"></i>
-                        <spam>Ingredientes</spam>
+                        <i className="fa-solid fa-lock"></i>
+                        <span>Ingredientes</span>
                     </div>
-                    <div class="inputBox">
+                    <div className="inputBox">
                     <input type="radio" required="required" id="true"  value="true" 
                     checked={cocktelAlc === true ? true : false} onChange={alcoholChange} />
-                        <spam>Con alcohol</spam>
+                        <span>Con alcohol</span>
                     <input type="radio" required="required" id="false"  value="false"
                      checked={cocktelAlc === false ? true : false}  onChange={alcoholChange}  />
-                        <spam>Sin alcohol</spam>          
+                        <span>Sin alcohol</span>          
                     </div>
                     
-                    <div class="inputBox">
+                    <div className="inputBox">
                         <input type="submit" value="Agregar cocoktel" onClick={agregarCocktel} />
                     </div>
 
