@@ -60,17 +60,13 @@ var count = 0;
         count++;
         return(cocktails.length > 20 ? (count < cocktails.length/verMas ? <Cartas cocktail={x}/> : " ") : <Cartas cocktail={x}/> )})          
     }
-</div><br/>
-<<<<<<< HEAD
-<div className="barra" id="buscar" >
- {posts.length > 20  ?<div className="boton"><button className='elemento'  onClick={VerMas}>{verMas === 2 ? "Ver mas ": "Ver menos"}
-=======
-<div class="barra" id="buscar">
- {cocktails.length > 20  ?<div class="boton"><button className='elemento'  onClick={VerMas}>{verMas === 2 ? "Ver mas ": "Ver menos"}
->>>>>>> 256352062bf8413e28ad7f40bf78526edfaeb80d
-    </button> 
-</div> : " "}
-</div>
+    </div><br/>
+
+        <div className="barra" id="buscar" >
+            {posts.length > 20  ?<div className="boton"><button className='elemento'  onClick={VerMas}>{verMas === 2 ? "Ver mas ": "Ver menos"}
+            </button> 
+        </div> : " "}
+    </div>
 
 </>
 
