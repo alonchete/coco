@@ -52,7 +52,7 @@ var count = 0;
 
     <p align="center">{  }  {
 } </p>
-<div className="cartas"key={posts.name} >
+<div className="cartas"key={cocktails.name} >
 
 
     {
@@ -63,7 +63,7 @@ var count = 0;
     </div><br/>
 
         <div className="barra" id="buscar" >
-            {posts.length > 20  ?<div className="boton"><button className='elemento'  onClick={VerMas}>{verMas === 2 ? "Ver mas ": "Ver menos"}
+            {cocktails.length > 20  ?<div className="boton"><button className='elemento'  onClick={VerMas}>{verMas === 2 ? "Ver mas ": "Ver menos"}
             </button> 
         </div> : " "}
     </div>
