@@ -46,7 +46,6 @@ function Container({AllCocktailsAlc, allCocktails, setCocktelPag, cocktelPag}){
           else return 0;
     
       }
-      console.log(paginas)
 
      const agregarCocktel=  ( () =>{
         console.log(addPage())

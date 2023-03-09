@@ -30,7 +30,7 @@ export default function Paginacion({setTotalPaginas, allCocktails, paginasTotale
     }, [allCocktails][paginaActual])
 
     
-if(paginasTotales > 2 && posts.length > 10){
+if(paginasTotales > 2 ){
     for(let i = 1; i < paginasTotales; i++){
         pages.push(<div style={styleLI} key={i}><Pagina numeroPagina={i} seleccionada={paginaActual === i} setPagina={setPagina}/></div>)
     }

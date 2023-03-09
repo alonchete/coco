@@ -12,7 +12,6 @@ function Cartas(p){
 
     const popupAcarta = (isclicked) => {
         setClicked(isclicked)
-        console.log(isclicked)
     }
 
 return(
@@ -23,7 +22,6 @@ return(
         <div class="caja">
             <div class="imagen">
                <img src={img} />
-               <div class="heart"></div>
             </div>
             <div className="contenido">
                <a id='nombre' href="#popupbox"  onClick={() => setClicked(true)}>{name}</a> 
@@ -33,6 +31,7 @@ return(
 
 
     <Popup 
+        id={id}
         name={name} 
         img={img} 
         prep={prep} 

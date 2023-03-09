@@ -5,8 +5,9 @@ import Barra from './Barra';
 import Formulario from './Formulario';
 import Footer from './Footer';
 import Paginacion from './Paginacion';
+import Favorite from './Favorite';
 import '../sass/main.scss';
-import {AllCocktailsAlc, getCocktails, getAllCocktails} from './sevices'
+import {AllCocktailsAlc, getCocktails, getAllCocktails, getFavorites} from './sevices'
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
   const [alcohol, setAlcohol] = useState(false);
   const [totalPaginas, setTotalPaginas] = useState();
   const [cocktelPag, setCocktelPag] = useState(0);
+  const [favs, setFavs] = useState([]);
 
 
  var URL = `http://localhost:3002/cocktails`;
@@ -36,6 +38,10 @@ useEffect(() => {
 
 }, [searchTerm === '', alcohol, paginaActual]);
 
+useEffect(() => {
+  getFavorites().then((result) => {setFavs(result)})
+}, []);
+
 return (
 
       <>
@@ -44,10 +50,12 @@ return (
         <Categorias/>
         <Barra  paginaActual={paginaActual} posts={posts} setPagina={setPagina}
          setSearchTerm={setSearchTerm} setAlcohol={setAlcohol} alcohol={alcohol}/>
+        <Favorite favorites={favs}/>
         <Paginacion setTotalPaginas={setTotalPaginas} allCocktails={allCocktails} alcohol={alcohol} 
         paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina} posts={posts} searchTerm={searchTerm}/>
         <Formulario AllCocktailsAlc={AllCocktailsAlc} allCocktails={allCocktails} setCocktelPag={setCocktelPag} cocktelPag={cocktelPag} />
         <Footer />        
+      
       </>
     
   ) 
