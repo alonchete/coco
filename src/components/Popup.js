@@ -7,26 +7,25 @@ import { addCocktailFavorite, removeFavorite} from "./sevices";
     const hijoApadre = props.hijoApadre;
     const [style, setStyle] = useState("heart2");
 
-    const [favorite, setFavorite] = useState();
+    const [favorite, setFavorite] = useState(false);
 
    
 
-    function favoritoClick(event){
-    favorite === false ? setFavorite(true) : setFavorite(false);
+    function favoritoClick(){
 
-    if(favorite === false){
+    if(favorite === true){
+        setFavorite(false);
         setStyle("heart2");
-        addCocktailFavorite(props.id)
-    }
-    else{
-        setStyle("heart");
         removeFavorite(props.id)
 
-
+    }
+    else{
+        setFavorite(true)
+        setStyle("heart");
+        addCocktailFavorite(props.id)
     }
     }
 
-     
 
     const popupAcarta = props.popupAcarta;
 
