@@ -41,7 +41,7 @@ useEffect(() => {
 
 useEffect(() => {
   getFavorites().then((result) => {setFavs(result)})
-}, [favs]);
+}, []);
 
 
 return (
@@ -52,10 +52,9 @@ return (
         <Categorias/>
         <Barra  paginaActual={paginaActual} cocktails={cocktails} setPagina={setPagina}
          setSearchTerm={setSearchTerm} setAlcohol={setAlcohol} alcohol={alcohol}/>
-    
-        <Favorite favorites={favs}/>
          <Paginacion setTotalPaginas={setTotalPaginas} allCocktails={allCocktails} alcohol={alcohol} 
         paginasTotales={totalPaginas} paginaActual={paginaActual} setPagina={setPagina} searchTerm={searchTerm}/>
+
         <Favorite favorites={favs} setFavs={setFavs}/>
         <Formulario AllCocktailsAlc={AllCocktailsAlc} allCocktails={allCocktails} setCocktelPag={setCocktelPag} cocktelPag={cocktelPag} />
         <Footer />        

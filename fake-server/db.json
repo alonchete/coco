@@ -829,28 +829,20 @@
   ],
   "favorites": [
     {
-      "cocktelId": "69",
-      "id": "69"
-    },
-    {
       "cocktelId": "81",
       "id": "81"
-    },
-    {
-      "cocktelId": "80",
-      "id": "80"
-    },
-    {
-      "cocktelId": "66",
-      "id": "66"
     },
     {
       "cocktelId": "56",
       "id": "56"
     },
     {
-      "cocktelId": "64",
-      "id": "64"
+      "cocktelId": "69",
+      "id": "69"
+    },
+    {
+      "cocktelId": "80",
+      "id": "80"
     }
   ]
 }

@@ -22,16 +22,7 @@ import { addCocktailFavorite, removeFavorite, getFavorites} from "./sevices";
     }, [favorite,popupAcarta, favoritoClick])
 
 
-    useEffect(() => {
-        getFavorites().then((result) => {setFavs(result)})
-        
-        if(favs.some(function(isFav){return isFav.cocktelId === props.id})){
-            setStyle("heart");
-        }else{
-            setStyle("heart2")
-        } 
-        
-    }, [favorite,popupAcarta, favoritoClick])
+    
 
 
     function favoritoClick(){

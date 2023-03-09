@@ -1,0 +1,12 @@
+[33mf96fd5e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: checkout: moving from main to main
+[33mf96fd5e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: checkout: moving from main to main
+[33mf96fd5e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2}: commit: cocktails
+[33mf2a4455[m HEAD@{3}: commit: favs otra vez
+[33maee8d1e[m HEAD@{4}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33m1e1d71b[m HEAD@{5}: commit: favs3
+[33m2563520[m HEAD@{6}: commit: favs2
+[33mfd53d02[m HEAD@{7}: commit: favs
+[33mb70df79[m HEAD@{8}: pull --tags origin main: Fast-forward
+[33m2f79524[m HEAD@{9}: pull --tags origin main: Fast-forward
+[33m1596943[m HEAD@{10}: commit: form
+[33mc839444[m HEAD@{11}: clone: from https://github.com/alonchete/coco.git
